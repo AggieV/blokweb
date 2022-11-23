@@ -60,29 +60,72 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+  -De koppen op de site zijn lastig te vinden met de screenreader
+  -De screenreader gaat eerst naar het secundaire menu en dan naar het primaire
+  -De site is bij bepaalde kleurenpaletten niet erg toegankelijk voor kleurenblinden
 
   #### Screenreader
   Hier korte omschrijving (met indien nodig afbeeldingen)
+  
+  Ik heb de screenreader training gevolgd en vervolgens heb ik de instellingen zo aangepast dat de screenreader te bedienen is met 1 knop, de capslock. Uiteindelijk begreep ik hoe de screenreader werkte, maar ik vond het veel te snel gaan.
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+
+  De screenreader mag langzamer voorlezen. Verder moet ik zorgen dat alle headings enzo duidelijk zijn, in een logische volgorde.
+
 
 
   #### Muis en Toetsenbord 
   Hier korte omschrijving (met indien nodig afbeeldingen)
 
+  Ik heb de Chrome extensie 'colorblindly' geinstalleerd en vervolgens heb ik alle opties op mijn gekozen site uitgeprobeerd. Ik kwam erachter dat de monochrome optie het minst toegankelijk was van alle opties. Dit komt waarschijnlijk omdat de site een zwarte achtergrond heeft. Het effect is dan dat plaatjes en grijze letters weinig/nauwelijks contrast hebben en dit maakt de content minder goed zichtbaar.
+
+  <img src="readme-images/monochrome.png" width="375px" alt="trailers">
+
+
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+
+  Het contrast tussen achtergrond en tekst en plaatjes moet groot genoeg zijn, dus misschien moeten de grijze letters ook wit worden.
+
 
 
   #### Motoriek (shocks, elastiekjes)
   Hier korte omschrijving (met indien nodig afbeeldingen)
 
+  Ik had de shock heel kort gebruikt, maar het deed te veel pijn, dus ik kon het niet echt gebruiken. De elastiekjes had ik om meerdere vingers 
+  gedaan. Ik merkte alleen niet echt verschil qua navigatie op de website, misschien omdat mijn motoriek van nature vrij goed is, of ik nou
+  10 of 8 vingers heb die ik kan gebruiken.
+
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  N.V.T.
 
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
   Hier korte omschrijving (met indien nodig afbeeldingen)
 
+  1 Combined Loss Diabetic Eye Disease en Central Field Loss AMD:
+  ik zie alles lastig, maar ik zie alles wel.
+
+  2 Peripheral Field Loss:
+  ik zie geen dingen in mijn centrale blikveld.
+
+  3 Low Contrast:
+  ik zie plaatjes slecht en grijze tekst.
+
+  4 Color #0779P: 
+  geen verschil, alles is wat geler, goed contrast met zwart, grijze tekst lijkt zelfs beter leesbaar
+
+  5 Hemifield loss: 
+  ik merk geen verschil met normale situatie, ik zie niet minder dan normaal
+
+  -Ballon omhoog houden terwijl ik de navigeer door de pagina heen: (voor mensen met adhd) gaat lastig
+
+
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+
+  Aangezien de grijze tekst minder leesbaar is met verminderd zicht, is het een idee om de grijze tekst een andere kleur te geven.
+
+
 
 </details>
 
@@ -94,14 +137,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 2e werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+
+  https://miro.com/app/board/uXjVPCw8QgQ=/?share_link_id=245174166337
+
+  <img src="readme-images/scrmoviepass1.png" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/scrmoviepass2.png" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/scrmoviepass3.png" width="375px" alt="breakdown van de hele pagina">
+
+  <img src="readme-images/scrtrailers1.png" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/scrtrailers2.png" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/scrtrailers3.png" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
-
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
-
+  <img src="readme-images/scrdynamischdeelimgslider.png" width="375px" alt="breakdown van de hele pagina">
 </details>
 
 
@@ -116,15 +164,45 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+  Wat goed ging: 
+  Pagina van de moviepass grotendeels opzetten in html en css:
+  
+  <img src="readme-images/scrmoviepass.png" width="375px" alt="breakdown van de hele pagina">
+
+  Wat lastig is:
+  Juiste CSS uitzoeken: grid, flexbox enz
+
+  <img src="readme-images/code.png" width="375px" alt="breakdown van de hele pagina">
+
+
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
   | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Agnes:                               Sohil: niet     Koelsoem: 
+   
+    -ik zoek                             gereageerd      -Heeft nu alleen
+    alternatief                                          html main met afb en 
+    voor class in                                        kopjes in flex, moet
+    body                                                 verder uitzoeken hoe
+    -ik wil weten                                        goede marges moeten
+    wat h1 h2 enz                                        -Werken aan header en
+    zijn (is mijn                                        footer
+    breakdownschets
+    goed)          |Ab                 | ---          | ---              |
+  | dit bespreken  | -Geswitcht naar 
+    -Moet ik grid
+    verplicht 
+    gebruiken?      nieuwe website,
+                    omdat de eerste te 
+                    veel gebruik maakte 
+                    van animaties, 
+                    te lastig           | en ik dit    | en dan ik dat    |
+  |                |-Lastig om classes
+                    en divs te vervangen 
+                    door iets anders                    | nog een punt | dit wil ik zeker |
+  |                |                    | ...          | ...              |
 
 
   ### Verslag van meeting
@@ -154,9 +232,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   samen met je groepje opstellen
 
   | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | Agnes          | Ab                 | ---          | ---              |
+  | dit bespreken  | -                   | en ik dit    | en dan ik dat    |
+  | en dat ook nog |                    | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
 
 
@@ -250,7 +328,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitkomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
@@ -276,8 +354,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-  1. bron 1
-  2. bron 2
+  1. bron 1: https://www.w3schools.com/howto/howto_css_list_without_bullets.asp 
+
+  2. bron 2:
+
   3. ...
 
 </details>

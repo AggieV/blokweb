@@ -1,34 +1,184 @@
 /**************/
 /* CSS REMEDY */
 /**************/
-*, *::after, *::before {
-  box-sizing:border-box;  
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
 }
 
-button, summary {
+button,
+summary {
 	cursor: pointer;
 }
-
-
-
-
 
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
+
+@font-face {
+	font-family: 'Isonorm';
+	src: url(./fonts/IsonormRegular.otf);
+}
+
 :root {
 	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+	--color-text: #111;
+	--color-background: #eee;
+	--primary-colour: orange;
+	--secundary-colour: white;
+	/* --page-header-height: 120px; */
+	/* --page-header-scrolled-height: 80px; */
+	/* --header-height: 59px; */
+}
+
+body {
+	/* display: grid;
+	grid-auto-columns: min-content;
+	place-content: center; */
+	color: var(--secundary-colour);
+	background-color: black;
+	font-family: 'Isonorm', sans-serif;
+	line-height: 1.38888889;
+	color: #fff;
+	background-color: #0b0c0e;
+	margin: 0;
+	line-break: auto;
+}
+
+/* body.moviepasspage section:nth-of-type(1) ul {
+	display: flex;
+	flex-direction: row-reverse;
+} */
+
+.moviepasspage header nav ul li:first-child img {
+	height: auto;
+	width: 1.5em;
 }
 
 
+.moviepasspage section:nth-of-type(1) h2 {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+.moviepasspage section:nth-of-type(1) ul {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	overflow: scroll;
+	margin: 0;
+	padding: 0;
+}
+
+.moviepasspage section:nth-of-type(2) li {
+	display: flex;
+	flex-direction: row;
+}
+
+.moviepasspage section:nth-of-type(2) li img {
+	margin-right: 0.5em;
+}
+
+h1 {
+	color: var(--primary-colour);
+	font-size: 3em;
+	font-weight: bold;
+	letter-spacing: 0.5em;
+	word-spacing: 1em;
+	text-shadow: 1em, 1em, 1em, 1em, black;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+h2 {
+	color: var(--secundary-colour);
+	font-size: 1em;
+	text-align: center;
+}
+
+h3 {
+	font-size: 1.9em;
+
+}
+
+p {
+	line-height: 1em;
+	text-align: left;
+	/* word-spacing: 0.5em; */
+}
+
+/*lists*/
+/* bron: https://www.w3schools.com/howto/howto_css_list_without_bullets.asp */
+ul {
+	list-style-type: none;
+}
 
 
+/* ul:nth-of-type(1) {
+	display: flex;
+	overflow: auto;
+	scroll-snap-type: x mandatory;
+}
+
+/* li's zijn flexkinderen */
+/* ul:nth-of-type(1) li {
+	flex-grow: 1;
+	scroll-snap-align: center;
+
+}  */
+
+/*buttons*/
+/*bronnen:https://www.javatpoint.com/how-to-center-a-button-in-css
+*/
+
+button {
+	display: grid;
+	color: var(--color-text);
+	background-color: var(--primary-colour);
+	padding: 0.69em 1.06em;
+	margin: auto;
+	font-size: 1.5em;
+}
+
+/* button:nth-of-type(1) {
+	display: grid;
+	color: var(--color-text);
+	background-color: var(--primary-colour);
+	padding: 0.69 em 1.06em;
+	margin: 0 1em 0 0;
+}
+
+button:nth-of-type(1) {
+	color: var(--color-text);
+	background-color: var(--primary-colour);
+} */
+
+/*links*/
+
+/*images*/
+
+img {
+	max-width: 7.5em;
+}
+
+.landingpage1 {
+	max-width: 20.63em;
+	margin: auto;
+}
+
+.moviepass-poster-caroussel .swiperslide img {
+	width: 100%;
+	height: auto;
+}
 
 /****************/
 /* JOUW STYLING */
 /****************/
 
 /* jouw code */
-
