@@ -179,47 +179,35 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | Agnes:                               Sohil: niet     Koelsoem: 
-   
-    -ik zoek                             gereageerd      -Heeft nu alleen
-    alternatief                                          html main met afb en 
-    voor class in                                        kopjes in flex, moet
-    body                                                 verder uitzoeken hoe
-    -ik wil weten                                        goede marges moeten
-    wat h1 h2 enz                                        -Werken aan header en
-    zijn (is mijn                                        footer
-    breakdownschets
-    goed)          |Ab                 | ---          | ---              |
-  | dit bespreken  | -Geswitcht naar 
-    -Moet ik grid
-    verplicht 
-    gebruiken?      nieuwe website,
-                    omdat de eerste te 
-                    veel gebruik maakte 
-                    van animaties, 
-                    te lastig           | en ik dit    | en dan ik dat    |
-  |                |-Lastig om classes
-                    en divs te vervangen 
-                    door iets anders                    | nog een punt | dit wil ik zeker |
-  |                |                    | ...          | ...              |
+  Student 1: Agnes
+
+  Ik zoek een alternatief voor de class in de body. Ook wil ik weten wat h1 en h2 enz zijn. Zijn mijn breakdownschetsen goed? 
+
+  
+  Student 2: Ab
+
+  Geswitcht naar nieuwe website, omdat de eerste teveel gebruik maakte van animaties, te lastig om te maken. Lastig om classes en divs te vervangen door iets anders.
+
+
+  Student 3: Koelsoem
+
+  Heeft nu alleen html main met afb en kopjes in flex, moet alleen nog uitzoeken hoe er goede marges moeten komen. Ook moet ze nog werken aan header en footer.
+
+  
+  Student 4: Sohil
+
+  Heeft niet gereageerd
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
-
+  Ab moet nog het meeste doen voor de html en de css. Koelsoem moet koppen toevoegen en ook de rest van de content van de website aanvullen en ook meer css toevoegen. Ik zelf kreeg als tip om 3 css bestanden aan te maken: 1 voor het algemene deel en dan 1 voor elke pagina. In een html bestand van 1 specifieke pagina zou ik dan moeten linken naar de algemene stylesheet en naar de specifieke. Ook kon ik het beste op de homepagina alleen een h1 zetten en niet een a, want daar is het logo geen link naar de homepage, omdat het logo zich al op de homepage bevindt. Ook kon ik nog de slider van films klikbaar maken en ook met een stopoptie. 
 </details>
 
 
 
-
-
-## Voortgang 2 (week 3)
+## Voortgang 2 open (week 3)
 
 <details>
   <summary>uitwerken voor 2e voortgang</summary>
@@ -227,15 +215,44 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+  Wat goed ging was om 3 verschillende css bestanden te maken. Ook met het selecteren van bepaalde onderdelen in een sectie kon ik bepaalde eigenschappen geven aan een specifiek deel, zoals de kleur van een lettertype. Ik was blij dat dit lukte zonder een class te hoeven gebruiken.
+
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | Agnes          | Ab                 | ---          | ---              |
-  | dit bespreken  | -                   | en ik dit    | en dan ik dat    |
-  | en dat ook nog |                    | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  Student 1: Agnes
+
+  Wat wel al goed ging;
+   -Nav bar maken
+   -JS gebruiken om knop blauw te maken
+
+
+  Wat nog niet lukt;
+   -Hamburgermenu lukt niet
+   -Logo moet naar links en omhoog: lukt niet
+   -Lineheight:lukt niet
+   -Gradient: moet over 3 secties, zonder margins, als 1 verloop, ook moet de gradient rechts beginnen
+   -Eigenschappen h1 van moviepass overschrijft eigenschappen van de h1 van trailerpagina (zoals wordspacing en text-transform:uppercase)
+ 
+
+  
+  Student 2: Ab
+
+  Burger bar
+
+
+  Student 3: Koelsoem
+
+  Responsive maken header
+
+  
+  
+  Student 4: Sohil
+
+  Header fixen
+
+
 
 
   ### Verslag van meeting

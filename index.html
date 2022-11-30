@@ -3,67 +3,101 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="author" content="jouw naam">
+	<meta name="author" content="agnesverhagen">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<title>vuecinemas</title>
 
 	<link href="styles/style.css" rel="stylesheet">
+	<link href="styles/moviepassstyle.css" rel="stylesheet">
 	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 </head>
 
-<body class="moviepasspage">
+<body>
 	<header>
 		<nav>
 			<ul>
 				<li>
 					<h1>
-						<a href="#"><img src="readme-images/vue-logo.png" alt="vue-logo"></img></a>
+						<a href="#"><img src="images/vue-logo.png" alt="vue-logo"></img></a>
 					</h1>
 				</li>
-				<li>zoekfunctie</li>
-				<li>hamburgermenu</li>
+				<li><img src="images/search.svg" alt="search"></img></li>
+				<li><img src="images/hamburgermenu.svg" alt="hamburgermenu"></img></li> 
+
+				<!-- bron https://codepen.io/Agnes-Verhagen/pen/mdKGxpM -->
+				<!-- <li><button aria-hidden="true"><img src="images/hamburgermenu.svg" alt="" />Menu</button></li> -->
 			</ul>
 		</nav>
+
+		<!--  het menu -->
+		<!-- <nav> -->
+			<!-- de sluit button -->
+			<!-- de button is ook niet relevant voor screenreaders -->
+			<!-- <button aria-hidden="true"><img src="https://assets.codepen.io/274456/ui-icon-cross.svg"
+					alt="" />Sluit</button>
+
+			<ul>
+				<li><a class="active"><img alt="home"> Home</a></li>
+				<li><a href="#"> Knight</a></li>
+				<li><a href="#"> Ogre</a></li>
+				<li><a href="#"> Queen</a></li>
+				<li><a href="#"> Witch</a></li>
+				<li><a href="#"> Wizard</a></li>
+			</ul>
+		</nav> -->
+
+		<!-- <ul>
+			<li>Films</li>
+			<li>Specials & Events</li>
+			<li>Kids</li>
+			<li>Belevingen</li>
+			<li>Tickets</li>
+			<li>Movie Pass</li>
+			<li>Gift Gards</li>
+			<li>Zakelijk</li>
+			<li>klantenservice</li>
+		</ul> -->
+
 	</header>
 
 	<main>
 
 		<section>
-			<h2>Film slider</h2>
-				<ul>
-					<li>
-						<img src="readme-images/barbarian.jpg" alt="barbarian"></img>
-					</li>
+			<h2>films die nu draaien</h2>
+			<ul>
+				<li>
+					<img src="images/barbarian.jpg" alt="barbarian"></img>
+				</li>
 
-					<li>
-						<img src="readme-images/casacoco.jpg" alt="casacoco"></img>
-					</li>
+				<li>
+					<img src="images/casacoco.jpg" alt="casacoco"></img>
+				</li>
 
-					<li>
-						<img src="readme-images/blackadam.jpg" alt="blackadam"></img>
-					</li>
+				<li>
+					<img src="images/blackadam.jpg" alt="blackadam"></img>
+				</li>
 
-					<li>
-						<img src="readme-images/clubvansintrace.jpg" alt="clubvansintrace"></img>
-					</li>
+				<li>
+					<img src="images/clubvansintrace.jpg" alt="clubvansintrace"></img>
+				</li>
 
-					<li>
-						<img src="readme-images/grotesintfilm.jpg" alt="grotesintfilm"></img>
-					</li>
+				<li>
+					<img src="images/grotesintfilm.jpg" alt="grotesintfilm"></img>
+				</li>
 
-					<li>
-						<img src="readme-images/listydome5.jpg" alt="listydome5"></img>
-					</li>
+				<li>
+					<img src="images/listydome5.jpg" alt="listydome5"></img>
+				</li>
 
-					<li>
-						<img src="readme-images/tickettoparadise.jpeg" alt="tickettoparadise"></img>
-					</li>
+				<li>
+					<img src="images/tickettoparadise.jpeg" alt="tickettoparadise"></img>
+				</li>
 
-					<li>
-						<img src="readme-images/wakandaforever.jpg" alt="wakandaforever"></img>
-					</li>
-				</ul>
+				<li>
+					<img src="images/wakandaforever.jpg" alt="wakandaforever"></img>
+				</li>
+			</ul>
 		</section>
 
 		<section>
@@ -71,29 +105,30 @@
 			<h3>onbeperkt naar de film voor €19.50 p/mnd</h3>
 			<ul>
 				<li>
-					<img src="readme-images/movie-snacks.svg" alt="movie-snacks"></img>
+					<img src="images/movie-snacks.svg" alt="movie-snacks"></img>
 					<p>10% korting op eten en drinken</p>
 				</li>
 
 				<li>
-					<img src="readme-images/movie-chair.svg" alt="movie-chair"></img>
+					<img src="images/movie-chair.svg" alt="movie-chair"></img>
 					<p>Inclusief Sneak Preview & Movie Pass Exclusive</p>
 				</li>
 
 				<li>
-					<img src="readme-images/movie-watch.svg" alt="movie-watch"></img>
+					<img src="images/movie-watch.svg" alt="movie-watch"></img>
 					<p>Inclusief XD Experience en Dolby Atmos</p>
 				</li>
 			</ul>
 		</section>
 
 		<section>
+			<!-- <https://www.freecodecamp.org/news/html-button-link-code-examples-how-to-make-html-hyperlinks-using-the-href-attribute-on-tags/> -->
 			<button>neem abonnement</button>
 			<button>geef cadeau</button>
 		</section>
 
 		<section>
-			<img class=landingpage1 src="readme-images/moviepass-landingpage1.jpg" alt="moviepass-landingpage1"></img>
+			<img class=landingpage1 src="images/moviepass-landingpage1.jpg" alt="moviepass-landingpage1"></img>
 
 			<h3>speciaal voor onze échte filmliefhebbers</h3>
 
@@ -107,7 +142,7 @@
 		</section>
 
 		<section>
-			<img src="readme-images/movie-chair.svg" alt="movie-chair"></img>
+			<img src="images/movie-chair.svg" alt="movie-chair"></img>
 
 			<h3>al gauw voordeliger dan reguliere tickets</h3>
 
@@ -120,7 +155,7 @@
 		</section>
 
 		<section>
-			<img src="readme-images/movie-chair.svg" alt="movie-chair"></img>
+			<img src="images/movie-chair.svg" alt="movie-chair"></img>
 
 			<h3>scan via de vue app en je bent binnen!</h3>
 
@@ -143,24 +178,24 @@
 		</section>
 
 		<section>
+			<!-- <https://www.w3schools.com/tags/tag_select.asp> -->
 			<h3>veelgestelde vragen</h3>
-			<p>dropdown 1</p>
-			<p></p>
-			<p></p>
-
-			<p>bekijk alle vragen</p>
+			<p>Wanneer kan ik mijn tickets ophalen?</p>
+			<p>Kan ik ook kaartjes kopen in de bioscoop?</p>
+			<p>Waar kan ik mijn gekochte tickets vinden?</p>
+			<a>bekijk alle vragen</a>
 		</section>
 
 		<section>
 			<h3>voorwaarden</h3>
-			<p>bekijk de algemene voorwaarden</p>
+			<a>bekijk de algemene voorwaarden</a>
 		</section>
 
 		<section>
 			<h3>overige vragen</h3>
 			<p>Staat jouw vraag en/of antwoord er niet bij? Neem dan contact met ons op middels het e-mailadres.</p>
 
-			<p>klantenservice@vuemoviepass.nl</p>
+			<a>klantenservice@vuemoviepass.nl</a>
 		</section>
 
 		<section>
@@ -179,32 +214,32 @@
 
 			<ul>
 				<li>
-					<img src="readme-images/movie-watch.svg" alt="movie-watch"></img>
+					<img src="images/movie-watch.svg" alt="movie-watch"></img>
 					<p>Facebook</p>
 				</li>
 
 				<li>
-					<img src="readme-images/movie-watch.svg" alt="movie-watch"></img>
+					<img src="images/movie-watch.svg" alt="movie-watch"></img>
 					<p>Twitter</p>
 				</li>
 
 				<li>
-					<img src="readme-images/movie-watch.svg" alt="movie-watch"></img>
+					<img src="images/movie-watch.svg" alt="movie-watch"></img>
 					<p>Instagram</p>
 				</li>
 
 				<li>
-					<img src="readme-images/movie-watch.svg" alt="movie-watch"></img>
+					<img src="images/movie-watch.svg" alt="movie-watch"></img>
 					<p>TikTok</p>
 				</li>
 
 				<li>
-					<img src="readme-images/movie-watch.svg" alt="movie-watch"></img>
+					<img src="images/movie-watch.svg" alt="movie-watch"></img>
 					<p>YouTube</p>
 				</li>
 
 				<li>
-					<img src="readme-images/movie-watch.svg" alt="movie-watch"></img>
+					<img src="images/movie-watch.svg" alt="movie-watch"></img>
 					<p>Blog</p>
 				</li>
 
@@ -363,23 +398,23 @@
 		<section>
 			<ul>
 				<li>
-					<img src="readme-images/movie-watch.svg" alt="movie-watch"></img>
+					<img src="images/movie-watch.svg" alt="movie-watch"></img>
 				</li>
 
 				<li>
-					<img src="readme-images/movie-watch.svg" alt="movie-watch"></img>
+					<img src="images/movie-watch.svg" alt="movie-watch"></img>
 				</li>
 
 				<li>
-					<img src="readme-images/movie-watch.svg" alt="movie-watch"></img>
+					<img src="images/movie-watch.svg" alt="movie-watch"></img>
 				</li>
 
 				<li>
-					<img src="readme-images/movie-watch.svg" alt="movie-watch"></img>
+					<img src="images/movie-watch.svg" alt="movie-watch"></img>
 				</li>
 
 				<li>
-					<img src="readme-images/movie-watch.svg" alt="movie-watch"></img>
+					<img src="images/movie-watch.svg" alt="movie-watch"></img>
 				</li>
 			</ul>
 		</section>
