@@ -28,6 +28,7 @@ summary {
 	--primary-colour: orange;
 	--secundary-colour: white;
 	--tertiary-colour: grey;
+	--quaternary-colour: purple;
 }
 
 body {
@@ -40,71 +41,186 @@ body {
 	line-break: auto;
 }
 
-main {
-	margin-top: 5.69em;
+/*nav bar*/
+
+header {
+	display: flex;
+	/* justify-content: space-between; */
+	position: sticky;
+	top: 0;
+	background-color: black;
+}
+
+/*logo*/
+
+header>h1 {
+	flex-grow: 0.95;
+}
+
+/*logo, search en hamburgerbutton*/
+
+header>h1,
+img,
+button {
+	background-color: black;
+	border: none;
+	width:1.5em;
+}
+
+header nav ul:nth-of-type(2) {
+	display: none;
+}
+
+nav.menuopenklappen {
+	transform: translateY(0);
+}
+
+nav.menuopenendicht {
+	transform: translateY(-100%);
+}
+
+/*bron:alvaragotrigo.com/blog/*/
+
+ul:nth-of-type(2) {
+	display: none;
+	height: 100%;
+	cursor: pointer;
+	align-items: left;
+}
+
+ul:nth-of-type(2) li {
+	overflow: hidden;
 }
 
 /*nav*/
 
 nav {
-	height: 3.69em;
-	background: black;
-	z-index: 1;
 	position: fixed;
 	top: 0;
-	width: 100%;
-} 
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: black;
+	transform: translateY(-100%);
+	transition: transform 1s;
+}
 
-header nav ul {
+/*alle icoontjes in uitgeklapt hamburgermenu*/
+
+nav ul img {
+	margin-left: 0;
+}
+
+/*hoofdlijst uitgeklapt hamburgermenu*/
+
+nav ul {
 	display: flex;
-	align-items: baseline;
+	flex-direction: column;
+	list-style-type: none;
+	margin-left: -1em;
 }
 
-header nav ul li:first-child {
-	flex-grow: 1;
+/*giftcards, zakelijk, klantenservice*/
+
+nav ul li:nth-of-type(8) {
+	display: flex;
+	/* flex-direction: column; */
 }
 
-header nav ul li img {
-	top: 0;
+/*listitem:icoon en link in uitgeklapt hamburgermenu*/
+
+nav ul li ul {
+	flex-direction: row;
+	/* justify-content: space-between; */
+	padding: 0;
+	/* justify-items: space-evenly; */
 }
 
-header nav ul li:first-child img {
-	height: auto;
+/*alle listitems in uitgeklapt hamburgermenu*/
+
+nav ul li ul li {
+	margin: 0.5em 0.5em 0.5em;
+	/* align-items: flex-end; */
+	/* justify-content: space-between; */
+}
+
+/*avatar icoon bij mijn vue*/
+
+nav ul li ul li:first-child > img {
+	padding: 0;
+	width: 3em;
+}
+
+/*logo*/
+
+nav ul li ul li:first-child,
+ul {
 	align-items: flex-start;
-	width: 1.5em;
-} 
-  
-.menuopenendichtklappen {
-	background-color: red;
+	/* flex-grow: 20; */
 }
 
-ul:nth-of-type(2) {
-	display: none;
+/*dropdownpijltje van link eerste listitem uitgeklapt hamburgermenu*/
+
+nav ul li ul>li:nth-of-type(2) {
+	align-items: flex-end;
 }
 
+/*mijn vue, log in onder elkaar bij eerste listitem*/
 
-/*rest*/
-
-header nav ul li:nth-of-type(2) img {
-	width: 2.5em;
-	margin-right: 1em;
+nav ul li ul ul {
+	display: flex;
+	flex-direction: column;
 }
 
-header nav ul li:nth-of-type(3) img {
-	/* margin-top: -.5em; */
-	width: 2.5em;
+/*logo*/
+
+nav ul li ul:first-child li:nth-of-type(1) {
+	align-items: flex-end;
 }
 
-/*hidden h2*/
+/*ul in hamburgermenu: giftcards, zakelijk, klantenservice*/
 
-section:nth-of-type(1) h2 {
-	clip: rect(0 0 0 0);
-	clip-path: inset(50%);
-	height: 1px;
-	overflow: hidden;
+nav ul:nth-of-type(2) {
+	display: flex;
+	flex-direction: column;
+	color: var(--tertiary-colour);
+}
+
+/*sluitknop hamburgermenu*/
+
+nav button {
 	position: absolute;
-	white-space: nowrap;
-	width: 1px;
+	right: 0;
+}
+
+nav button img {
+	width: 3em;
+}
+
+/*main*/
+
+main {
+	margin-top: 3em;
+}
+
+/*all sections*/
+
+section {
+	padding: 0;
+	margin: 0;
+}
+
+/*trendingmoviesslider*/
+
+section:nth-of-type(1) > section img {
+	width: 7.5em;
+}
+
+
+/*icoontjes voordelen moviepass*/
+
+section:nth-of-type(2) ul li img {
+	background-color: transparent;
 }
 
 /*headings and text*/
@@ -113,45 +229,82 @@ h1,
 h2,
 h3,
 p {
-	margin-right: 1em;
+	/* margin-right: 1em; */
 	margin-left: 1em;
+	padding: 0;
 }
 
-h2 {
-	color: var(--secundary-colour);
-	font-size: 1em;
-	text-align: center;
 
+/*koppen*/
+
+h1 {
+	color: var(--primary-colour);
+	font-size: 3em;
+	/* font-weight: bold; */
+	letter-spacing: 0.5em;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+section:nth-of-type(2) h2 {
+	color: var(--secundary-colour);
+	font-size: 1.25em;
+	font-weight: normal;
+	text-align: center;
+	text-transform: uppercase;
+	color: var(--primary-colour);
+	text-align: left;
+}
+
+/*hidden h2*/
+
+section:nth-of-type(1) section h2 {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 0.06em;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 0.06em;
 }
 
 h3 {
-	font-size: 1.9em;
-
+	font-size: 1.52em;
+	text-transform: uppercase;
+	font-weight: normal;
+	line-height: 1.5em;
 }
+
+/*tekst*/
 
 p {
-	line-height: 1.5em;
 	text-align: left;
-	/* word-spacing: 0.5em; */
+	color: var(--tertiary-colour);
+	line-height: 1.5em;
 }
 
-/*lists
-*/
-/* bron: https://www.w3schools.com/howto/howto_css_list_without_bullets.asp
-*/
+/*lists*/
+/* bron: https://www.w3schools.com/howto/howto_css_list_without_bullets.asp */
 ul {
 	list-style-type: none;
 }
 
-/*buttons
-*/
-/*bronnen:https://www.javatpoint.com/how-to-center-a-button-in-css
-*/
-
 /*links*/
 
-/*images*/
+a {
+	/* color:var(--secundary-colour); */
+	color: white;
+	text-decoration: none;
+}
 
-img {
-	max-width: 7.5em;
+a:visited {
+	color: var(--quaternary-colour);
+}
+
+a:hover {
+	color: var(--tertiary-colour);
+}
+
+a:active {
+	color: var(--primairy-colour);
 }
