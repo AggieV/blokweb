@@ -2,10 +2,17 @@
 
 /*orange gradient background*/
 
-/* section:first-child, section:nth-of-type(2) {
+/* section:first-child, section:nth-of-type(2), section:nth-of-type(3)  {
 	padding:0;
-	background-image: radial-gradient(#934c1e, #7e4e1d, #483513, #000000);
-} */
+	background-image: url(../images/hazy-background-desktop.jpg);
+}  */
+
+section:nth-of-type(2) {
+	padding:0;
+	background-image: url(../images/hazy-background-desktop.jpg);
+	width: 100vw;
+	margin: 0;
+} 
 
 /*slideroftrendingmovies*/
 
@@ -16,6 +23,7 @@ section:nth-of-type(1) ul {
 	margin: 0 2em 0 2em;
 	padding: 0;
 	gap: 0.5em;
+	margin-left: 1em;
 }
 
 /*onbeperkt naar de film voor 19.50 p/m: voordelen moviepas*/
@@ -36,8 +44,9 @@ section:nth-of-type(2) ul li {
 /*icoontjes links van voordelen moviepas*/
 
 section:nth-of-type(2) li img {
-	margin-right: 0.5em;
+	margin-right: 0.1em;
 	width: 1.5em;
+	margin-left: -1em;
 }
 
 /*voordelen moviepas*/
@@ -55,23 +64,43 @@ section:nth-of-type(2) li p {
 section:nth-of-type(3) button {
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	white-space: nowrap;
 	color: var(--color-text);
 	background-color: var(--primary-colour);
-	padding: 0.69em 3.5em 0.69em;
+	/* padding: 0.69em 9em 0.69em; */
 	margin: auto;
 	margin-bottom: 0.5em;
 	text-transform: uppercase;
 	font-size: 1.25em;
 	border-radius: 0.4em;
+	width: 80vw;
+}
+
+section:nth-of-type(3) button:hover {
+	transform: scale(1.2);
+	background-color: orangered;
+	color: white;
+}
+
+section:nth-of-type(3) button:focus {
+	transform: scale(1.2);
+	box-shadow: 0 0 0 0.5em purple;
+	color: white;
+}
+
+section:nth-of-type(3) button:active {
+	transform: scale(1.2);
+	background-color: purple;
+	color: white;
 }
 
 
-section:nth-of-type(3) button:first-child.blauwworden {
+
+/* section:nth-of-type(3) button:first-child.blauwworden {
 	background-color: rgb(0, 8, 255);
 	color: white;
 	transform: scale(1.2);
-}
+} */
 
 /*geef cadeau knop*/
 
@@ -81,20 +110,162 @@ section:nth-of-type(3) button:nth-of-type(2) {
 	background-color: black;
 	color: white;
 	border: 0.05em solid var(--primary-colour);
-	padding: 0.69em 3.5em 0.69em;
+	/* padding: 0.69em 9em 0.69em; */
 }
 
-section:nth-of-type(4) img {
-	max-width: 20.63em;
+section:nth-of-type(3) button:hover {
+	/* transform: scale(1.2); */
+	background-color: orange;
+	color: white;
+}
+
+section:nth-of-type(3) button:focus {
+	outline: 0.5em purple;
+}
+
+section:nth-of-type(3) button:active {
+	background-color: orange;
+	color: white;
+}
+
+
+section:nth-of-type(4) {
+	margin-top: 7em;
+}
+
+section:nth-of-type(4) img,
+section:nth-of-type(5) img,
+section:nth-of-type(6) img {
+	width: 22em;
 	margin: auto;
+	display: block;
 }
 
-section:nth-of-type(4),
-section:nth-of-type(5),
-section:nth-of-type(5) img {
-	width: 20em;
+/*quote*/
+
+section:nth-of-type(7) {
+	margin-top: 4em;
 }
 
-q {
+section:nth-of-type(7) blockquote {
 	text-align: center;
+	color: var(--secundary-colour);
+	line-height: 1.5em;
+	margin-left: 2em;
+	font-size: 1.25em;
+}
+
+/*name reviewer*/
+
+section:nth-of-type(7) p {
+	color: var(--primary-colour);
+	font-size: 1.25em;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 4em;
+}
+
+/*dropdown veelgestelde vragen*/
+
+section:nth-child(10) a,
+section:nth-child(11) a,
+section:nth-child(12) a {
+	color: var(--primary-colour);
+	font-weight: 400;
+	margin-left: 1.5em;
+	margin-bottom: 1.5em;
+}
+
+/*dropdown styling veelgestelde vragen*/
+
+/* section:nth-child(8)>p:first-of-type,
+button,
+section:first-of-type,
+section:nth-child(9),
+section:nth-child(10) {
+	display: grid;
+	gap: 1em;
+	outline: lightgrey 1em;
+	border-radius: 15px;
+	background-color: aqua;
+	margin-right: 0;
+	margin-left: 0;
+	z-index: -1; */
+/* border:lightgrey 1em; */
+/* padding: 0.5em 1em 0.5em;  */
+/* margin: auto; 
+} */
+
+
+section:nth-child(8),
+section:nth-child(9),
+section:nth-child(10) {
+	--uitklaptijd: .3s;
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 0.5em;
+}
+
+section:nth-child(8) p,
+section:nth-child(9) p,
+section:nth-child(10) p {
+	flex-grow: 1;
+	margin: 0;
+	color: white;
+	margin-left: 1.5em;
+	cursor: pointer;
+}
+
+section:nth-child(8) button,
+section:nth-child(9) button,
+section:nth-child(10) button {
+	width: 3em;
+	aspect-ratio: 1/1;
+	padding: 0;
+	background-color: var(--color-text);
+	cursor: pointer;
+}
+
+section:nth-child(8) button img,
+section:nth-child(9) button img,
+section:nth-child(10) button img {
+	transform: rotate(.25turn);
+	transition: var(--uitklaptijd);
+}
+
+section:nth-child(8).open button img,
+section:nth-child(9).open button img,
+section:nth-child(10).open button img {
+	transform: rotate(-.25turn);
+}
+
+section:nth-child(8) section,
+section:nth-child(9) section,
+section:nth-child(10) section {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	max-height: 0em;
+	overflow: hidden;
+	transition: var(--uitklaptijd);
+}
+
+section:nth-child(8).open section,
+section:nth-child(9).open section,
+section:nth-child(10).open section {
+	max-height: 25em;
+	transition: var(--uitklaptijd);
+}
+
+section:nth-child(10):a,
+section:nth-child(11):a,
+section:nth-child(12):a {
+	color: var(--primary-colour);
+	margin-left: 1em;
+}
+
+section:nth-child(12) p {
+	color: var(--secundary-colour);
+
 }
