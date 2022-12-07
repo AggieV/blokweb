@@ -7,11 +7,12 @@
 	background-image: url(../images/hazy-background-desktop.jpg);
 }  */
 
-section:nth-of-type(2) {
+main {
 	padding:0;
 	background-image: url(../images/hazy-background-desktop.jpg);
 	width: 100vw;
-	margin: 0;
+	margin-top:3.44em;
+	height: 45.5em;
 } 
 
 /*slideroftrendingmovies*/
@@ -73,7 +74,9 @@ section:nth-of-type(3) button {
 	text-transform: uppercase;
 	font-size: 1.25em;
 	border-radius: 0.4em;
-	width: 80vw;
+	width: 90vw;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
 }
 
 section:nth-of-type(3) button:hover {
@@ -175,6 +178,116 @@ section:nth-child(12) a {
 	margin-left: 1.5em;
 	margin-bottom: 1.5em;
 }
+
+/*dropdown styling veelgestelde vragen*/
+
+/* section:nth-child(8)>p:first-of-type,
+button,
+section:first-of-type,
+section:nth-child(9),
+section:nth-child(10) {
+	display: grid;
+	gap: 1em;
+	outline: lightgrey 1em;
+	border-radius: 15px;
+	background-color: aqua;
+	margin-right: 0;
+	margin-left: 0;
+	z-index: -1; */
+/* border:lightgrey 1em; */
+/* padding: 0.5em 1em 0.5em;  */
+/* margin: auto; 
+} */
+
+/* 
+section:nth-child(8),
+section:nth-child(9),
+section:nth-child(10),
+section:nth-child(16) {
+	--uitklaptijd: .3s;
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 0.5em;
+}
+
+section:nth-child(8) p,
+section:nth-child(9) p,
+section:nth-child(10) p {
+	flex-grow: 1;
+	margin: 0;
+	color: white;
+	margin-left: 1.5em;
+	cursor: pointer;
+}
+
+section:nth-child(16) ul {
+	flex-grow: 1;
+	margin: 0;
+	color: white;
+	margin-left: 1.5em;
+	cursor: pointer;
+}
+
+section:nth-child(8) button,
+section:nth-child(9) button,
+section:nth-child(10) button,
+section:nth-child(16) button:nth-of-type(2) {
+	width: 3em;
+	aspect-ratio: 1/1;
+	padding: 0;
+	background-color: var(--color-text);
+	cursor: pointer;
+}
+
+section:nth-child(8) button img,
+section:nth-child(9) button img,
+section:nth-child(10) button img, 
+section:nth-child(16) button:nth-of-type(2) img {
+	transform: rotate(.25turn);
+	transition: var(--uitklaptijd);
+}
+
+section:nth-child(8).open button img,
+section:nth-child(9).open button img,
+section:nth-child(10).open button img,
+section:nth-child(16).open button:nth-of-type(2) img {
+	transform: rotate(-.25turn);
+}
+
+section:nth-child(8) section,
+section:nth-child(9) section,
+section:nth-child(10) section,
+section:nth-child(16) section {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	max-height: 0em;
+	overflow: hidden;
+	transition: var(--uitklaptijd);
+}
+
+section:nth-child(8).open section,
+section:nth-child(9).open section,
+section:nth-child(10).open section,
+section:nth-child(16).open section {
+	max-height: 25em;
+	transition: var(--uitklaptijd);
+}
+
+section:nth-child(10):a,
+section:nth-child(11):a,
+section:nth-child(12):a {
+	color: var(--primary-colour);
+	margin-left: 1em;
+}
+
+section:nth-child(12) p {
+	color: var(--secundary-colour);
+
+} */
+
+
 
 /*dropdown styling veelgestelde vragen*/
 

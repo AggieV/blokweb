@@ -469,7 +469,7 @@ details > summary:nth-of-type(1) {
 	align-items: center;
 	column-gap: 1em;
 	/* padding: 0; */
-	/* margin: 0.5em; 
+/* margin: 0.5em; 
 }  */
 
 
@@ -480,27 +480,135 @@ details > summary:nth-of-type(1) {
 section:nth-of-type(13) ul {
 	display: flex;
 	flex-wrap: wrap;
-	align-items: center;
+	justify-content: space-evenly;
 	align-content: center;
+	align-items: flex-end;
+	margin-left: -1.5em;
+	flex: 1 1 160px;
+	text-align: center;
 }
+
+/* section:nth-of-type(13) ul li:nth-child(5n) {
+    flex-basis: 100%;
+} */
 
 section:nth-of-type(13) ul li img {
 	width: 2em;
 }
 
-section:nth-of-type(13) ul img p {
-	margin-left:0;
+section:nth-of-type(13) ul li {
+	margin-right: 1em;
 }
 
-section:nth-of-type(14) p button {
-	display: flex;
-	
+section:nth-of-type(13) ul img p {
+	/* margin-left:0; */
+	padding: 0;
+	/* text-align: center !important; */
+}
+
+section:nth-of-type(13) ul p {
+	margin-left: 0;
+}
+
+/*wees welkom bij de vuefamilie*/
+
+section:nth-of-type(14) h3 {
+	text-align: center;
+}
+
+section:nth-of-type(14) p {
+	text-align: center;
+}
+
+/*https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/email*/
+
+section:nth-of-type(14) input button {
+	/* display: block;
+	margin: auto; */
+	/* display: grid;
+	grid-template-rows: 1fr 1fr;
+	gap: 0;
+	margin-top: 0; */
+	/* position: relative; */
+
+	text-align: center;
+	display: inline-block;
+	position: absolute;
+
+}
+
+
+section:nth-of-type(14) input {
+	padding: 0.85em 1em 0.85em;
+	/* position: relative; */
+	border-radius: 0.4em 0 0 0.4em;
+	font-size: 1em;
+	background-color: #2B2C33;
+	border:none;
+
+}
+
+section:nth-of-type(14) input [type='email'] {
+	font-size: 1em;
+
 }
 
 section:nth-of-type(14) button {
-	background-color: var();
+	text-transform: uppercase;
+	padding: 0.5em 1em 0.5em;
+	border: none;
+	border-radius: 0 0.4em 0.4em 0;
+	background-color: var(--primary-colour);
+	font-size: 1.25em;
+	cursor:pointer;
+
 }
 
+/* section:nth-of-type(14) button {
+	background-color: radial-gradient(orange(var(--primary-colour)), #EEC42A);
 
+} */
+
+/*https://www.w3.org/TR/css-multicol-1/*/
+
+section:nth-of-type(15) ul { /*15*/
+	padding: 0;
+	column-count: 2;
+}
+
+section:nth-of-type(15) ul li { /*15*/
+	padding: 0;
+	margin-top: 0;
+}
+
+section:nth-of-type(16) ul,
+section:nth-of-type(17) ul {
+	padding: 0;
+	display: inline-block;
+} 
+
+section:nth-of-type(16) button {
+	padding: 0.85em 1em 0.85em;
+	background-color: #2B2C33;
+	width: 90vw;
+	display: block;
+	margin: auto;
+	text-align: left;
+	color: #8D8F99;
+	border-radius: 0.4em 0.4em 0.4em;
+	font-size: 1em;
+	cursor:pointer;
+}
+
+/*partners van Vue*/
+section:nth-of-type(20) ul {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	color: var(--color-background); 
+}
+	/* justify-content: center;
+	align-items: center;
+	align-content: center; */
 
 

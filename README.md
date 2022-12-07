@@ -274,13 +274,28 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details>
   <summary>uitwerken na test in 8e werkgroep</summary>
 
+
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+
+  Getest met Lynn Wolters;
+  Site: Ace & Tate
+
 
   #### Screenreader
   Hier korte omschrijving (met indien nodig afbeeldingen)
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+
+  Screenreader gaat goed door koppen heen, maar ziet broodtekst ook als kopniveau, ik weet niet of dat de bedoeling is.
+
+  Screenreader denkt ook dat tel nummers onderin onderdeel zijn van de navigatie, misschien is dat niet de bedoeling.
+
+  <img src="readme-images/navigatiescreenreader.png
+"width="375px" alt="navigatiescreenreader.png">
+
+  <img src="readme-images/navigatie2screenreader.png
+"width="375px" alt="navigatie2screenreader.png">
 
 
   #### Muis en Toetsenbord 
@@ -288,17 +303,177 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 
+  Muis
+  Gaat prima, duidelijke navigatie
+
+  Toetsenbord;
+  Tab werkt; maar misschien niet handig dat er wordt getabd tussen alle kleurtjes waarin een product beschikbaar is
+
+  <img src="readme-images/aceandtatetab.png
+"width="375px" alt="aceandtatetab.png">
+
+  Spatie;
+
+  Enter;
+  Werkt sowieso voor het hamburgermenu: openen en 
+  
+  <img src="readme-images/aceandtateenter.png
+"width="375px" alt="aceandtateenter.png">
+
 
   #### Motoriek (shocks, elastiekjes)
   Hier korte omschrijving (met indien nodig afbeeldingen)
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 
+  Ballon omhoog houden-beperking= concentratieprobleem;
+  -Navigeren gaat best goed, maar bij de sliders naar rechts moet ik me te veel focussen en dan laat ik de ballon vallen 
+
+  
+  Brillen-beperking= visuele beperking;
+
+  
+  Central Field Loss/AMD
+  Tekst op knoppen niet leesbaar
+
+  
+  Combined eye loss-diabetic eye disease;
+
+  Ik merk geen verschil
+
+ 
+  Low contrast;
+  -Vooral titel is bijna onleesbaar geworden, net als tekst op knoppen en zwarte kleine letters op witte achtergrond
+
+
+  Blur;
+  Ik zie geen navigatie, geen zwarte letters op wit, geen tekst op knoppen
+
+  
+  Color #0779P;
+
+  Geen verschil, kleurcontrast is misschien juist beter
+  
+  
+  Peripheral Field Loss/glaucoma
+
+  Hemifield Loss;
+  Geen verschil
+
+
+  Shock;
+  Niet gedaan, te pijnlijk
+
+  
+  Elastiekjes
+
+  Maak links en knoppen groter, want dat is lastig aan te klikken als je minder vingers hebt/geen goede motoriek over je handen
+
+   <img src="readme-images/elastiekjes.jpg
+"width="375px" alt="elastiekjes">
+
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
   Hier korte omschrijving (met indien nodig afbeeldingen)
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+
+  Maak tekst op knoppen en/of knoppen groter, doe lichte letters op donkere achtergrond bij knoppen, kijk voor een andere kleur voor de titel (wit is niet goed leesbaar), maak nav elementen groter
+
+  
+  Toegankelijkheidstest: 2
+
+  Website: Vuecinemas
+
+  Door: Lynn Wolters
+
+  Voor: Agnes Verhagen
+  
+  Screenreader Test
+
+
+  -Links
+
+  Bij oplezen films zegt hij ook: bezocht, link, afbeelding
+  
+  -Koppen
+
+  Doet het goed
+
+  -Formulierregelaars
+
+  Pakt elementen die geen formulieren zijn (zoals pijltjes naar beneden en hamburger menu)
+  
+  -Oriëntatiepunten
+
+  Orientatiepunten doen het niet goed, laten je nauwelijks weten waar je bent op de website
+  
+  -Navigatie
+
+  Navigatie is ook onduidelijk, kan zijn omdat er geen duidelijke navigatie in de website zit
+  
+  -Tekens
+
+  Werken ook niet
+
+  -Woorden
+  Leest niks op, blijft bij banner hangen
+  
+  -Vensterspots
+  
+  Pakt alleen de hele html als vensterspot
+  
+  Muis, toetsenbord en kleurtjes test
+
+
+  Muis
+
+  Footer links moeten nog hover functie krijgen
+  De twee call to action buttons zou ik de effecten geven die je ook op de website ziet
+  
+  Toetsenbord
+
+  Enter werkt niet
+  
+  Omhoog en omlaag button werken wel om te navigeren
+  
+  Tab button werkt om te navigeren maar is moeilijk zichtbaar
+ 
+  Kleurtjes
+  Platte tekst is moeilijk zichtbaar, andere kleur geven
+  
+  
+  Diverse Beperkingen
+  
+  Spieren Apparaat
+  Knopjes zijn te klein om nog op de kleine knoppen te drukken (knoppen groter maken)
+  
+  
+  Brillen
+  
+  
+  Hemifield Loss: website is nog goed te zien
+  
+  
+  Color #0779P:  website is nog goed te zien
+  
+ 
+  Peripheral Field Loss: website is heel lastig te zien door donkere kleuren en kleine elementen
+  
+  
+  Central Field Loss: website is nog goed te zien
+  
+  
+  Low Contrast #0778P: website is nog wel te zien
+  
+  
+  Combined Loss Diabetic Disease: website is nog wel te zien maar wordt moeilijk
+  
+  
+  Concentratie test
+  Het is lastig om op de hamburger menu te klikken en de sluit button (zijn erg klein). Buttons zijn te dun om er op te klikken
+
+
 
 </details>
 
@@ -321,9 +496,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Student 1: Agnes
 
   Wat wel al goed ging;
+
+  Hamburgermenu, dropdown, stijlen
    
 
   Wat nog niet lukt;
+  Wrap van rijen, dingen uitlijnen, zoals de emailbutton
  
   
   Student 2: Ab
@@ -383,8 +561,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   1. bron 1: https://www.w3schools.com/howto/howto_css_list_without_bullets.asp 
 
-  2. bron 2:
+  2. bron 2: https://www.w3schools.com/tags/tag_select.asp
 
-  3. ...
+  3. bron 3: 
 
 </details>

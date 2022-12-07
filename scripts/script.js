@@ -27,8 +27,8 @@ function klapMenuDicht() {
 
 /*dropdown veelgestelde vragen */
 
-let deMenuButtons = document.querySelectorAll("section:nth-child(8), section:nth-child(9), section:nth-child(10) > button");
-let deMenuPs = document.querySelectorAll("section:nth-child(8), section:nth-child(9), section:nth-child(10) > p");
+let deMenuButtons = document.querySelectorAll("section:nth-child(8) > button, section:nth-child(9) > button, section:nth-child(10) > button");
+let deMenuPs = document.querySelectorAll("section:nth-child(8) > p, section:nth-child(9) > p, section:nth-child(10) > p");
 
 deMenuButtons.forEach(deMenuButton => {
 	deMenuButton.addEventListener("click", toggleMenu);
