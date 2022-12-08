@@ -506,13 +506,22 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   
   Student 2: Ab
   
+  Is ziek
 
 
   Student 3: Koelsoem
 
+  Wat goed ging. 
+  Ik heb nieuwe css bestanden aangemaakt en gekoppeld, mijn footer responsive gemaakt en begonnen aan mn detail pagina.
+
+  Wat niet goed ging.
+  tekst over een afbeelding zetten op een bepaalde plek
+
 
   
   Student 4: Sohil
+
+  k heb nog steeds moeite met mijn header en mijn github
 
 
 
