@@ -528,6 +528,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
+
+
  
 
 </details>
@@ -548,11 +550,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Dit ging goed/Heb ik geleerd: 
   Korte omschrijving met plaatjes
 
+  Ik heb geleerd om goed te blijven kijken naar
+
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
+
+  Trailerpagina en footer van die pagina
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>

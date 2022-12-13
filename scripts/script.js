@@ -66,7 +66,7 @@ function klapMenuDicht() {
 
 /*dropdown veelgestelde vragen */
 
-let deMenuButtons = document.querySelectorAll("nav > ul:first-child > li:nth-of-type(2) > a > section, section:nth-child(8), section:nth-child(9), section:nth-child(10), section:nth-child(16) > button");
+let deMenuButtons = document.querySelectorAll("nav > ul:first-child > li:nth-of-type(2) > a > button, section:nth-child(8), section:nth-child(9), section:nth-child(10), section:nth-child(16) > button");
 let deMenuPs = document.querySelectorAll("nav > ul:first-child > li:nth-of-type(2) > a > section > ul, section:nth-child(8) >  p, section:nth-child(9) > p, section:nth-child(10) > p, section:nth-child(16)  > ul");
 
 deMenuButtons.forEach(deMenuButton => {
