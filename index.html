@@ -14,6 +14,7 @@
 </head>
 
 <body>
+
 	<header>
 
 		<h1>
@@ -33,67 +34,93 @@
 				<li>
 					<a href="#">
 						<img src="images/avatar.png" alt="avatar">
-						<p>Mijn Vue</p>
-						<p>Log in</p>
-						<!-- <p>></p> -->
+						<div>Mijn Vue</div>
+						<div>Log in</div>
+						<img src="images/iconarrowdown.svg" alt="iconarrowdown">
 					</a>
 				</li>
 
 				<li>
 					<a href="#">
 						<img src="images/filmstuk.svg" alt="filmstuk">
-						<p>Films</p>
-						<p>></p>
+						<div>
+							Films
+						</div>
+
+						<button aria-label="dropdown"><img src="images/iconarrowdown.svg" alt="iconarrowdown"></button>
+						<section>
+							<ul>
+								<li>Nu in de bioscoop</li>
+								<li>Top 10</li>
+								<li>Voorverkoop</li>
+								<li>Voorpremière</li>
+								<li>Coming soon</li>
+								<li>Filmtrailers</li>
+								<li>Dinner & Movie</li>
+								<li>Totaalaanbod Film bij Vue</li>
+							</ul>
+						</section>
 					</a>
 				</li>
 
 				<li>
 					<a href="#">
 						<img src="images/star.svg" alt="star">
-						<p>Specials & Events</p>
-						<p>></p>
+						<div>Specials & Events</div>
+						<img src="images/iconarrowdown.svg" alt="iconarrowdown">
 					</a>
 				</li>
 
 				<li>
 					<a href="#">
 						<img src="images/kids.svg" alt="kids">
-						<p>Kids</p>
-						<p>></p>
+						<div>Kids</div>
+						<img src="images/iconarrowdown.svg" alt="iconarrowdown">
 					</a>
 				</li>
 
 				<li>
 					<a href="#">
 						<img src="images/icon-experience-gradient.svg" alt="icon-experience-gradient">
-						<p>Belevingen</p>
-						<p>></p>
+						<div>Belevingen</div>
+						<img src="images/iconarrowdown.svg" alt="iconarrowdown">
 					</a>
 				</li>
 
 				<li>
 					<a href="#">
 						<img src="images/ticket.svg" alt="ticket">
-						<p>Tickets</p>
-						<p>></p>
+						<div>Tickets</div>
 					</a>
 				</li>
 
 				<li>
 					<a href="#">
 						<img src="images/movie-pass.svg" alt="moviepass">
-						<p>Moviepass</p>
-						<p>></p>
+						<div>Moviepass</div>
 					</a>
 				</li>
 
 				<ul>
-
 					<li><a href="#">Giftcards</a></li>
 					<li><a href="#">Zakelijk</a></li>
 					<li><a href="#">Klantenservice</a></li>
 				</ul>
 
+			</ul>
+
+			<!--lichte modus/donkere modus switch-->
+
+			<button></button>
+
+			<!--nav list for desktop-->
+
+			<ul>
+				<li>Films</li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
 			</ul>
 
 	</header>
@@ -214,67 +241,52 @@
 		</section>
 
 		<section>
+			<!--https://www.freecodecamp.org/news/span-html-how-to-use-the-span-tag-with-css/-->
 			<!-- bron:https://www.w3schools.com/html/html_quotation_elements.asp -->
 			<!-- <h2>quote van bezoeker Giamo</h2> maak onzichtbaar-->
 			<blockquote>Het is fijn om een Vue Movie Pass te hebben. Onbeperkt naar de film wanneer het mij uitkomt. Ik
 				ga nu
 				naar films
 				waar ik normaal niet zo snel heen zou gaan en waar ik steeds erg verrast door word!
+
 			</blockquote>
 
-			<p>- giamo (bezoeker)</p>
+			<div><span>- giamo (bezoeker)</span></div>
+
+			<!-- LIKE KNOP -->
+
+			<div>
+
+				<div>Like deze review</div>
+				<button class="like" aria-label="like deze review">♥</button>
+
+			</div>
+
 		</section>
 
 		<!-- <section 8 veelgestelde vragen> -->
 
 		<section>
 
-			<!-- <https://www.w3schools.com/tags/tag_select.asp> -->
-			<!-- <h3>Veelgestelde vragen</h3>
-
-			<details>
-				<summary><p>Wanneer kan ik mijn tickets ophalen?</p></summary>
-				<p>
-					Als je tickets via internet hebt gekocht kun je direct doorlopen naar de ticketcontrole. Jouw Vue
-					Movie Pass is alleen digitaal en moet je ook laten controleren bij de ticketcontrole. Via 'tickets'
-					op je App of mobiele website swipe je makkelijk heen en weer tussen jouw QR tickets codes en jouw
-					digitale Vue Movie Pass. Als je tickets aan de kassa koopt, dan krijg je direct een fysiek
-					filmticket mee, die je kunt laten controleren tezamen met je digitale Vue Movie Pass bij de
-					ticketcontrole. Gebruik dan de snelbutton Movie Pass op de app. Hier vind je snel en makkelijk jouw
-					digitale Movie Pass als je geen online tickets hebt gekocht. Alle tickets zijn pas vanaf 90 minuten
-					voorafgaand aan de voorstelling te scannen bij de ticketcontrole of te koop bij de kassa.
-				</p>
-			</details>
-
-			<details>
-				<summary><p>Kan ik ook kaartjes kopen in de bioscoop?</p></summary>
-				<p>
-					Ja, aan de kassa, mits de kaartjes voor voorstellingen zijn die op dezelfde dag plaatsvinden. Er moet minstens 90 minuten tussen twee achtereenvolgende voorstellingen zitten.
-				</p>
-			</details>
-
-			<details>
-				<summary><p>Waar kan ik mijn gekochte tickets vinden?</p></summary>
-				<p>
-					Tickets worden altijd gemaild naar het adres dat gekoppeld is aan jouw Vue Movie Pass. Daarnaast staan ze bij 'tickets' in jouw Mijn Vue account. Op de Vue App staat tevens een snelbutton 'tickets' op de home page. Het ticket bestaat uit een QR Code die je moet laten scannen bij de ticketcontrole in de bioscoop!
-				</p>
-			</details> -->
-
 			<h3>Veelgestelde vragen</h3>
 
-			<p>Wanneer kan ik mijn tickets ophalen?</p>
+			<div>Wanneer kan ik mijn tickets ophalen?</div>
 
-			<button aria-label="toggle het boeken menu"><img src="https://assets.codepen.io/274456/ui-icon-arrow.svg"
-					alt="" /></button>
+			<button aria-label="dropdown"><img src="images/iconarrowdown.svg" alt="iconarrowdown"></button>
 			<section>
 				<p>
-					Als je tickets via internet hebt gekocht kun je direct doorlopen naar de ticketcontrole. Jouw Vue
-					Movie Pass is alleen digitaal en moet je ook laten controleren bij de ticketcontrole. Via 'tickets'
-					op je App of mobiele website swipe je makkelijk heen en weer tussen jouw QR tickets codes en jouw
+					Als je tickets via internet hebt gekocht kun je direct doorlopen naar de ticketcontrole. Jouw
+					Vue
+					Movie Pass is alleen digitaal en moet je ook laten controleren bij de ticketcontrole. Via
+					'tickets'
+					op je App of mobiele website swipe je makkelijk heen en weer tussen jouw QR tickets codes en
+					jouw
 					digitale Vue Movie Pass. Als je tickets aan de kassa koopt, dan krijg je direct een fysiek
 					filmticket mee, die je kunt laten controleren tezamen met je digitale Vue Movie Pass bij de
-					ticketcontrole. Gebruik dan de snelbutton Movie Pass op de app. Hier vind je snel en makkelijk jouw
-					digitale Movie Pass als je geen online tickets hebt gekocht. Alle tickets zijn pas vanaf 90 minuten
+					ticketcontrole. Gebruik dan de snelbutton Movie Pass op de app. Hier vind je snel en makkelijk
+					jouw
+					digitale Movie Pass als je geen online tickets hebt gekocht. Alle tickets zijn pas vanaf 90
+					minuten
 					voorafgaand aan de voorstelling te scannen bij de ticketcontrole of te koop bij de kassa.
 				</p>
 			</section>
@@ -283,10 +295,10 @@
 
 		<section>
 
-			<p>Kan ik ook kaartjes kopen in de bioscoop?</p>
+			<div>Kan ik ook kaartjes kopen in de bioscoop?</div>
 
-			<button aria-label="toggle het boeken menu"><img src="https://assets.codepen.io/274456/ui-icon-arrow.svg"
-					alt="" /></button>
+			<button aria-label="dropdown"><img src="images/iconarrowdown.svg" alt="iconarrowdown"></button>
+
 			<section>
 				<p>
 					Ja, aan de kassa, mits de kaartjes voor voorstellingen zijn die op dezelfde dag plaatsvinden. Er
@@ -298,10 +310,10 @@
 
 		<section>
 
-			<p>Waar kan ik mijn gekochte tickets vinden?</p>
+			<div>Waar kan ik mijn gekochte tickets vinden?</div>
 
-			<button aria-label="toggle het boeken menu"><img src="https://assets.codepen.io/274456/ui-icon-arrow.svg"
-					alt="" /></button>
+			<button aria-label="dropdown"><img src="images/iconarrowdown.svg" alt="iconarrowdown"></button>
+
 			<section>
 				<p>
 					Tickets worden altijd gemaild naar het adres dat gekoppeld is aan jouw Vue Movie Pass. Daarnaast
@@ -309,9 +321,10 @@
 					op de home page. Het ticket bestaat uit een QR Code die je moet laten scannen bij de ticketcontrole
 					in de bioscoop!
 				</p>
-			</section>
 
-			<a href="#">Bekijk alle vragen</a>
+			</section>
+			<div>
+				<a href="#">Bekijk alle vragen</a>
 		</section>
 
 		<section>
@@ -332,33 +345,45 @@
 
 			<ul>
 				<li>
-					<img src="images/facebookicon.svg" alt="facebookicon"></img>
-					<p>Facebook</p>
+					<a href="#">
+						<img src="images/facebookicon.svg" alt="facebookicon">
+						<div>Facebook</div>
+					</a>
 				</li>
 
 				<li>
-					<img src="images/twittericon.svg" alt="twittericon"></img>
-					<p>Twitter</p>
+					<a href="#">
+						<img src="images/twittericon.svg" alt="twittericon"></img>
+						<div>Twitter</div>
+					</a>
 				</li>
 
 				<li>
-					<img src="images/instagramicon.svg" alt="instagramicon"></img>
-					<p>Instagram</p>
+					<a href="#">
+						<img src="images/instagramicon.svg" alt="instagramicon"></img>
+						<div>Instagram</div>
+					</a>
 				</li>
 
 				<li>
-					<img src="images/tiktokicon.svg" alt="tiktokicon"></img>
-					<p>TikTok</p>
+					<a href="#">
+						<img src="images/tiktokicon.svg" alt="tiktokicon"></img>
+						<div>TikTok</div>
+					</a>
 				</li>
 
 				<li>
-					<img src="images/youtubeicon.svg" alt="youtubeicon"></img>
-					<p>YouTube</p>
+					<a href="#">
+						<img src="images/youtubeicon.svg" alt="youtubeicon"></img>
+						<div>YouTube</div>
+					</a>
 				</li>
 
 				<li>
-					<img src="images/blogicon.svg" alt="blogicon.svg"></img>
-					<p>Blog</p>
+					<a href="#">
+						<img src="images/blogicon.svg" alt="blogicon.svg"></img>
+						<div>Blog</div>
+					</a>
 				</li>
 
 			</ul>
@@ -399,8 +424,7 @@
 			<h3>alle vue cinemas</h3>
 			<button>Vue Cinema</button>
 
-			<button aria-label="toggle het boeken menu"><img src="https://assets.codepen.io/274456/ui-icon-arrow.svg"
-					alt="" /></button>
+			<button aria-label="dropdown"><img src="images/iconarrowdown.svg" alt="iconarrowdown"></button>
 
 			<section>
 				<ul>
@@ -479,6 +503,7 @@
 		</section>
 
 		<section>
+			<!--bron:https://fsymbols.com/copyright/-->
 			<ul>
 				<li>
 					Disclaimer
@@ -497,7 +522,7 @@
 				</li>
 
 				<li>
-					@Vue Cinemas 2022
+					©Vue Cinemas 2022
 				</li>
 			</ul>
 		</section>

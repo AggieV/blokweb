@@ -3,12 +3,51 @@ console.log("hallo");
 
 /*algemeen*/
 
-/*moviepass*/
+window.addEventListener('scroll', () => {
+	document.body.style.setProperty('--scroll', window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
+  }, false);
 
-var hetHamburgerMenu = document.querySelector("header > button");
-var nav = document.querySelector("header nav");
+/*darkmode/lightmode switch*/
+
+// let LightModeButton = document.querySelectorAll("section > button");
+
+// LightModeButton.forEach(); {
+// 	LightModeButton.addEventListener("click", toggleMenu);
+// }
+
+// // LightModeButtons.forEach(); {
+// // 	LightModeButton.addEventListener("click", toggleMenu);
+// // }
+
+// function toggleMenu() {
+// 	let deButtonWaaropGekliktIs = this; 
+// 	let deSectionWaarDeButtonInZit = deButtonWaaropGekliktIs.closest("section");
+// 	body.classList.toggle("open");
+// }
+
+/*moviepass*/
+/*scroll animation icons voordelen vue moviepass*/
+/*bron:https://css-tricks.com/books/greatest-css-tricks/scroll-animation/*/
+
+
+/*likebutton reviews*/
+
+let deLikeButton = document.querySelector("section:nth-of-type(7) button");
+console.log("deLikeButton");
+
+deLikeButton.addEventListener("click", wordRood);
+
+function wordRood(){
+deLikeButton.classList.toggle("roodworden");
+}
+
+
+/*hamburgermenu*/
+
+let hetHamburgerMenu = document.querySelector("header > button");
+let nav = document.querySelector("header nav");
 console.log("hamburgermenu");
-var sluitButton = document.querySelector("header nav button");
+let sluitButton = document.querySelector("header nav button");
 console.log("hamburgermenu");
 
 
@@ -27,8 +66,8 @@ function klapMenuDicht() {
 
 /*dropdown veelgestelde vragen */
 
-let deMenuButtons = document.querySelectorAll("section:nth-child(8) > button, section:nth-child(9) > button, section:nth-child(10) > button");
-let deMenuPs = document.querySelectorAll("section:nth-child(8) > p, section:nth-child(9) > p, section:nth-child(10) > p");
+let deMenuButtons = document.querySelectorAll("nav > ul:first-child > li:nth-of-type(2) > a > section, section:nth-child(8), section:nth-child(9), section:nth-child(10), section:nth-child(16) > button");
+let deMenuPs = document.querySelectorAll("nav > ul:first-child > li:nth-of-type(2) > a > section > ul, section:nth-child(8) >  p, section:nth-child(9) > p, section:nth-child(10) > p, section:nth-child(16)  > ul");
 
 deMenuButtons.forEach(deMenuButton => {
 	deMenuButton.addEventListener("click", toggleMenu);

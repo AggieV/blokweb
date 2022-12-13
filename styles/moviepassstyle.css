@@ -11,20 +11,26 @@ main {
 	padding:0;
 	background-image: url(../images/hazy-background-desktop.jpg);
 	width: 100vw;
-	margin-top:3.44em;
-	height: 45.5em;
+	/* margin-top:3.44em; */
+	height: 40em;
+	right:0;
+	left:0;
+	/* position: fixed; */
+	background-size: cover;
 } 
 
 /*slideroftrendingmovies*/
 
-section:nth-of-type(1) ul {
+section:first-child > ul {
 	display: flex;
 	align-items: center;
+	/* justify-content: center; */
 	overflow: scroll;
 	margin: 0 2em 0 2em;
 	padding: 0;
 	gap: 0.5em;
 	margin-left: 1em;
+	margin-top: 6em;
 }
 
 /*onbeperkt naar de film voor 19.50 p/m: voordelen moviepas*/
@@ -73,10 +79,14 @@ section:nth-of-type(3) button {
 	margin-bottom: 0.5em;
 	text-transform: uppercase;
 	font-size: 1.25em;
+	text-align: center;
 	border-radius: 0.4em;
-	width: 90vw;
-	padding-top: 0.5em;
-	padding-bottom: 0.5em;
+	/* width: 90vw; */
+	width: 17em;
+	padding: 0.5em 1em 0.5em;
+	/* padding-top: 0.5em;
+	padding-bottom: 0.5em; */
+	vertical-align: middle;
 }
 
 section:nth-of-type(3) button:hover {
@@ -87,7 +97,7 @@ section:nth-of-type(3) button:hover {
 
 section:nth-of-type(3) button:focus {
 	transform: scale(1.2);
-	box-shadow: 0 0 0 0.5em purple;
+	box-shadow: 0 0 0 0.2em purple;
 	color: white;
 }
 
@@ -159,16 +169,70 @@ section:nth-of-type(7) blockquote {
 }
 
 /*name reviewer*/
-
-section:nth-of-type(7) p {
+/* 
+section:nth-of-type(7) div:first-of-type {
 	color: var(--primary-colour);
 	font-size: 1.25em;
 	text-align: center;
 	text-transform: uppercase;
+	margin-bottom: 2em;
+} */
+
+section:nth-of-type(7) span {
+	color: var(--primary-colour);
+	font-size: 1.25em;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: -2em;
+}
+
+section:nth-of-type(7) div {
+	display:flex;
+	flex-wrap: wrap;
+	font-size: 1em;
+	font-style: normal;
+	justify-content: center;
 	margin-bottom: 4em;
 }
 
+section:nth-of-type(7) div {
+	color: var(--secundary-colour);
+	font-size: 1em;
+	text-align: center;
+	margin-bottom: 4em;
+}
+
+section:nth-of-type(7) div > div{
+	position: relative;
+	top: 1em;
+}
+
+section:nth-of-type(8) div:first-child {
+	display: grid;
+	margin: auto;
+	/* display: block; */
+	/* margin-left: 1em; */
+}
+
+section:nth-of-type(8),
+section:nth-of-type(9),
+section:nth-of-type(10)
+ {
+	/* display: flex; */
+	margin-top: 4em;
+	border: solid 0.1em grey;
+	border-radius: 0.4em 0.4em 0.4em;
+
+} 
+
 /*dropdown veelgestelde vragen*/
+
+section:nth-of-type(16) button:nth-of-type(2) {
+	z-index: 1;
+    left: 17em;
+    top: -2.5em;
+    /* position: relative; */
+}
 
 section:nth-child(10) a,
 section:nth-child(11) a,
@@ -181,154 +245,34 @@ section:nth-child(12) a {
 
 /*dropdown styling veelgestelde vragen*/
 
-/* section:nth-child(8)>p:first-of-type,
-button,
-section:first-of-type,
-section:nth-child(9),
-section:nth-child(10) {
-	display: grid;
-	gap: 1em;
-	outline: lightgrey 1em;
-	border-radius: 15px;
-	background-color: aqua;
-	margin-right: 0;
-	margin-left: 0;
-	z-index: -1; */
-/* border:lightgrey 1em; */
-/* padding: 0.5em 1em 0.5em;  */
-/* margin: auto; 
-} */
-
-/* 
+nav > ul:first-child > li:nth-of-type(2) > a > section
 section:nth-child(8),
 section:nth-child(9),
 section:nth-child(10),
-section:nth-child(16) {
+/* section:nth-child(16) button button */
+section:nth-child(16) 
+ {
+	display: grid;
+	/* justify-items: center; */
 	--uitklaptijd: .3s;
-	display: flex;
-	flex-wrap: wrap;
+	/* display: flex;
+	flex-wrap: wrap; */
 	margin-bottom: 0.5em;
 }
 
+nav > ul:first-child > li:nth-of-type(2) > a > section > ul,
 section:nth-child(8) p,
 section:nth-child(9) p,
-section:nth-child(10) p {
-	flex-grow: 1;
-	margin: 0;
-	color: white;
-	margin-left: 1.5em;
-	cursor: pointer;
-}
-
+section:nth-child(10) p,
 section:nth-child(16) ul {
 	flex-grow: 1;
 	margin: 0;
-	color: white;
-	margin-left: 1.5em;
-	cursor: pointer;
-}
-
-section:nth-child(8) button,
-section:nth-child(9) button,
-section:nth-child(10) button,
-section:nth-child(16) button:nth-of-type(2) {
-	width: 3em;
-	aspect-ratio: 1/1;
-	padding: 0;
-	background-color: var(--color-text);
-	cursor: pointer;
-}
-
-section:nth-child(8) button img,
-section:nth-child(9) button img,
-section:nth-child(10) button img, 
-section:nth-child(16) button:nth-of-type(2) img {
-	transform: rotate(.25turn);
-	transition: var(--uitklaptijd);
-}
-
-section:nth-child(8).open button img,
-section:nth-child(9).open button img,
-section:nth-child(10).open button img,
-section:nth-child(16).open button:nth-of-type(2) img {
-	transform: rotate(-.25turn);
-}
-
-section:nth-child(8) section,
-section:nth-child(9) section,
-section:nth-child(10) section,
-section:nth-child(16) section {
-	width: 100%;
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	max-height: 0em;
-	overflow: hidden;
-	transition: var(--uitklaptijd);
-}
-
-section:nth-child(8).open section,
-section:nth-child(9).open section,
-section:nth-child(10).open section,
-section:nth-child(16).open section {
-	max-height: 25em;
-	transition: var(--uitklaptijd);
-}
-
-section:nth-child(10):a,
-section:nth-child(11):a,
-section:nth-child(12):a {
 	color: var(--primary-colour);
-	margin-left: 1em;
-}
-
-section:nth-child(12) p {
-	color: var(--secundary-colour);
-
-} */
-
-
-
-/*dropdown styling veelgestelde vragen*/
-
-/* section:nth-child(8)>p:first-of-type,
-button,
-section:first-of-type,
-section:nth-child(9),
-section:nth-child(10) {
-	display: grid;
-	gap: 1em;
-	outline: lightgrey 1em;
-	border-radius: 15px;
-	background-color: aqua;
-	margin-right: 0;
-	margin-left: 0;
-	z-index: -1; */
-/* border:lightgrey 1em; */
-/* padding: 0.5em 1em 0.5em;  */
-/* margin: auto; 
-} */
-
-
-section:nth-child(8),
-section:nth-child(9),
-section:nth-child(10) {
-	--uitklaptijd: .3s;
-	display: flex;
-	flex-wrap: wrap;
-	margin-bottom: 0.5em;
-}
-
-section:nth-child(8) p,
-section:nth-child(9) p,
-section:nth-child(10) p {
-	flex-grow: 1;
-	margin: 0;
-	color: white;
 	margin-left: 1.5em;
 	cursor: pointer;
 }
 
+nav > ul > li:nth-of-type(2) > a > section > ul button,
 section:nth-child(8) button,
 section:nth-child(9) button,
 section:nth-child(10) button {
@@ -339,22 +283,44 @@ section:nth-child(10) button {
 	cursor: pointer;
 }
 
+section:nth-child(16) button {
+	width: 3em;
+	padding: 0;
+	background-color: var(--color-text);
+	cursor: pointer;
+
+}
+
+section:nth-child(16) button:nth-of-type(2) {
+	/* position: relative; */
+	/* right: 0; */
+}
+
+nav > ul > li:nth-of-type(2) > a > section > ul button img,
 section:nth-child(8) button img,
 section:nth-child(9) button img,
-section:nth-child(10) button img {
-	transform: rotate(.25turn);
+section:nth-child(10) button img,
+section:nth-child(16) button img
+ {
+	/* transform: rotate(-180deg); */
 	transition: var(--uitklaptijd);
 }
 
+nav > ul > li:nth-of-type(2) > a > section > ul.open button img,
 section:nth-child(8).open button img,
 section:nth-child(9).open button img,
-section:nth-child(10).open button img {
-	transform: rotate(-.25turn);
+section:nth-child(10).open button img,
+section:nth-child(16).open button img
+ {
+	transform: rotate(-180deg);
 }
 
+nav > ul > li:nth-of-type(2) > a > section,
 section:nth-child(8) section,
 section:nth-child(9) section,
-section:nth-child(10) section {
+section:nth-child(10) section,
+section:nth-child(16) section
+ {
 	width: 100%;
 	margin: 0;
 	padding: 0;
@@ -364,13 +330,16 @@ section:nth-child(10) section {
 	transition: var(--uitklaptijd);
 }
 
+nav > ul > li:nth-of-type(2) > a > section.opensection,
 section:nth-child(8).open section,
 section:nth-child(9).open section,
-section:nth-child(10).open section {
+section:nth-child(10).open section,
+section:nth-child(16).open section {
 	max-height: 25em;
 	transition: var(--uitklaptijd);
 }
 
+nav > ul > li:nth-of-type(2) > a > section:a,
 section:nth-child(10):a,
 section:nth-child(11):a,
 section:nth-child(12):a {
@@ -378,7 +347,15 @@ section:nth-child(12):a {
 	margin-left: 1em;
 }
 
+section:nth-child(11),
+section:nth-child(12), 
+section:nth-child(13),
+section:nth-child(14)
+ {
+	margin-top: 4em;
+}
+
+
 section:nth-child(12) p {
 	color: var(--secundary-colour);
-
 }
