@@ -91,13 +91,13 @@ section:nth-of-type(3) button {
 
 section:nth-of-type(3) button:hover {
 	transform: scale(1.2);
-	background-color: orangered;
+	background-color: red;	
 	color: white;
 }
 
 section:nth-of-type(3) button:focus {
 	transform: scale(1.2);
-	box-shadow: 0 0 0 0.2em purple;
+	box-shadow: 0 0 0 0.1em purple;
 	color: white;
 }
 
@@ -106,8 +106,6 @@ section:nth-of-type(3) button:active {
 	background-color: purple;
 	color: white;
 }
-
-
 
 /* section:nth-of-type(3) button:first-child.blauwworden {
 	background-color: rgb(0, 8, 255);
@@ -128,7 +126,7 @@ section:nth-of-type(3) button:nth-of-type(2) {
 
 section:nth-of-type(3) button:hover {
 	/* transform: scale(1.2); */
-	background-color: orange;
+	background-color: orangered;
 	color: white;
 }
 
