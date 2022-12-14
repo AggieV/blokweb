@@ -209,7 +209,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Voortgang 2 (week 3)
 
-<details open>
+<details>
   <summary>uitwerken voor 2e voortgang</summary>
 
   ### Stand van zaken
@@ -258,11 +258,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  Ik werd geholpen bij mijn hamburgermenu. 
+  Ik werd geholpen bij mijn hamburgermenu. Ik moest de button om het hamburgermenu te sluiten in mijn navigatie doen en de hamburgerknop zelf boven de nav. 
 
-  Ik moest de button om het hamburgermenu te sluiten in mijn navigatie doen en de hamburgerknop zelf boven de nav. 
-
-  Verder kreeg ik als tip om alleen padding te gebruiken voor mijn sections en geen margin. Op die manier zou ik een vloeiende gradient kunnen maken als achtergrondd voor mijn sections. Ook kreeg ik nog de tip om alles in mijn code commentaar te geven met hele specifeke namen, zodat iedereen precies zou snappen waar 
+  Verder kreeg ik als tip om alleen padding te gebruiken voor mijn sections en geen margin. Op die manier zou ik een vloeiende gradient kunnen maken als achtergrondd voor mijn sections. Ook kreeg ik nog de tip om alles in mijn code commentaar te geven met hele specifeke namen, zodat iedereen precies zou snappen wat wat was.
 </details>
 
 
@@ -278,109 +276,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
-  Getest met Lynn Wolters;
-  Site: Ace & Tate
-
-
-  #### Screenreader
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
-  Screenreader gaat goed door koppen heen, maar ziet broodtekst ook als kopniveau, ik weet niet of dat de bedoeling is.
-
-  Screenreader denkt ook dat tel nummers onderin onderdeel zijn van de navigatie, misschien is dat niet de bedoeling.
-
-  <img src="readme-images/navigatiescreenreader.png
-"width="375px" alt="navigatiescreenreader.png">
-
-  <img src="readme-images/navigatie2screenreader.png
-"width="375px" alt="navigatie2screenreader.png">
-
-
-  #### Muis en Toetsenbord 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
-  Muis
-  Gaat prima, duidelijke navigatie
-
-  Toetsenbord;
-  Tab werkt; maar misschien niet handig dat er wordt getabd tussen alle kleurtjes waarin een product beschikbaar is
-
-  <img src="readme-images/aceandtatetab.png
-"width="375px" alt="aceandtatetab.png">
-
-  Spatie;
-
-  Enter;
-  Werkt sowieso voor het hamburgermenu: openen en 
-  
-  <img src="readme-images/aceandtateenter.png
-"width="375px" alt="aceandtateenter.png">
-
-
-  #### Motoriek (shocks, elastiekjes)
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
-  Ballon omhoog houden-beperking= concentratieprobleem;
-  -Navigeren gaat best goed, maar bij de sliders naar rechts moet ik me te veel focussen en dan laat ik de ballon vallen 
-
-  
-  Brillen-beperking= visuele beperking;
-
-  
-  Central Field Loss/AMD
-  Tekst op knoppen niet leesbaar
-
-  
-  Combined eye loss-diabetic eye disease;
-
-  Ik merk geen verschil
-
- 
-  Low contrast;
-  -Vooral titel is bijna onleesbaar geworden, net als tekst op knoppen en zwarte kleine letters op witte achtergrond
-
-
-  Blur;
-  Ik zie geen navigatie, geen zwarte letters op wit, geen tekst op knoppen
-
-  
-  Color #0779P;
-
-  Geen verschil, kleurcontrast is misschien juist beter
-  
-  
-  Peripheral Field Loss/glaucoma
-
-  Hemifield Loss;
-  Geen verschil
-
-
-  Shock;
-  Niet gedaan, te pijnlijk
-
-  
-  Elastiekjes
-
-  Maak links en knoppen groter, want dat is lastig aan te klikken als je minder vingers hebt/geen goede motoriek over je handen
-
-   <img src="readme-images/elastiekjes.jpg
-"width="375px" alt="elastiekjes">
-
-
-  #### Visueel (brillen, contrast, kleurenblind, dark/light). 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
-  Maak tekst op knoppen en/of knoppen groter, doe lichte letters op donkere achtergrond bij knoppen, kijk voor een andere kleur voor de titel (wit is niet goed leesbaar), maak nav elementen groter
-
-  
   Toegankelijkheidstest: 2
 
   Website: Vuecinemas
@@ -388,97 +283,92 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Door: Lynn Wolters
 
   Voor: Agnes Verhagen
-  
+
+
+  #### Screenreader
+  Hier korte omschrijving (met indien nodig afbeeldingen)
+
   Screenreader Test
 
-
-  -Links
-
+  Links
   Bij oplezen films zegt hij ook: bezocht, link, afbeelding
   
-  -Koppen
-
+  Koppen
   Doet het goed
-
-  -Formulierregelaars
-
+  
+  Formulierregelaars
   Pakt elementen die geen formulieren zijn (zoals pijltjes naar beneden en hamburger menu)
   
-  -Oriëntatiepunten
-
+  Oriëntatiepunten
   Orientatiepunten doen het niet goed, laten je nauwelijks weten waar je bent op de website
   
-  -Navigatie
-
+  Navigatie
   Navigatie is ook onduidelijk, kan zijn omdat er geen duidelijke navigatie in de website zit
   
-  -Tekens
-
+  Tekens
   Werken ook niet
 
-  -Woorden
+  Woorden
   Leest niks op, blijft bij banner hangen
-  
-  -Vensterspots
-  
-  Pakt alleen de hele html als vensterspot
-  
-  Muis, toetsenbord en kleurtjes test
 
+  Vensterspots
+  Pakt alleen de hele html als vensterspot
+
+  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Kijken of de navigatie verbeterd kan worden
+
+
+  #### Muis en Toetsenbord 
+  Hier korte omschrijving (met indien nodig afbeeldingen)
 
   Muis
-
-  Footer links moeten nog hover functie krijgen
-  De twee call to action buttons zou ik de effecten geven die je ook op de website ziet
+  Footer links moeten nog hover functie krijgen. De twee call to action buttons zou ik de effecten geven die je ook op de website ziet
   
   Toetsenbord
+  Gaat prima
 
-  Enter werkt niet
-  
+  Enter 
+  Werkt niet
   Omhoog en omlaag button werken wel om te navigeren
-  
   Tab button werkt om te navigeren maar is moeilijk zichtbaar
- 
-  Kleurtjes
+  
+  Kleuren
   Platte tekst is moeilijk zichtbaar, andere kleur geven
-  
-  
-  Diverse Beperkingen
-  
+
+  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Footer links hover functie geven, dus bijv met kleuren, buttons bovenin moviepasspagina dezelfde soort hovereffecten geven als de originele site, werk focus optie meer uit, platte tekst meer zichtbare kleur geven.
+
+
+  #### Motoriek (shocks, elastiekjes)
+  Hier korte omschrijving (met indien nodig afbeeldingen)
+
   Spieren Apparaat
   Knopjes zijn te klein om nog op de kleine knoppen te drukken (knoppen groter maken)
-  
-  
-  Brillen
-  
-  
-  Hemifield Loss: website is nog goed te zien
-  
-  
-  Color #0779P:  website is nog goed te zien
-  
- 
-  Peripheral Field Loss: website is heel lastig te zien door donkere kleuren en kleine elementen
-  
-  
-  Central Field Loss: website is nog goed te zien
-  
-  
-  Low Contrast #0778P: website is nog wel te zien
-  
-  
-  Combined Loss Diabetic Disease: website is nog wel te zien maar wordt moeilijk
-  
-  
+
   Concentratie test
-  Het is lastig om op de hamburger menu te klikken en de sluit button (zijn erg klein). Buttons zijn te dun om er op te klikken
+  Het is lastig om op de hamburger menu te klikken en de sluit button (zijn erg klein)
+  Buttons zijn te dun om er op te klikken
+
+  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Knoppen groter maken, hamburgermenu en sluitknop groter maken 
+
+  #### Visueel (brillen, contrast, kleurenblind, dark/light). 
+  Hier korte omschrijving (met indien nodig afbeeldingen)
+
+  Brillen
+
+  Hemifield Loss: website is nog goed te zien
+  Color #0779P:  website is nog goed te zien
+  Peripheral Field Loss: website is heel lastig te zien door donkere kleuren en kleine elementen
+  Central Field Loss: website is nog goed te zien
+  Low Contrast #0778P: website is nog wel te zien
+  Combined Loss Diabetic Disease: website is nog wel te zien maar wordt moeilijk
 
 
-
+  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Maak kleine elementen groter en zorg voor beter kleurcontrast
+  
 </details>
-
-
-
 
 
 ## Voortgang 3 (week 4)
@@ -506,7 +396,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   
   Student 2: Ab
   
-  Is ziek
+  Is ziek.
 
 
   Student 3: Koelsoem
@@ -515,56 +405,64 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Ik heb nieuwe css bestanden aangemaakt en gekoppeld, mijn footer responsive gemaakt en begonnen aan mn detail pagina.
 
   Wat niet goed ging.
-  tekst over een afbeelding zetten op een bepaalde plek
+  Tekst over een afbeelding zetten op een bepaalde plek.
 
 
-  
   Student 4: Sohil
 
-  k heb nog steeds moeite met mijn header en mijn github
-
+  Ik heb nog steeds moeite met mijn header en mijn github.
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
-
-
-
- 
+  Koelsoem kreeg het advies om een hamburgermenu te maken, want op mobiel scherm werden de navigaitielinks in de header te klein om te lezen. Sohil kreeg te zien hoe hij een navigatiebalk kon maken die 1 kleur had als je de pagina opende en als je begon te scrollen werd de onderste helft van de nav bar transparant. Ik kreeg de tip om de emailbutton en de aanmeldknop in 1 form tag te zetten en toen kon ik hem wel gemakkelijk in het midden van de pagina uitlijnen.
 
 </details>
 
 
-
-
-
 ## Eindgesprek (week 5)
 
-<details>
+<details open>
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitkomst opdracht 1">
 
+  <img src="readme-images/uitkomstsite1.png" width="375px" alt="uitkomst1 opdracht 1">
+  <img src="readme-images/uitkomstsite2.png" width="375px" alt="uitkomst2 opdracht 1">
+  <img src="readme-images/uitkomstsite3.png" width="375px" alt="uitkomst3 opdracht 1">
 
   ### Dit ging goed/Heb ik geleerd: 
   Korte omschrijving met plaatjes
 
-  Ik heb geleerd om goed te blijven kijken naar
+  -Custom properties
+  <img src="readme-images/customproperties.png" width="375px" alt="customproperties">
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  -Hamburgermenu maken
+  <img src="readme-images/hamburgermenu.png" width="375px" alt="hamburgermenu">
+
+  -Animeren iconen
+   <img src="readme-images/animereniconen.png" width="375px" alt="animereniconen">
+
+  -Meeste problemen kon ik ontdekken met de inspector
+  <img src="readme-images/inspector.png" width="375px" alt="inspector">
 
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
 
-  Trailerpagina en footer van die pagina
+  -Mediaqueries ben ik nog niet helemaal uitgekomen/aan toe gekomen
+  <img src="readme-images/mediaqueries.png" width="375px" alt="mediaqueries.png">
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  -Grid vind ik nog lastig
+  <img src="readme-images/grid.png" width="375px" alt="grid">
+
+  -Trailerpagina niet af gekregen
+  <img src="readme-images/trailerpaginauitkomst.png" width="375px" alt="trailerpaginauitkomst">
+
+  -Footer van de trailerpagina lukt niet om dezelfde layout te geven als die van index.html (ligt dit aan het css bestand?)
+  <img src="readme-images/trailerpaginafooter.png" width="375px" alt="trailerpaginafooter">
+
 </details>
-
-
-
 
 
 ## Bronnenlijst
@@ -574,10 +472,36 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-  1. bron 1: https://www.w3schools.com/howto/howto_css_list_without_bullets.asp 
+  1. bron 1: https://www.w3schools.com/tags/tag_select.asp
 
-  2. bron 2: https://www.w3schools.com/tags/tag_select.asp
+https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timing-function*/
 
-  3. bron 3: 
+https://css-tricks.com/a-complete-guide-to-calc-in-css/*/
+
+https://www.javatpoint.com/how-to-center-a-button-in-css
+
+https://codepen.io/shooft/pen/BarqVdR*/
+
+https://www.w3schools.com/howto/howto_css_list_without_bullets.asp */
+
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/email*/
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow*/
+
+https://stackoverflow.com/questions/8287447/create-a-white-rgba-css3*/
+
+https://www.w3.org/TR/css-multicol-1/*/
+
+https://codepen.io/shooft/pen/yLEwVXm*/
+
+https://www.handleidinghtml.nl/css/eigenschappen/white-space/beschrijving.html*/
+
+https://stackoverflow.com/questions/25125793/
+
+html-css-display-text-and-wrap-it-propertly-in-two-columns-and-a-single-row*/
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries*/
+
+https://kinsta.com/nl/blog/responsive-webdesign/*/
 
 </details>
