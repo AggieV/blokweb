@@ -47,12 +47,51 @@ summary {
 	} */
 }
 
+/* algemene styling */
+/* dit geldt voor alles */
 body {
 	background-color: var(--color-background);
-	color: var(--color-white);
+	/* color: var(--color-white); */
 	font-family: 'Isonorm', sans-serif;
 	margin: 0;
 	line-break: auto;
+}
+
+
+/*koppen & p's*/
+
+h1,
+h2,
+h3,
+p {
+	/* margin-right: 1em; */
+	margin-left: 1em;
+	padding: 0;
+}
+
+
+/*koppen*/
+
+h1 {
+	color: var(--primary-colour);
+	font-size: 3em;
+	/* font-weight: bold; */
+	letter-spacing: 0.5em;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+/*zichtbare h2's*/
+
+h2 {
+	color: var(--color-white);
+	font-size: 1.25em;
+	font-weight: normal;
+	text-align: center;
+	text-transform: uppercase;
+	text-align: left;
+	margin-top: 3em;
+	margin-bottom: -1em;
 }
 
 /*header*/
@@ -82,6 +121,26 @@ header>h1 {
 
 }
 
+/*logo, search en hamburgerbutton*/
+
+header>h1 img {
+	margin-left: 0.2em;
+}
+
+/* header>h1 img,
+header>img,
+header>button img {
+	width: 1.5em;
+	top: 0;
+} */
+
+header>h1 img,
+header>button:first-child>img,
+header>button:nth-of-type(2)>img {
+	width: 1.5em;
+	top: 0;
+}
+
 /*nav*/
 
 nav {
@@ -99,23 +158,13 @@ nav img:first-child {
 	width: 2em;
 }
 
-/*logo, search en hamburgerbutton*/
-
-header>h1 img {
-	margin-left: 0.2em;
-}
-
-header>h1 img,
-header>img,
-header>button img {
-	width: 1.5em;
-	top: 0;
-	/* position: fixed; */
-}
-
 /*uitklappen en inklappen hamburgermenu*/
 
-header nav ul:nth-of-type(2) {
+/* header nav ul:nth-of-type(2) {
+	display: none;
+} */
+
+header nav ul {
 	display: none;
 }
 
@@ -143,8 +192,6 @@ nav ul>ul {
 	display: inline-block;
 	display: flex;
 	flex-direction: column;
-	/* margin-left: 0.2em;
-	justify-content: center; */
 	padding: 0;
 	margin-top: 1em;
 }
@@ -154,7 +201,6 @@ nav ul>ul li a {
 	line-height: 2.5em;
 	color: var(--color-grey);
 }
-
 
 /*listitem:icoon en link in uitgeklapt hamburgermenu*/
 
@@ -196,11 +242,11 @@ nav ul li:first-child a img:nth-of-type(2) {
 
 /*log in, grijze letters*/
 
-nav ul li a:first-child>div:first-child {
+nav ul li:first-child > a >div:first-child {
 	color: var(--color-grey);
 }
 
-nav ul li a:first-child>div:nth-child(2) {
+nav ul li:first-child a >div:nth-child(2) {
 	margin: 0;
 	grid-row-start: 2;
 	grid-row-end: 3;
@@ -234,22 +280,15 @@ nav ul li:nth-of-type(7) a {
 }
 
 nav ul:first-child li:first-child a>img,
-div,
-div,
-img {
-	margin-right: 1em;
-}
-
+div, div, img,
 nav ul:first-child li:nth-of-type(2) a>img,
 nav ul:first-child li:nth-of-type(2) a>div,
 nav ul:first-child li:nth-of-type(2) a>button,
 
 nav ul:first-child li:nth-of-type(3) a>img,
-div,
-img,
+div,img,
 nav ul:first-child li:nth-of-type(4) a>img,
-div,
-img,
+div,img,
 nav ul:first-child li:nth-of-type(5) a>img,
 div,
 img {
@@ -334,42 +373,7 @@ section:nth-of-type(13) {
 	border-bottom: solid 0.1em var(--color-orange);
 }
 
-/*koppen & p's*/
-
-h1,
-h2,
-h3,
-p {
-	/* margin-right: 1em; */
-	margin-left: 1em;
-	padding: 0;
-}
-
-
 /*koppen*/
-
-h1 {
-	color: var(--primary-colour);
-	font-size: 3em;
-	/* font-weight: bold; */
-	letter-spacing: 0.5em;
-	text-transform: uppercase;
-	margin: 0;
-}
-
-/*zichtbare h2's*/
-
-h2 {
-	color: var(--color-white);
-	font-size: 1.25em;
-	font-weight: normal;
-	text-align: center;
-	text-transform: uppercase;
-	text-align: left;
-	margin-top: 3em;
-	margin-bottom: -1em;
-}
-
 /*verborgen h2*/
 
 section:first-of-type h2 {
@@ -519,7 +523,7 @@ section:nth-of-type(14) form {
 	margin-bottom: 4em;
 }
 
-/*https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/email*/
+/*bron:https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/email*/
 
 section:nth-of-type(14) input button {
 	/* display: block;
@@ -567,8 +571,8 @@ section:nth-of-type(14) button {
 
 }
 
-/*https://www.w3.org/TR/css-multicol-1/*/
 /*'films' footerlijst, 'zakelijk' footerlijst, 'vue' footerlijst*/
+/*bron:https://www.w3.org/TR/css-multicol-1/*/
 
 section:nth-of-type(15)>ul li div,
 section:nth-of-type(17)>ul li div,
@@ -587,8 +591,6 @@ section:nth-of-type(18) {
 	/* margin-left: 1.3em; */
 	padding: 0;
 }
-
-
 
 /*'films' footerlijst*/
 /*bron:https://codepen.io/shooft/pen/yLEwVXm*/
@@ -640,7 +642,6 @@ section:nth-of-type(18) ul {
 	padding: 0;
 	margin-left: 1em;
 }
-
 
 /*download de vue app via de app store of google play*/
 
@@ -695,17 +696,16 @@ section:nth-of-type(19)>button:active {
 
 /*icon apple & google play*/
 
-section:nth-of-type(19)>button>div>img {
+section:nth-of-type(11)>button>div>img {
 	width: 1.5em;
 }
 
 /*copyright*/
 
-section:nth-of-type(20) ul {
+section:nth-of-type(12) ul {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	/* color: var(--color-background); */
 	font-size: 1em;
 	margin-left: 1em;
 	justify-content: center;
@@ -714,29 +714,26 @@ section:nth-of-type(20) ul {
 
 /*vertical line between items*/
 
-section:nth-of-type(20)>ul>li>a>div::after {
-	/* text-align: right; */
+section:nth-of-type(12)>ul>li>a>div::after {
 	padding: 0.5em;
 	content: "|";
-
 }
 
 /*partners van vue*/
 
-section:nth-of-type(21) ul {
+section:nth-of-type(13) ul {
 	padding: 0;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	/* white-space: nowrap; */
 }
 
-section:nth-of-type(21) ul li {
+section:nth-of-type(13) ul li {
 	padding: 1.5em;
 }
 
-section:nth-of-type(14) {
+section:nth-of-type(7) {
 	border-bottom: solid 0.1em rgb(247, 148, 30);
 }
 
@@ -745,7 +742,7 @@ section:nth-of-type(14) {
 /*mediaqueries*/
 
 /* @media (min-width: 1025px) {
-	header {
+	header {3
 		display: flex;
 		position: fixed;
 		width: 100vw;
@@ -769,4 +766,110 @@ section:nth-of-type(14) {
 			grid-template-columns: 1fr;
 		}
 	}
+} */
+
+/*buttons
+*/
+/*bronnen:https://www.javatpoint.com/how-to-center-a-button-in-css
+*/
+/*neem abonnement knop*/
+
+section:nth-of-type(2) button {
+	display: flex;
+	justify-content: center;
+	white-space: nowrap;
+	color: var(--color-text-button);
+	background-color: var(--color-orange);
+	margin: auto;
+	margin-bottom: 0.5em;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	text-align: center;
+	border-radius: 0.4em;
+	width: 17em;
+	padding: 0.5em 1em 0.5em;
+	vertical-align: middle;
+}
+
+/* section:nth-of-type(3) button:first-child.blauwworden {
+	background-color: rgb(0, 8, 255);
+	color: white;
+	transform: scale(1.2);
+} */
+
+section:nth-of-type(2) button:hover {
+	transform: scale(1.09);
+	background-color: var(--color-accent);
+	color: var(--color-white);
+}
+
+section:nth-of-type(2) button:focus {
+	transform: scale(0.8);
+	box-shadow: 0 0 0 0.1em var(--color-accent);
+	color: var(--color-white);
+}
+
+section:nth-of-type(2) button:active {
+	transform: scale(1.1);
+	background-color: var(--color-accent);
+	color: var(--color-white);
+}
+
+/*geef cadeau knop*/
+
+section:nth-of-type(2) button:nth-of-type(2) {
+	text-transform: uppercase;
+	font-size: 1.25em;
+	background-color: var(--color-background-section);
+	color: var(--color-white);
+	border: 0.05em solid var(--color-orange);
+	/* padding: 0.69em 9em 0.69em; */
+}
+
+section:nth-of-type(2) button:hover {
+	/* transform: scale(1.2); */
+	background-color: var(--color-accent);
+	color: var(--color-white);
+}
+
+section:nth-of-type(2) button:focus {
+	outline: 0.5em var(--color-accent);
+}
+
+section:nth-of-type(2) button:active {
+	background-color: var(--color-orange);
+	color: var(--color-white);
+}
+
+/* FOOTER*/
+/* footer section ul {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+}
+footer section:nth-of-type(2) button:first-of-type {
+    width: 100%;
+    background-color: var(--color-text);
+    cursor: pointer;
+    padding: 0.85em 1em 0.85em;
+    background-color: #2B2C33;
+    text-align: left;
+    color: #8D8F99;
+    border-radius: 0.4em 0.4em 0.4em;
+    font-size: 1em;
+    cursor: pointer;
+    border: 0.05em solid var(--primary-colour);
+}
+@media (min-width:28em) {
+    footer section ul {
+        grid-template-columns:1fr 1fr 1fr;
+    }
+}
+@media (min-width:40em) {
+    footer section ul {
+        grid-template-columns:1fr;
+    }
+    footer {
+        display:grid;
+        grid-template-columns:1fr 1fr 1fr 1fr;
+    }
 } */

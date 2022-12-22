@@ -6,11 +6,11 @@
 	<meta name="author" content="agnesverhagen">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>vuecinemas</title>
+	<title>vuecinemas - homepage</title>
 
 	<link href="styles/style.css" rel="stylesheet">
 	<link href="styles/moviepassstyle.css" rel="stylesheet">
-	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+	<link rel="icon" type="image/svg+xml" href="images/filmstuk.svg">
 </head>
 
 <body>
@@ -23,34 +23,32 @@
 
 		<!-- <button>Light modus</button> -->
 
-		<img src="images/search.svg" alt="search"></img>
+		<button aria-label="zoeken"><img src="images/search.svg" alt="search">
+			<!-- bron https://codepen.io/Agnes-Verhagen/pen/mdKGxpM -->
 
-		<!-- bron https://codepen.io/Agnes-Verhagen/pen/mdKGxpM -->
+			<button aria-label="toggle menu"><img src="images/hamburgermenu.svg" alt="hamburgermenu"></button>
 
-		<button><img src="images/hamburgermenu.svg" alt="hamburgermenu"></button>
+			<nav>
+				<img src="images/vue-logo.png" alt="vue-logo"></img>
+				<button><img src="images/sluitknop.svg" alt="sluitknop"></button>
+				<ul>
+					<li>
+						<a href="#">
+							<img src="images/avatar.png" alt="avatar">
+							<div>Log in</div>
+							<div>Mijn Vue</div>
+							<img src="images/iconarrowdown.svg" alt="iconarrowdown">
+						</a>
+					</li>
 
-
-		<nav>
-			<img src="images/vue-logo.png" alt="vue-logo"></img>
-			<button><img src="images/sluitknop.svg" alt="sluitknop"></button>
-			<ul>
-				<li>
-					<a href="#">
-						<img src="images/avatar.png" alt="avatar">
-						<div>Log in</div>
-						<div>Mijn Vue</div>
-						<img src="images/iconarrowdown.svg" alt="iconarrowdown">
-					</a>
-				</li>
-
-				<li>
-					<a href="#">
-						<img src="images/filmstuk.svg" alt="filmstuk">
-						<div>
+					<li>
+						<a href="trailers.html">
+							<img src="images/filmstuk.svg" alt="">
+							<!-- lege alt omdat plaatje decoratief is -->
+							<!-- <div> -->
 							Films
-						</div>
 
-						<button aria-label="dropdown"><img src="images/iconarrowdown.svg" alt="iconarrowdown"></button>
+							<!-- <button aria-label="dropdown"><img src="images/iconarrowdown.svg" alt="iconarrowdown"></button>
 						<section>
 							<ul>
 								<li>Nu in de bioscoop</li>
@@ -62,66 +60,66 @@
 								<li>Dinner & Movie</li>
 								<li>Totaalaanbod Film bij Vue</li>
 							</ul>
-						</section>
-					</a>
-				</li>
+						</section> -->
+						</a>
+					</li>
 
-				<li>
-					<a href="#">
-						<img src="images/star.svg" alt="star">
-						<div>Specials & Events</div>
-						<img src="images/iconarrowdown.svg" alt="iconarrowdown">
-					</a>
-				</li>
+					<li>
+						<a href="#">
+							<img src="images/star.svg" alt="">
+							Specials & Events
+							<!-- <img src="images/iconarrowdown.svg" alt="iconarrowdown"> -->
+						</a>
+					</li>
 
-				<li>
-					<a href="#">
-						<img src="images/kids.svg" alt="kids">
-						<div>Kids</div>
-						<img src="images/iconarrowdown.svg" alt="iconarrowdown">
-					</a>
-				</li>
+					<li>
+						<a href="#">
+							<img src="images/kids.svg" alt="">
+							Kids
+							<!-- <img src="images/iconarrowdown.svg" alt="iconarrowdown"> -->
+						</a>
+					</li>
 
-				<li>
-					<a href="#">
-						<img src="images/icon-experience-gradient.svg" alt="icon-experience-gradient">
-						<div>Belevingen</div>
-						<img src="images/iconarrowdown.svg" alt="iconarrowdown">
-					</a>
-				</li>
+					<li>
+						<a href="#">
+							<img src="images/experience.svg" alt="">
+							Belevingen
+							<!-- <img src="images/iconarrowdown.svg" alt="iconarrowdown"> -->
+						</a>
+					</li>
 
-				<li>
-					<a href="#">
-						<img src="images/ticket.svg" alt="ticket">
-						<div>Tickets</div>
-					</a>
-				</li>
+					<li>
+						<a href="#">
+							<img src="images/ticket.svg" alt="">
+							Tickets
+						</a>
+					</li>
 
-				<li>
-					<a href="#">
-						<img src="images/movie-pass.svg" alt="moviepass">
-						<div>Moviepass</div>
-					</a>
-				</li>
+					<li>
+						<a href="#">
+							<img src="images/movie-pass.svg" alt="">
+							Moviepass
+						</a>
+					</li>
 
-				<ul>
-					<li><a href="#">Giftcards</a></li>
-					<li><a href="#">Zakelijk</a></li>
-					<li><a href="#">Klantenservice</a></li>
+					<ul>
+						<li><a href="#">Giftcards</a></li>
+						<li><a href="#">Zakelijk</a></li>
+						<li><a href="#">Klantenservice</a></li>
+					</ul>
+
 				</ul>
 
-			</ul>
+				<!--nav list for desktop-->
 
-			<!--nav list for desktop-->
-
-			<!-- <ul>
+				<!-- <ul>
 				<li>Films</li>
 				<li></li>
 				<li></li>
 				<li></li>
 				<li></li>
 			</ul> -->
-		</nav>
+			</nav>
 
 	</header>
 
@@ -130,38 +128,46 @@
 		<!-- <section 1-filmslider> -->
 
 		<section>
+			<!-- <verstop h2> -->
 			<h2>films die nu draaien</h2>
 			<ul>
 				<li>
-					<a href="#"><img src="images/barbarian.jpg" alt="barbarian"></img></a>
+					<a href="#" aria-label="info over barbarian"><img src="images/barbarian.jpg"
+							alt="barbarian"></img></a>
 				</li>
 
 				<li>
-					<a href="#"><img src="images/casacoco.jpg" alt="casacoco"></img></a>
+					<a href="#" aria-label="info over casacoco"><img src="images/casacoco.jpg" alt="casacoco"></img></a>
 				</li>
 
 				<li>
-					<a href="#"><img src="images/blackadam.jpg" alt="blackadam"></img></a>
+					<a href="#" aria-label="info over blackadam"><img src="images/blackadam.jpg"
+							alt="blackadam"></img></a>
 				</li>
 
 				<li>
-					<a href="#"><img src="images/clubvansintrace.jpg" alt="clubvansintrace"></img></a>
+					<a href="#" aria-label="info over clubvansintrace"><img src="images/clubvansintrace.jpg"
+							alt="clubvansintrace"></img></a>
 				</li>
 
 				<li>
-					<a href="#"><img src="images/grotesintfilm.jpg" alt="grotesintfilm"></img></a>
+					<a href="#" aria-label="info over grotesintfilm"><img src="images/grotesintfilm.jpg"
+							alt="grotesintfilm"></img></a>
 				</li>
 
 				<li>
-					<a href="#"><img src="images/listydome5.jpg" alt="listydome5"></img></a>
+					<a href="#" aria-label="info over listydome5"><img src="images/listydome5.jpg"
+							alt="listydome5"></img></a>
 				</li>
 
 				<li>
-					<a href="#"><img src="images/tickettoparadise.jpeg" alt="tickettoparadise"></img></a>
+					<a href="#" aria-label="info over tickettoparadise"><img src="images/tickettoparadise.jpeg"
+							alt="tickettoparadise"></img></a>
 				</li>
 
 				<li>
-					<a href="#"><img src="images/wakandaforever.jpg" alt="wakandaforever"></img></a>
+					<a href="#" aria-label="info over wakandaforever"><img src="images/wakandaforever.jpg"
+							alt="wakandaforever"></img></a>
 				</li>
 			</ul>
 		</section>
@@ -173,247 +179,259 @@
 			<h3>onbeperkt naar de film voor €20.50 p/mnd</h3>
 			<ul>
 				<li>
-					<img src="images/movie-snacks.svg" alt="movie-snacks"></img>
+					<img src="images/movie-snacks.svg" alt=""></img>
 					<p>10% korting op eten en drinken</p>
 				</li>
 
 				<li>
-					<img src="images/movie-chair.svg" alt="movie-chair"></img>
+					<img src="images/movie-chair.svg" alt=""></img>
 					<p>Inclusief Sneak Preview & Movie Pass Exclusive</p>
 				</li>
 
 				<li>
-					<img src="images/movie-watch.svg" alt="movie-watch"></img>
+					<img src="images/movie-watch.svg" alt=""></img>
 					<p>Inclusief XD Experience en Dolby Atmos</p>
 				</li>
 			</ul>
 
+			<div>
+				<button>neem abonnement</button>
+				<button>geef cadeau</button>
+			</div>
+
 		</section>
 
-		<!-- <section 3-knoppen 'geef abonnement' & 'geef cadeau' -->
+		<!-- <https://www.freecodecamp.org/news/html-button-link-code-examples-how-to-make-html-hyperlinks-using-the-href-attribute-on-tags/> -->
+
+
+		<!-- <section 3-speciaal voor onze échte filmliefhebbers en nog 2 artikels> -->
 
 		<section>
-			<!-- <https://www.freecodecamp.org/news/html-button-link-code-examples-how-to-make-html-hyperlinks-using-the-href-attribute-on-tags/> -->
-			<!-- <h2>neem abonnement knop en geef cadeau knop</h2> maak onzichtbaar-->
+			<!-- h2verbergen -->
+			<h2>hoe werkt de vue movie pass?</h2>
+			<ul>
+				<li>
 
-			<button>neem abonnement</button>
-			<button>geef cadeau</button>
+					<img src="images/moviepassfirstarticle.jpg" alt=""></img>
+
+					<h3>speciaal voor onze échte filmliefhebbers</h3>
+
+					<p>Een Vue Movie Pass is een film abonnement waarmee je onbeperkt naar alle Vue Cinemas kan gaan.
+						Het
+						abonnement is
+						opzegbaar na 4 kalendermaanden. Of je nou fan bent van horror of de nieuwste Marvel's wilt zien,
+						hiermee
+						kan je
+						elke reguliere voorstelling bezoeken. Ook krijg je korting op al het eten en drinken én mag je
+						gratis
+						naar de
+						Movie Pass Exclusive en de Sneak Preview. Wat wil je nog meer?</p>
+				</li>
+
+				<li>
+					<img src="images/moviepasssecondarticle.jpg" alt=""></img>
+
+					<h3>al gauw voordeliger dan reguliere tickets</h3>
+
+					<p>Als je meer dan 1x per maand naar de bioscoop gaat, is de Vue Movie Pass al goedkoper dan het
+						bestellen
+						van
+						reguliere tickets! Dus voor iedereen die graag voordelig naar de bioscoop gaat, is deze Movie
+						Pass
+						ideaal. De
+						prijs is exclusief toeslagen voor 3D, DeLuxe seating en speciale evenementen als Ladies Night en
+						Vue
+						Plus.</p>
+				</li>
+
+				<li>
+					<img src="images/moviepassthirdarticle.jpg" alt=""></img>
+
+
+					<h3>scan via de vue app en je bent binnen!</h3>
+
+					<p>Bekijk in de middag welke films er vanavond
+						draaien en ga dezelfde avond nog zonder extra kosten naar de bioscoop! Laat jouw digitale Vue
+						Movie
+						Pass
+						scannen
+						vanaf je app en je bent binnen. Een perfect avondje uit als je het ons vraagt! Dus wacht niet en
+						bestel
+						nu jou
+						Vue Movie Pass voor jezelf en je vrienden.</p>
+				</li>
+
+			</ul>
+
 		</section>
 
-		<!-- <section 4-speciaal voor onze échte filmliefhebbers> -->
-
-		<section>
-			<img src="images/moviepass-landingpage1.jpg" alt="moviepass-landingpage1"></img>
-
-			<h3>speciaal voor onze échte filmliefhebbers</h3>
-
-			<p>Een Vue Movie Pass is een film abonnement waarmee je onbeperkt naar alle Vue Cinemas kan gaan. Het
-				abonnement is
-				opzegbaar na 4 kalendermaanden. Of je nou fan bent van horror of de nieuwste Marvel's wilt zien,
-				hiermee
-				kan je
-				elke reguliere voorstelling bezoeken. Ook krijg je korting op al het eten en drinken én mag je
-				gratis
-				naar de
-				Movie Pass Exclusive en de Sneak Preview. Wat wil je nog meer?</p>
-		</section>
-
-		<!-- <section 5-al gauw voordeliger dan reguliere tickets> -->
-
-		<section>
-			<img src="images/moviepass-landingpage2.jpg" alt="moviepass-landingpage2"></img>
-
-			<h3>al gauw voordeliger dan reguliere tickets</h3>
-
-			<p>Als je meer dan 1x per maand naar de bioscoop gaat, is de Vue Movie Pass al goedkoper dan het
-				bestellen
-				van
-				reguliere tickets! Dus voor iedereen die graag voordelig naar de bioscoop gaat, is deze Movie Pass
-				ideaal. De
-				prijs is exclusief toeslagen voor 3D, DeLuxe seating en speciale evenementen als Ladies Night en Vue
-				Plus.</p>
-		</section>
-
-		<!-- <section 6-scan via de vue app en je bent binnen!> -->
-
-		<section>
-			<img src="images/moviepass-landingpage3.jpg" alt="moviepass-landingpage3"></img>
-
-
-			<h3>scan via de vue app en je bent binnen!</h3>
-
-			<p>Bekijk in de middag welke films er vanavond
-				draaien en ga dezelfde avond nog zonder extra kosten naar de bioscoop! Laat jouw digitale Vue Movie
-				Pass
-				scannen
-				vanaf je app en je bent binnen. Een perfect avondje uit als je het ons vraagt! Dus wacht niet en
-				bestel
-				nu jou
-				Vue Movie Pass voor jezelf en je vrienden.</p>
-		</section>
-
-		<!-- <section 7-quotes> -->
+		<!-- <section 4-quotes> -->
 
 		<section>
 			<!--https://www.freecodecamp.org/news/span-html-how-to-use-the-span-tag-with-css/-->
 			<!-- bron:https://www.w3schools.com/html/html_quotation_elements.asp -->
 			<!-- <h2>quote van bezoeker Giamo</h2> maak onzichtbaar-->
-			<blockquote>Het is fijn om een Vue Movie Pass te hebben. Onbeperkt naar de film wanneer het mij uitkomt. Ik
+			
+			<!-- <verstop h2> -->
+			<h2>quotes van bezoekers</h2>
+		
+			<blockquote>Het is fijn om een Vue Movie Pass te hebben. Onbeperkt naar de film wanneer het mij
+				uitkomt. Ik
 				ga nu
 				naar films
 				waar ik normaal niet zo snel heen zou gaan en waar ik steeds erg verrast door word!
-
 			</blockquote>
 
-			<div><span>- giamo (bezoeker)</span></div>
+			<p>- giamo (bezoeker)</p>
 
-			<div>
-
-				<div>Like deze review</div>
-				<button class="like" aria-label="like deze review">♥</button>
-
-			</div>
+			<button class="like" aria-label="like deze review">Like deze review <span>♥</span></button>
 
 		</section>
 
-		<!-- <section 8-veelgestelde vragen> -->
+		<!-- <section 5-veelgestelde vragen> -->
 
 		<section>
 
-			<h3>Veelgestelde vragen</h3>
+			<h2>Veelgestelde vragen</h2>
 
-			<div>Wanneer kan ik mijn tickets ophalen?</div>
+			<ul>
+				<li>
+					<h3>Wanneer kan ik mijn tickets ophalen?</h3>
 
-			<button aria-label="dropdown"><img src="images/iconarrowdown.svg" alt="iconarrowdown"></button>
-			<section>
-				<p>
-					Als je tickets via internet hebt gekocht kun je direct doorlopen naar de ticketcontrole. Jouw
-					Vue
-					Movie Pass is alleen digitaal en moet je ook laten controleren bij de ticketcontrole. Via
-					'tickets'
-					op je App of mobiele website swipe je makkelijk heen en weer tussen jouw QR tickets codes en
-					jouw
-					digitale Vue Movie Pass. Als je tickets aan de kassa koopt, dan krijg je direct een fysiek
-					filmticket mee, die je kunt laten controleren tezamen met je digitale Vue Movie Pass bij de
-					ticketcontrole. Gebruik dan de snelbutton Movie Pass op de app. Hier vind je snel en makkelijk
-					jouw
-					digitale Movie Pass als je geen online tickets hebt gekocht. Alle tickets zijn pas vanaf 90
-					minuten
-					voorafgaand aan de voorstelling te scannen bij de ticketcontrole of te koop bij de kassa.
-				</p>
-			</section>
+					<button aria-label="dropdown"><img src="images/iconarrowdown.svg" alt="iconarrowdown"></button>
+					<section>
+						<p>
+							Als je tickets via internet hebt gekocht kun je direct doorlopen naar de ticketcontrole.
+							Jouw
+							Vue
+							Movie Pass is alleen digitaal en moet je ook laten controleren bij de ticketcontrole. Via
+							'tickets'
+							op je App of mobiele website swipe je makkelijk heen en weer tussen jouw QR tickets codes en
+							jouw
+							digitale Vue Movie Pass. Als je tickets aan de kassa koopt, dan krijg je direct een fysiek
+							filmticket mee, die je kunt laten controleren tezamen met je digitale Vue Movie Pass bij de
+							ticketcontrole. Gebruik dan de snelbutton Movie Pass op de app. Hier vind je snel en
+							makkelijk
+							jouw
+							digitale Movie Pass als je geen online tickets hebt gekocht. Alle tickets zijn pas vanaf 90
+							minuten
+							voorafgaand aan de voorstelling te scannen bij de ticketcontrole of te koop bij de kassa.
+						</p>
+					</section>
+				</li>
+				<li>
+					<h3>Kan ik ook kaartjes kopen in de bioscoop?</h3>
 
+					<button aria-label="dropdown"><img src="images/iconarrowdown.svg" alt="iconarrowdown"></button>
+
+					<section>
+						<p>
+							Ja, aan de kassa, mits de kaartjes voor voorstellingen zijn die op dezelfde dag
+							plaatsvinden. Er
+							moet minstens 90 minuten tussen twee achtereenvolgende voorstellingen zitten.
+						</p>
+					</section>
+				</li>
+
+				<li>
+					<h3>Waar kan ik mijn gekochte tickets vinden?</h3>
+
+					<button aria-label="dropdown"><img src="images/iconarrowdown.svg" alt="iconarrowdown"></button>
+
+					<section>
+						<p>
+							Tickets worden altijd gemaild naar het adres dat gekoppeld is aan jouw Vue Movie Pass.
+							Daarnaast
+							staan ze bij 'tickets' in jouw Mijn Vue account. Op de Vue App staat tevens een snelbutton
+							'tickets'
+							op de home page. Het ticket bestaat uit een QR Code die je moet laten scannen bij de
+							ticketcontrole
+							in de bioscoop!
+						</p>
+
+					</section>
+				</li>
+			</ul>
+
+			<a href="#">Bekijk alle vragen</a>
 		</section>
 
-		<!-- <section 9-kan ik ook kaartjes kopen in de bioscoop?> -->
+		<!-- <section 6-voorwaarden> -->
 
 		<section>
-
-			<div>Kan ik ook kaartjes kopen in de bioscoop?</div>
-
-			<button aria-label="dropdown"><img src="images/iconarrowdown.svg" alt="iconarrowdown"></button>
-
-			<section>
-				<p>
-					Ja, aan de kassa, mits de kaartjes voor voorstellingen zijn die op dezelfde dag plaatsvinden. Er
-					moet minstens 90 minuten tussen twee achtereenvolgende voorstellingen zitten.
-				</p>
-			</section>
-
-		</section>
-
-		<!-- <section 10-waar kan ik mijn gekochte tickets vinden?> -->
-
-		<section>
-
-			<div>Waar kan ik mijn gekochte tickets vinden?</div>
-
-			<button aria-label="dropdown"><img src="images/iconarrowdown.svg" alt="iconarrowdown"></button>
-
-			<section>
-				<p>
-					Tickets worden altijd gemaild naar het adres dat gekoppeld is aan jouw Vue Movie Pass. Daarnaast
-					staan ze bij 'tickets' in jouw Mijn Vue account. Op de Vue App staat tevens een snelbutton 'tickets'
-					op de home page. Het ticket bestaat uit een QR Code die je moet laten scannen bij de ticketcontrole
-					in de bioscoop!
-				</p>
-
-			</section>
-			<div>
-				<a href="#">Bekijk alle vragen</a>
-		</section>
-
-		<!-- <section 11-voorwaarden> -->
-
-		<section>
-			<h3>voorwaarden</h3>
+			<h2>voorwaarden</h2>
 			<a href="#">Bekijk de algemene voorwaarden</a>
 		</section>
 
-		<!-- <section 12-mailadres klantenservice voor overige vragen> -->
+		<!-- <section 7-mailadres klantenservice voor overige vragen> -->
 
 		<section>
-			<h3>overige vragen</h3>
+			<h2>overige vragen</h2>
 			<p>Staat jouw vraag en/of antwoord er niet bij? Neem dan contact met ons op middels het e-mailadres.</p>
 			<a href="#">klantenservice@vuemoviepass.nl</a>
 		</section>
 
-		<!--footer gedeelte-->
-		<!-- <section 13-volg ons ook via> -->
+	<!-- </main> -->
+
+	<!--footer gedeelte-->
+
+	<!-- <footer> -->
+
+		<!-- <section 8-volg ons ook via> -->
 
 		<section>
-			<h3>volg ons ook via</h3>
+			<h2>volg ons ook via</h2>
 
 			<ul>
 				<li>
 					<a href="#">
 						<img src="images/facebookicon.svg" alt="facebookicon">
-						<div>Facebook</div>
+						Facebook
 					</a>
 				</li>
 
 				<li>
 					<a href="#">
 						<img src="images/twittericon.svg" alt="twittericon"></img>
-						<div>Twitter</div>
+						Twitter
 					</a>
 				</li>
 
 				<li>
 					<a href="#">
 						<img src="images/instagramicon.svg" alt="instagramicon"></img>
-						<div>Instagram</div>
+						Instagram
 					</a>
 				</li>
 
 				<li>
 					<a href="#">
 						<img src="images/tiktokicon.svg" alt="tiktokicon"></img>
-						<div>TikTok</div>
+						TikTok
 					</a>
 				</li>
 
 				<li>
 					<a href="#">
 						<img src="images/youtubeicon.svg" alt="youtubeicon"></img>
-						<div>YouTube</div>
+						YouTube
 					</a>
 				</li>
 
 				<li>
 					<a href="#">
 						<img src="images/blogicon.svg" alt="blogicon.svg"></img>
-						<div>Blog</div>
+						Blog
 					</a>
 				</li>
 
 			</ul>
 		</section>
 
-		<!-- <section 14-schrijf je in voor onze nieuwsbrief> -->
+		<!-- <section 9-schrijf je in voor onze nieuwsbrief> -->
 
 		<section>
-			<h3>wees welkom bij de vuefamilie</h3>
+			<h2>wees welkom bij de vuefamilie</h2>
 			<p>Schrijf je in voor onze nieuwsbrief.</p>
 			<form>
 				<input type="email" placeholder="E-mailadres" />
@@ -421,147 +439,260 @@
 			</form>
 		</section>
 
-		<!-- <section 15-films footerlijst> -->
+		<!-- <section 10-footerlijst films, zakelijk en vue> -->
 		<section>
-			<h3>films</h3>
-			<ul>
-				<li>Nu in de bioscoop</li>
-
-				<li>Top 10</li>
-
-				<li>Voorverkoop</li>
-
-				<li>Voorpremiere</li>
-
-				<li>Coming soon</li>
-
-				<li>Filmtrailers</li>
-
-				<li>Dinner & Movie</li>
-
-				<li>Totaalaanbod Film</li>
-			</ul>
-		</section>
-
-		<!-- <section 16-alle vue cinemas footerlijst> -->
-
-		<section>
-			<h3>alle vue cinemas</h3>
-			<button>Vue Cinema</button>
-
-			<button aria-label="dropdown"><img src="images/iconarrowdown.svg" alt="iconarrowdown"></button>
+			<!-- <verstop h2> -->
+			<h2>links naar andere pagina's</h2>
 
 			<section>
+				<h3>films</h3>
 				<ul>
-					<li>Vue Alkmaar</li>
-					<li>Vue Alphen a/d Rijn</li>
-					<li>Vue Amersfoort</li>
-					<li>Vue Apeldoorn</li>
-					<li>Vue Arnhem</li>
-					<li>Vue Den Bosch</li>
-					<li>Vue Deventer</li>
-					<li>Vue Doetinchem</li>
+					<li>
+						<a href="#">
+							<!-- <div> -->
+							Nu in de bioscoop
+							<!-- </div> -->
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Top 10
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Voorverkoop
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Voorpremiere
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Coming soon
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Filmtrailers
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Dinner & Movie
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Totaalaanbod Film
+						</a>
+					</li>
 				</ul>
 			</section>
 
+			<section>
+				<h3>zakelijk</h3>
+				<ul>
+					<li>
+						<a href="#">
+							Zaalhuur
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Scholen
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Vouchers
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Doekreclame
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Partners
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Besloten filmvoorstelling
+						</a>
+					</li>
+				</ul>
+			</section>
+
+			<section>
+
+				<h3>vue</h3>
+
+				<ul>
+					<li>
+						<a href="#">
+							App
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Over Vue
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Verloren voorwerpen
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Contact
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Werken bij de Vue
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Veelgestelde vragen
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Nieuwsbrief
+						</a>
+					</li>
+				</ul>
+			</section>
 		</section>
 
-		<!-- <section 17-zakelijk footerlijst> -->
+		<!-- <section>
+				<h3>alle vue cinemas</h3>
+				<button>Vue Cinema</button>
+
+				<button aria-label="dropdown"><img src="images/iconarrowdown.svg" alt="iconarrowdown"></button> -->
+
+		<!-- <section>
+				<ul>
+					<li>
+						<a href="#">
+							Vue Alkmaar
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Vue Alphen a/d Rijn
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Vue Amersfoort
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Vue Apeldoorn
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Vue Arnhem
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Den Bosch
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Deventer
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Doetinchem
+						</a>
+					</li>
+				</ul>
+			</section> -->
+
+		<!-- <section 11-download de vue app via de app store of google play> -->
 
 		<section>
-			<h3>zakelijk</h3>
-			<ul>
-				<li>Zaalhuur</li>
-
-				<li>Scholen</li>
-
-				<li>Vouchers</li>
-
-				<li>Doekreclame</li>
-
-				<li>Partners</li>
-
-				<li>Besloten filmvoorstelling</li>
-			</ul>
-		</section>
-
-		<!-- <section 18-vue footerlijst> -->
-
-		<section>
-
-			<h3>vue</h3>
-
-			<ul>
-				<li>App</li>
-
-				<li>Over Vue</li>
-
-				<li>Verloren voorwerpen</li>
-
-				<li>Contact</li>
-
-				<li>Werken bij de Vue</li>
-
-				<li>Veelgestelde vragen</li>
-
-				<li>Nieuwsbrief</li>
-			</ul>
-		</section>
-
-		<!-- <section 19-download de vue app via de app store of google play> -->
-
-		<section>
-			<h3>download de vue app</h3>
+			<h2>download de vue app</h2>
 			<!--bron:https://www.flaticon.com/free-icon/apple_226769-->
 			<!--bron:https://www.flaticon.com/free-icon/apple_226769-->
-			<button>
-				<div>
-					<img src="images/apple.png" alt="apple">
-				</div>
-				<div>
-					App Store
-				</div>
-			</button>
-			<button>
-				<div>
-					<img src="images/googleplay.png" alt="googleplay">
-				</div>
-				<div>
-					Google Play
-				</div>
-			</button>
+			<a href="">
+				<!-- <div> -->
+				<img src="images/apple.png" alt="">
+				<!-- </div> -->
+				<!-- <div> -->
+				App Store
+				<!-- </div> -->
+			</a>
+			<a href="">
+				<!-- <div> -->
+				<img src="images/googleplay.png" alt="">
+				<!-- </div> -->
+				<!-- <div> -->
+				Google Play
+				<!-- </div> -->
+			</a>
 		</section>
 
-		<!-- <section 20-copyright> -->
+		<!-- <section 12-copyright> -->
 
 		<section>
 			<!--bron:https://fsymbols.com/copyright/-->
+			<!-- <verstop h2> -->
+			<h2>copyright</h2>
+			<!--bron:https://fsymbols.com/copyright/-->
 			<ul>
 				<li>
-					Disclaimer
+					<a href="#">
+						<!-- <div> -->
+						Disclaimer
+						<!-- </div> -->
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						Privacy
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						Cookievoorkeuren
+					</a>
 				</li>
 
 				<li>
-					Privacy
+					<a href="#">
+						Bezoekersvoorwaarden
+					</a>
 				</li>
 
 				<li>
-					Cookievoorkeuren
-				</li>
-
-				<li>
-					Bezoekersvoorwaarden
-				</li>
-
-				<li>
-					©Vue Cinemas 2022
+					<a href="#">
+						©Vue Cinemas 2022
+					</a>
 				</li>
 			</ul>
+
 		</section>
 
-		<!-- <section 21-partners van vue> -->
+		<!-- <section 13-partners van vue> -->
 
 		<section>
+			<!-- <verstop h2> -->
+			<h2>partners van Vue</h2>
 			<ul>
 				<li>
 					<img src="images/vue-international.png" alt="vue-international"></img>
