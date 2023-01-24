@@ -422,7 +422,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Eindgesprek (week 5)
 
-<details open>
+<details>
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
@@ -437,11 +437,41 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   -Custom properties
   <img src="readme-images/customproperties.png" width="375px" alt="customproperties">
 
-  -Hamburgermenu maken
-  <img src="readme-images/hamburgermenu.png" width="375px" alt="hamburgermenu">
+  -Meeste problemen kon ik ontdekken met de inspector
+  <img src="readme-images/inspector.png" width="375px" alt="inspector">
 
-  -Animeren iconen
-   <img src="readme-images/animereniconen.png" width="375px" alt="animereniconen">
+
+  ### Dit was lastig/Is niet gelukt:
+  Korte omschrijving met plaatjes
+
+  Ik vond het nog lastig om goede namen te geven aan de custom properties.
+
+
+
+  -Mediaqueries ben ik nog niet helemaal uitgekomen/aan toe gekomen
+  <img src="readme-images/mediaqueries.png" width="375px" alt="mediaqueries.png">
+
+
+</details>
+
+## Herkansing (week 5)
+
+<details open>
+  <summary>uitwerken voor herkansing</summary>
+
+  ### Je uitkomst - karakteristiek screenshots:
+
+  <img src="readme-images/uitkomstsiteherkansing.png" width="375px" alt="uitkomst site herkansing">
+
+  ### Dit ging goed/Heb ik geleerd: 
+  Korte omschrijving met plaatjes
+
+  Ik heb de hele site meer responsive gemaakt, zie hieronder:
+
+  Ook heb ik veel meer gebruik gemaakt van de custom properties. Ik heb een light-darkmode knop gemaakt en de kleuren van de site op elke modus afgestemd, mbv de custom properties. 
+
+  -Custom properties
+  <img src="readme-images/customproperties.png" width="375px" alt="customproperties">
 
   -Meeste problemen kon ik ontdekken met de inspector
   <img src="readme-images/inspector.png" width="375px" alt="inspector">
@@ -450,20 +480,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
 
-  -Mediaqueries ben ik nog niet helemaal uitgekomen/aan toe gekomen
-  <img src="readme-images/mediaqueries.png" width="375px" alt="mediaqueries.png">
-
-  -Grid vind ik nog lastig
-  <img src="readme-images/grid.png" width="375px" alt="grid">
-
-  -Trailerpagina niet af gekregen
-  <img src="readme-images/trailerpaginauitkomst.png" width="375px" alt="trailerpaginauitkomst">
-
-  -Footer van de trailerpagina lukt niet om dezelfde layout te geven als die van index.html (ligt dit aan het css bestand?)
-  <img src="readme-images/trailerpaginafooter.png" width="375px" alt="trailerpaginafooter">
+  Ik vind het nog lastig om de custom properties de juiste namen te geven, dus hier en daar kan het verwarrend overkomen.Uit 
 
 </details>
-
 
 ## Bronnenlijst
 
@@ -503,5 +522,37 @@ html-css-display-text-and-wrap-it-propertly-in-two-columns-and-a-single-row*/
 https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries*/
 
 https://kinsta.com/nl/blog/responsive-webdesign/*/
+
+https://www.flaticon.com/free-icon/apple_226769
+
+bron:https://fsymbols.com/copyright/
+
+bron:https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details-->
+
+bron https://codepen.io/Agnes-Verhagen/pen/mdKGxpM -->
+
+bron:https://codepen.io/ahmadbassamemran/pen/rNjMXqg -->
+
+https://www.freecodecamp.org/news/span-html-how-to-use-the-span-tag-with-css/-->
+bron:https://www.w3schools.com/html/html_quotation_elements.asp -->
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-snap-type-->
+bron:https://codepen.io/simevidas/pen/PJMENp-->
+		
+
+<https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video> -->
+						<!-- <https://www.w3schools.com/html/html5_video.asp> -->
+						<!-- <https://yt5s.io/en1/youtube-to-mp4> -->
+
+/*lists*/
+/*bron: https://www.w3schools.com/howto/howto_css_list_without_bullets.asp */
+/*lijstvan trailers*/
+
+/*bron:https://codepen.io/Agnes-Verhagen/pen/NWBNzyY*/
+
+/*bron:https://www.handleidinghtml.nl/css/eigenschappen/white-space/beschrijving.html*/
+/*bron:https://stackoverflow.com/questions/25125793/html-css-display-text-and-wrap-it-propertly-in-two-columns-and-a-single-row*/
+
+/*bron:https://codepen.io/shooft/pen/BarqVdR*/
 
 </details>
