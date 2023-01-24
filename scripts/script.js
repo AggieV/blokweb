@@ -3,57 +3,44 @@ console.log("hallo");
 
 /*algemeen*/
 
-window.addEventListener('scroll', () => {
-	document.body.style.setProperty('--scroll', window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
-  }, false);
+/*search menu mobile*/
 
-/*darkmode/lightmode switch*/
+let deSearchButton = document.querySelector("header ul li:nth-of-type(7) button");
+let deSearchField = document.querySelector("header ul li:nth-of-type(7) input");
 
-// let LightModeButton = document.querySelectorAll("section > button");
+deSearchButton.addEventListener("click", klapUit);
 
-// LightModeButton.forEach(); {
-// 	LightModeButton.addEventListener("click", toggleMenu);
-// }
-
-// // LightModeButtons.forEach(); {
-// // 	LightModeButton.addEventListener("click", toggleMenu);
-// // }
-
-// function toggleMenu() {
-// 	let deButtonWaaropGekliktIs = this; 
-// 	let deSectionWaarDeButtonInZit = deButtonWaaropGekliktIs.closest("section");
-// 	body.classList.toggle("open");
-// }
-
-/*moviepass*/
-/*scroll animation icons voordelen vue moviepass*/
-/*bron:https://css-tricks.com/books/greatest-css-tricks/scroll-animation/*/
-
-
-/*likebutton reviews*/
-
-let deLikeButton = document.querySelector("section:nth-of-type(7) button");
-console.log("deLikeButton");
-
-deLikeButton.addEventListener("click", wordRood);
-
-function wordRood(){
-deLikeButton.classList.toggle("roodworden");
+function klapUit(){
+	deSearchField.classList.toggle("open");
 }
 
+/*lightmode switch*/
+
+let lightModeButton = document.querySelector("header ul li:first-of-type button");
+let body = document.querySelector("body");
+
+lightModeButton.addEventListener("click", wordLicht);
+
+function wordLicht() {
+	body.classList.toggle("light-mode");
+
+	if (lightModeButton.innerHTML === "Light mode") {
+		lightModeButton.innerHTML = "Dark mode";
+	  } else {
+		lightModeButton.innerHTML = "Light mode";
+	  }
+}
 
 /*hamburgermenu*/
 
-let hetHamburgerMenu = document.querySelector("header > button");
+let hetHamburgerMenu = document.querySelector("header ul li:nth-of-type(8) button");
 let nav = document.querySelector("header nav");
-console.log("hamburgermenu");
 let sluitButton = document.querySelector("header nav button");
-console.log("hamburgermenu");
-
 
 hetHamburgerMenu.addEventListener("click", klapMenuOpen);
 
 function klapMenuOpen() {
+    nav.classList.remove("menudichtklappen"); 
     nav.classList.add("menuopenklappen");
 }
 
@@ -64,35 +51,31 @@ function klapMenuDicht() {
     nav.classList.add("menudichtklappen");
 }
 
-/*dropdown veelgestelde vragen */
+/*likebutton reviews*/
 
-let deMenuButtons = document.querySelectorAll("section:nth-child(5) ul li:first-child > button, section:nth-child(5) ul li:nth-child(2) > button, section:nth-child(5) ul li:nth-child(3) > button,");
-let deMenuPs = document.querySelectorAll("section:nth-child(5) ul > section > p");
+let deLikeButton = document.querySelector("section:nth-of-type(3) button span");
+console.log("deLikeButton");
+
+deLikeButton.addEventListener("click", wordRood);
+
+function wordRood(){
+	deLikeButton.classList.toggle("roodworden");
+}
+
+/*moviepass pagina*/
+/*dropdown veelgestelde vragen */
+button1 = "main section:nth-of-type(4) article:first-child ul li:first-child,"
+button2 = "main section:nth-of-type(4) article:first-child ul li:nth-child(2),"
+button3 = "main section:nth-of-type(4) article:first-child ul li:nth-child(3)"
+let deMenuButtons = document.querySelectorAll(button1+button2+button3);
 
 deMenuButtons.forEach(deMenuButton => {
 	deMenuButton.addEventListener("click", toggleMenu);
 });
 
-deMenuPs.forEach(deMenuPs => {
-	deMenuPs.addEventListener("click", toggleMenu);
-});
-
 function toggleMenu() {
 	let deButtonWaaropGekliktIs = this; 
-	let deSectionWaarDeButtonInZit = deButtonWaaropGekliktIs.closest("section");
+	let deSectionWaarDeButtonInZit = deButtonWaaropGekliktIs.closest("li");
 	deSectionWaarDeButtonInZit.classList.toggle("open");
 }
 
-
-/*maak knop van oranje naar blauw en weer terug*/
-
-// var deEersteButton = document.querySelector("section:nth-of-type(3) button:first-child");
-// console.log("deEersteButton");
-
-// deEersteButton.addEventListener("click", wordBlauw);
-
-// function wordBlauw(){
-//     deEersteButton.classList.toggle("blauwworden");
-// }
-
-/*trailers*/
