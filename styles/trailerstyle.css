@@ -89,6 +89,7 @@ section:first-of-type ul li div {
 	margin: auto;
 	position: relative;
 	top: -6em;
+	/* pointer-events: none; */
 }
 
 section:first-of-type>ul>li>div>ul>li:first-child {
@@ -214,18 +215,21 @@ section:nth-of-type(2) div img:nth-of-type(2) {
 	top: 6em;
 	left: 2em;
 	animation-delay: 1s;
+	transform: rotate(40deg);
 }
 
 section:nth-of-type(2) div img:nth-of-type(3) {
 	top: -11em;
 	left: 5em;
 	animation-delay: 2s;
+	transform: rotate(40deg);
 }
 
 section:nth-of-type(2) div img:nth-of-type(4) {
 	top: 4em;
 	left: 7em;
 	animation-delay: 3s;
+	transform: rotate(160deg);
 }
 
 @keyframes pulse {
