@@ -1,0 +1,480 @@
+/*css voor de moviepasspagina*/
+
+/*orange gradient background*/
+
+main {
+	background-image: var(--background-image);
+	width: 100vw;
+	background-size: 100% 40em;/*100% breed, 40em hoog*/
+	background-repeat: no-repeat;
+}
+
+/*verborgen h2, h3 en h4 main*/
+
+main section:first-of-type article:first-of-type h2,
+main section:nth-of-type(2) h2,
+main section:nth-of-type(3) h2 {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 0.06em;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 0.06em;
+	color: var(--color-white);
+	font-size: 1.25em;
+	font-weight: normal;
+	text-transform: uppercase;
+	text-align: left;
+	margin-left: 1em;
+}
+
+/*section 1*/
+
+@media (min-width: 920px) {
+	main section:first-of-type {
+		display: grid;
+		grid-auto-columns: minmax(0, 1fr);
+		grid-auto-flow: column;
+	}
+}
+
+/*section 1 article 1-films die nu draaien*/
+
+main section:first-child article:first-of-type ul {
+	display: flex;
+	align-items: center;
+	overflow: scroll;
+	margin: 0 2em 0 2em;
+	padding: 0;
+	gap: 0.5em;
+	margin-left: 1em;
+	margin-top: 6em;
+}
+
+main section:first-child article:first-of-type img {
+	width: 7.5em;
+	opacity:var(--img-brightness);
+}
+
+main section:first-child article:first-of-type img:hover {
+	transform: translateY(-0.1em);
+}
+
+/*section 1 article 2-vue movie pass voordelen*/
+/*h2-vue movie pass*/
+
+main section:first-of-type article:nth-of-type(2) h2 {
+	color: var(--color-orange);
+	font-size: 1.52em;
+	font-weight: normal;
+	text-align: center;
+	text-transform: uppercase;
+	text-align: left;
+	margin-top: 3em;
+	margin-bottom: -0.6em;
+	margin-left:1em;
+
+}
+
+/*section 1 article 2-vue movie pass voordelen*/
+/*onbeperkt naar de film voor 19.50 p/m*/
+
+main section:first-of-type article:nth-of-type(2) ul {
+	display: flex;
+	flex-direction: column;
+
+}
+
+main section:first-of-type article:nth-of-type(2) ul li {
+	display: flex;
+	flex-direction: row;
+}
+
+/*section 1 article 2-vue movie pass voordelen*/
+/*voordelen*/
+
+main section:first-of-type article:nth-of-type(2) li p { 
+	color: var(--color-text-otherparts);
+	margin-left: 1em;
+}
+
+/*section 1 article 2-vue movie pass voordelen*/
+/*icoontjes voordelen moviepass animatie*/
+/*bron:https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timing-function*/
+/*bron:https://css-tricks.com/a-complete-guide-to-calc-in-css/*/
+
+main section:first-of-type article:nth-of-type(2) ul li img { 
+	margin-right: 0.1em;
+	width: 1.5em;
+	margin-left: -1em;
+	background-color: transparent;
+	display: inline-block;
+	animation: rotate 1s linear infinite;
+	animation-duration: 5s;
+	animation-delay: calc(1s + 15ms);
+}
+
+main section:first-of-type article:nth-of-type(2) h3 {
+	margin-left: 1em;
+}
+
+@keyframes rotate {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+/*buttons*/
+/*bronnen:https://www.javatpoint.com/how-to-center-a-button-in-css*/
+
+@media (min-width: 920px) {
+	main section:first-of-type article:nth-of-type(2) div {
+	display: flex;
+	flex-direction: row;
+	}
+	/* main section:first-of-type article:nth-of-type(2) div button {
+		margin-right: 1em;
+	} */
+
+	main section:first-of-type article:nth-of-type(2) div a {
+		margin-right: 1em;
+	}
+}
+
+/*section 2-vue movie pass voordelen*/
+/*neem abonnement knop*/
+
+@media (max-width: 919px) { /*media query for "normale" grootte, want je kan niet een standaard flex-direction hebben en een media query die de grootte overschrijft*/
+	main section:first-of-type article:nth-of-type(2) div {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+/* main section:first-of-type article:nth-of-type(2) div button */
+
+main section:first-of-type article:nth-of-type(2) div a {
+	white-space: nowrap;
+	color: var(--color-text-button);
+	background-color: var(--color-orange);
+	margin-bottom: 0.5em;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	text-align: center;
+	border-radius: 0.4em;
+	width: 17em;
+	padding: 0.5em 1em 0.5em;
+	vertical-align: middle;
+}
+
+/* main section:first-of-type article:nth-of-type(2) div button:hover  */
+main section:first-of-type article:nth-of-type(2) div a:hover,
+main section:first-of-type article:nth-of-type(2) div a:nth-of-type(2):hover {
+	background-color: var(--color-accent);
+	color: var(--color-white);
+}
+
+main section:first-of-type article:nth-of-type(2) div a:focus,
+main section:first-of-type article:nth-of-type(2) div a:nth-of-type(2):focus {
+	box-shadow: 0 0 0 0.1em var(--color-accent);
+	color: var(--color-white);
+}
+
+main section:first-of-type article:nth-of-type(2) div a:active,
+main section:first-of-type article:nth-of-type(2) div a:nth-of-type(2) {
+	background-color: var(--color-accent);
+	color: var(--color-white);
+	transform: translateY(0.1em);
+}
+
+/*section 2-vue movie pass voordelen*/
+/*geef cadeau knop*/
+
+main section:first-of-type article:nth-of-type(2) div a:nth-of-type(2) {
+	text-transform: uppercase;
+	font-size: 1.25em;
+	background-color: var(--color-button-grey);
+	color: var(--color-text-otherparts);
+	border: 0.1em solid var(--color-orange);
+}
+
+/*section 2-speciaal voor onze échte filmliefhebbers 
+en nog 2 artikels*/
+
+main section:nth-of-type(2) {
+	margin-top: 7em;
+	padding:0;
+	margin-right:2em;
+}
+
+main section:nth-of-type(2) ul {
+	display: block;
+	margin:0;
+}
+
+/*section 2-speciaal voor onze échte filmliefhebbers 
+en nog 2 artikels*/
+/*plaatjes*/
+
+main section:nth-of-type(2) img {
+	width: 22em;
+	margin: auto;
+	display: block;
+	opacity:var(--img-brightness);
+}
+
+@media (min-width: 920px) {
+	main section:nth-of-type(2) ul {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media (min-width: 1080px) {
+	main section:nth-of-type(2) ul {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+
+
+/*section 3-quotes*/
+/*quote van Giamo, bezoeker*/
+
+main section:nth-of-type(3) {
+	background-color: var(--color-background-section);
+	border-top: solid 0.1em var(--color-orange);
+	border-bottom: solid 0.1em var(--color-orange);
+}
+
+main section:nth-of-type(3) {
+	margin-top: 4em;
+}
+
+main section:nth-of-type(3) div {
+	margin-top: 4em;
+	margin-left: 1em;
+	margin-right: 1em;
+}
+
+main section:nth-of-type(3) blockquote {
+	display: grid;
+	justify-content: center;
+	text-align: center;
+	color: var(--color-white);
+	line-height: 1.5em;
+	font-size: 1.25em;
+	max-width: 35em;
+	margin: auto;
+}
+
+/*section 3-quotes*/
+/*naam van reviewer Giamo*/
+
+main section:nth-of-type(3) p {
+	color: var(--color-namereviewer);
+	font-size: 1.25em;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+main section:nth-of-type(3) p::before {
+	content: "-";
+}
+
+/*section 3-quotes*/
+/*like deze review*/
+
+main section:nth-of-type(3) button {
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 1em;
+	margin: auto;
+	font-style: normal;
+	justify-content: center;
+	margin-bottom: 4em;
+	color: var(--color-text-otherparts);
+	font-size: 1em;
+	margin-top:2em;
+}
+
+main section:nth-of-type(3) button span {
+	position: relative;
+	top: 2em;
+}
+
+/*section 3-quotes*/
+/*likebutton*/
+
+/* als een review ge-liked is */
+/* de styling voor het hartje */
+
+main section:nth-of-type(3) button span {
+	min-height: 2.5rem;
+	width: 3em;
+	z-index: 200;
+	transform: scale(3.5);
+	appearance: none;
+	color: var(--color-white);
+	background-color: transparent;
+	border: none;
+	border-radius: .5rem;
+	cursor: pointer;
+	transition: transform .3s;
+	grid-column-start: 2;
+	grid-row: 1/3;
+	justify-self: end;
+	align-self: start;
+	aspect-ratio: 1/1;
+}
+
+main section:nth-of-type(3) button span:active {
+	transform: translatey(0.06em);
+	transform: rotateY(180deg);
+}
+
+main section:nth-of-type(3) button span.roodworden {
+	border: blur(0.13em) var(--color-white);
+	color: var(--color-likebuttonactive);
+	transition: 0.5s;
+}
+
+/*section 4-veel gestelde vragen*/
+
+@media (min-width: 920px) {
+	main section:nth-of-type(4) {
+		display:grid;
+		grid-template-columns:1fr 1fr;
+	}
+}
+
+/*article 1-veelgestelde vragen*/
+/*vraag 1, vraag 2, vraag 3*/
+
+main section:nth-of-type(4) article:first-of-type ul li div {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	height: 2em;
+}
+
+main section:nth-of-type(4) article:first-of-type ul li {
+	margin-top: 4em;
+	border: solid 0.1em var(--color-button);
+	border-radius: 0.4em 0.4em 0.4em;
+	margin-left: 1em;
+	margin-right: 1em;
+	background-color: var(--color-background-section);
+	
+	/*uitgeklapt deel*/
+	flex-grow: 1;
+	margin: 1em;
+	color: var(--color-orange);
+	margin-left: 1.5em;
+	cursor: pointer;
+}
+
+main section:nth-of-type(4) article:first-of-type ul li h2 {
+	color: var(--color-white);
+	font-size: 1.25em;
+	font-weight: normal;
+	text-align: center;
+	text-transform: uppercase;
+	text-align: left;
+	margin-top: 3em;
+}
+
+main section:nth-of-type(4) article:first-of-type ul li h3 {
+	font-size: 1.2em;
+	text-transform:none;
+}
+
+main section:nth-of-type(4) article:first-of-type ul li article p{
+	color: var(--color-questiondropdown);
+	margin-left: 1em;
+	margin-right: 1em;
+}
+
+/*dropdown styling 'veelgestelde vragen'*/
+
+main section:nth-of-type(4)article:first-of-type ul {
+	padding: 0;
+	margin: 0;
+}
+
+/*arrow button voor dropdown*/
+main section:nth-of-type(4) article:first-of-type ul li button img {
+	width: 3em;
+	aspect-ratio: 1/1;
+	padding: 0;
+	cursor: pointer;
+	transition: var(--uitklaptijd);
+	background-color: var(--bluedotforcontrastwitharrow);
+	border-radius: var(--bluedotforcontrastwitharrow-border-radius);
+	margin-top: 1em;
+}
+
+/* uitklap menu arrow */
+/*tijd waarin arrow omdraait bij in- en uitklappen*/
+/*arrow roteert rechtsom van onder naar boven toe bij uitklappen*/
+main section:nth-of-type(4) article:first-child ul li.open button img {
+	transition: var(--uitklaptijd);
+	transform: rotate(-180deg);
+}
+
+/*uitklapdeel duwt andere secties netjes naar onder en gaat er niet overheen*/
+main section:nth-of-type(4) article:first-child ul li article {
+	width: 100%;
+	list-style: none;
+	max-height: 0em;
+	transition: max-height 0.5s; /*veranderd van: transition: var(--uitklaptijd);*/
+	overflow: hidden;
+}
+
+/*uitklaptijd van uitklapdeel*/
+main section:nth-of-type(4) article:first-child ul li.open article {
+	max-height: 100em; /*changed from 20em to 100em*/
+	transition: max-height 0.5s; /*veranderd van: transition: var(--uitklaptijd); */
+}
+
+main section:nth-of-type(4) article:first-child ul {
+	padding: 0;
+	margin: 0;
+}
+
+main section:nth-of-type(4) article:first-child ul li h3 {
+	color: var(--color-white);
+	margin-left: 1em;
+} 
+
+/*section 4-veelgestelde vragen*/
+/*links in 'veelgestelde vragen,' 'voorwaarden,' & 'overige vragen'*/
+
+main section:nth-of-type(4) article {
+	margin-top: 4em;
+}
+
+main section:nth-of-type(4) article a {
+	display: block;
+	color: var(--color-orange);
+	font-weight: 400;
+	margin-left: 1.5em;
+	margin-bottom: 1.5em;
+}
+main section:nth-of-type(4) article a:hover {
+	color: var(--color-accent);
+}
+
+/*section 4 article 2-mailadres klantenservice voor overige vragen*/
+/*staat jouw vraag en/of antwoord er niet bij? Neem dan contact met ons op middels het e-mailadres*/
+
+main section:nth-of-type(4) article:nth-child(3) p {
+	color: var(--color-text-otherparts);
+	margin-left:1.5em;
+}

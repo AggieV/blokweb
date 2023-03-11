@@ -1,0 +1,240 @@
+/*css voor de trailerpagina*/
+
+/*lists*/
+/*bron: https://www.w3schools.com/howto/howto_css_list_without_bullets.asp */
+/*lijstvan trailers*/
+
+/*bron:https://codepen.io/Agnes-Verhagen/pen/NWBNzyY*/
+
+/*animatie springende popcorn*/
+
+main section:first-of-type>img:first-child {
+	content: var(--img-popcorn);
+	width: 5em;
+	display: block;
+	margin: auto;
+	margin-bottom: -5em;
+	margin-top: 10em;
+	animation-name: jumppopcorn;
+	animation-duration: .5s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	/* met easing spelen: https://matthewlein.com/tools/ceaser */
+	animation-timing-function: cubic-bezier(0.125, 0.995, 1.000, 1);
+}
+
+@keyframes jumppopcorn {
+	0% {
+		transform: translateY(0);
+	}
+
+	100% {
+		transform: translateY(-8rem);
+	}
+}
+
+/*lijst met trailers*/
+
+main section:first-of-type ul {
+	margin-top: 5em;
+	padding: 0;
+}
+
+/*trailers*/
+
+video {
+	display: flex;
+	width: 90%;
+	max-width: 60em;
+	margin: auto;
+	cursor: pointer;
+}
+
+/*link: 'bekijk filmpagina'*/
+
+main section:first-of-type ul li a {
+	color: var(--color-orange); 
+}
+
+main section:first-of-type ul li a:hover {
+	color: var(--color-accent);
+}
+
+/*plaatje film, nu in de bioscoop, kijkwijzericonen, link naar filmpagina*/
+
+section:first-of-type ul li div {
+	color: var(--color-white);
+	font-size: 1em;
+}
+
+section:first-of-type>ul>li>div>a>img {
+	display: block;
+	width: 3.8em;
+	height: auto;
+	margin-right: 1em;
+	padding: 0;
+}
+
+section:first-of-type>ul>li>div>a>img:hover {
+	cursor: pointer;
+	opacity: 70%;
+}
+
+section:first-of-type ul li div {
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	max-width: 60em;
+	width: 90%;
+	margin: auto;
+	position: relative;
+	top: -6em;
+}
+
+section:first-of-type>ul>li>div>ul>li:first-child {
+	background-color: var(--color-accent);
+}
+
+section:first-of-type>ul>li>div>ul>li:nth-of-type(2) {
+	text-transform: uppercase;
+	font-size: 1.2em;
+	color: var(--color-text-otherparts);
+}
+
+section:first-of-type ul li div ul li ul {
+	display: flex;
+	padding: 0;
+	gap: 1em;
+	margin: 0;
+}
+
+section:first-of-type ul li div ul li ul img {
+	width: 1.5em;
+}
+
+/*koppen*/
+
+main h1 {
+	color: var(--color-text-otherparts);
+	text-align: center;
+	font-size: 1.13em;
+	font-weight: bold;
+	text-shadow: 1em, 1em, 1em, 1em, black;
+	margin-top: 6em;
+	text-transform: none;
+}
+
+main h2 {
+	text-align: center;
+	margin: auto;
+	margin-bottom: 1em;
+}
+
+a {
+	text-align: left;
+	font-size: 1em;
+}
+
+/*section 2-benieuwd naar meer?*/
+
+main section:nth-of-type(2) {
+	background-color: var(--color-background-section);
+	border-top: solid 0.1em var(--color-orange);
+	border-bottom: solid 0.1em var(--color-orange);
+	padding-top: 6em;
+	padding-bottom: 8em;
+	margin-bottom: 2em;
+}
+
+main section:nth-of-type(2) h2 {
+	color: var(--color-white);
+	font-size: 1.52em;
+	font-weight: normal;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+main section:nth-of-type(2) button img {
+	background-color: var(--color-background);
+}
+
+/*section 2-benieuwd naar meer?*/
+/*button-bekijk filmaanbod*/
+
+section:nth-of-type(2)>a {
+	padding: 0.8em 1.5em 0.8em;
+	color: var(--color-text-button);
+	width: 17em;
+	border-radius: 0.4em 0.4em 0.4em;
+	background-color: var(--color-button);
+	cursor: pointer;
+	display: flex;
+	gap: 1em;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	border-radius: 0.4em;
+	position: relative;
+	z-index: 10;
+	vertical-align: middle;
+}
+
+section:nth-of-type(2)>a:hover {
+	background-color: var(--color-accent);
+	color: var(--color-white);
+}
+
+section:nth-of-type(2)>a:focus {
+	box-shadow: 0 0 0 0.1em var(--color-accent);
+	color: var(--color-white);
+}
+
+section:nth-of-type(2)>a:active {
+	background-color: var(--color-accent);
+	color: var(--color-white);
+	transform: translateY(0.1em);
+}
+/*popcorn illustration & animation*/
+
+section:nth-of-type(2) div img {
+	width: 3em;
+	position: relative;
+	animation: pulse 1.2s linear infinite alternate;
+	transition-timing-function: ease-in-out;
+}
+
+section:nth-of-type(2) div img:first-child {
+	top: 1em;
+	left: 2em;
+}
+
+section:nth-of-type(2) div img:nth-of-type(2) {
+	top: 6em;
+	left: 2em;
+	animation-delay: 1s;
+}
+
+section:nth-of-type(2) div img:nth-of-type(3) {
+	top: -11em;
+	left: 5em;
+	animation-delay: 2s;
+}
+
+section:nth-of-type(2) div img:nth-of-type(4) {
+	top: 4em;
+	left: 7em;
+	animation-delay: 3s;
+}
+
+@keyframes pulse {
+
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}

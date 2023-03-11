@@ -1,0 +1,756 @@
+<!doctype html>
+<html lang="nl">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Agnes Verhagen">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>vuecinemas - trailerpagina</title>
+
+	<link href="styles/styles.css" rel="stylesheet">
+	<link href="styles/trailerstyle.css" rel="stylesheet">
+	<link rel="icon" type="image/svg+xml" href="images/faviconvue.png">
+</head>
+
+<body>
+
+	<header>
+		<h1>
+			<a href="index.html">
+				<img src="images/vue-logo.png" alt="vue-logo"></img>
+			</a>
+		</h1>
+
+		<ul>
+			<li>
+				<button aria-label="switchdarkandlightmode">Light mode</button>
+			</li>
+
+			<li>
+				<details>
+					<summary>Alle Vue Cinemas</summary>
+					<ul>
+						<li>
+							<a href="#">
+								Vue Alkmaar
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Vue Alphen a/d Rijn
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Vue Amersfoort
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Vue Apeldoorn
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Vue Arnhem
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Vue Den Bosch
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Vue Deventer
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Vue Doetinchem
+							</a>
+						</li>
+					</ul>
+				</details>
+			</li>
+
+			<li>
+				<details>
+					<summary>Films</summary>
+					<ul>
+						<li>
+							<a href="#">
+								Nu in de bioscoop
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Top 10
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Voorverkoop
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Voorpremière
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Coming soon
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Filmtrailers
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Dinner & Movie
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Totaalaanbod Film bij Vue
+							</a>
+						</li>
+					</ul>
+				</details>
+			</li>
+
+			<li>
+				<details>
+					<summary>Specials & Events</summary>
+					<ul>
+						<li>
+							<a href="#">
+								Ladies Night
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Movie Pass Exclusive
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Marathon
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Girls Night
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Meet The Cast
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Soft Sound Screening
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Sneak Preview
+							</a>
+						</li>
+					</ul>
+				</details>
+			</li>
+
+			<li>
+				<details>
+					<summary>Kids</summary>
+					<ul>
+						<li>
+							<a href="#">
+								Kinderfilms
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Kinderfeestjes
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Vue Amersfoort
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Mega Kids Weekend
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Mini Mornings
+							</a>
+						</li>
+					</ul>
+				</details>
+			</li>
+
+			<li>
+				<details>
+					<summary>Belevingen</summary>
+					<ul>
+						<li>
+							<a href="#">
+								Dolby Atmos
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Dolby Cinema
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								XD
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								VIP seating
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								DeLuxe Seating
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								D-box
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								3D
+							</a>
+						</li>
+					</ul>
+				</details>
+			</li>
+
+			<li>
+				<input type="text" name="searchfield" placeholder="Search for...">
+				<button aria-label="search"><img src="images/search-icon.png" alt="search-icon"></button>
+			</li>
+
+			<li>
+				<button aria-label="menu"><img src="images/hamburgermenu.png" alt="hamburgermenu"></button>
+			</li>
+		</ul>
+
+		<nav>
+			<img src="images/vue-logo.png" alt="vue-logo">
+			<button aria-label="closemenu"><img src="images/sluitbutton-icon.png" alt="sluitbutton-icon"></button>
+			<ul>
+				<li>
+					<a href="#">
+						<img src="images/mijnprofiel-icon.png" alt="">
+						<div>Log in</div>
+						<div>Mijn Vue</div>
+						<img src="images/arrow-icon.svg" alt="">
+					</a>
+				</li>
+
+				<li>
+					<a href="trailers.html">
+						<img src="images/trailer-icon.svg" alt="">
+						Trailers
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img src="images/specials&events-icon.svg" alt="">
+						Specials & Events
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img src="images/kids-icon.svg" alt="">
+						Kids
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img src="images/belevingen-icon.svg" alt="">
+						Belevingen
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img src="images/tickets-icon.svg" alt="">
+						Tickets
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img src="images/movie-pass-icon.svg" alt="">
+						Moviepass
+					</a>
+				</li>
+
+				<ul>
+					<li>
+						<a href="#">
+							Giftcards
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Zakelijk
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Klantenservice
+						</a>
+					</li>
+				</ul>
+
+			</ul>
+
+		</nav>
+	</header>
+
+	<main>
+
+		<!--section 1-nieuwste trailers-->
+
+		<section>
+
+			<img aria-label="jump" src="images/popcornbak.png" alt="">
+
+			<h1>Scroll om trailers te zien</h1>
+
+			<ul>
+				<!-- <video controls> -->
+				<li>
+					<video controls muted>
+						<source src="assets/avatarthewayofwater.mp4" type="video/mp4">
+					</video>
+
+					<div>
+						<a href="#">
+							<img src="images/avatarposter.jpeg" alt="link naar pagina van avatar">
+						</a>
+
+						<ul>
+							<li>Nu in de bioscoop</li>
+							<li>Avatar: the way of water</li>
+							<li>
+								<ul>
+									<li>
+										<img src="images/12jaar.png" alt="">
+									</li>
+									<li>
+										<img src="images/vechten.png" alt="">
+									</li>
+									<li>
+										<img src="images/eng.png" alt="">
+									</li>
+									<li>
+										<img src="images/schreeuwen.png" alt="">
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">Bekijk filmpagina</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<video controls muted>
+						<source src="assets/missionimpossible-deadreckoning.mp4" type="video/mp4">
+					</video>
+
+					<div>
+						<a href="#">
+							<img src="images/missionimpossibleposter.jpeg"
+								alt="link naar pagina van mission impossible">
+						</a>
+
+						<ul>
+							<li>Coming soon</li>
+							<li>Mission impossible-dead reckoning part one</li>
+							<li>
+								<ul>
+									<li>
+										<img src="images/12jaar.png" alt="">
+									</li>
+									<li>
+										<img src="images/vechten.png" alt="">
+									</li>
+									<li>
+										<img src="images/schreeuwen.png" alt="">
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">Bekijk filmpagina</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<video controls muted>
+						<source src="assets/degelaarsdekat2.mp4" type="video/mp4">
+					</video>
+
+					<div>
+						<a href="#">
+							<img src="images/degelaarsdekatposter.jpeg" alt="link naar pagina van degelaarsdekat2">
+						</a>
+
+						<ul>
+							<li>Nu in de bioscoop</li>
+							<li>De gelaarsde kat 2: de laatste wens</li>
+							<li>
+								<ul>
+									<li>
+										<img src="images/vechten.png" alt="">
+									</li>
+									<li>
+										<img src="images/eng.png" alt="">
+									</li>
+								</ul>
+							</li>
+							<li><a href="#">Bekijk filmpagina</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+
+		</section>
+
+		<!--section 2-benieuwd naar meer?-->
+
+		<section>
+			<h2>Benieuwd naar meer?</h2>
+
+			<a href="#">
+				<img src="images/trailer-icon.svg" alt="">
+				Bekijk filmaanbod
+			</a>
+
+			<div>
+				<img src="images/popcornhapje.png" alt="">
+				<img src="images/popcornhapje.png" alt="">
+				<img src="images/popcornhapje.png" alt="">
+				<img src="images/popcornhapje.png" alt="">
+			</div>
+
+		</section>
+
+	</main>
+
+	<!--footer gedeelte-->
+
+	<footer>
+
+		<!--footer section 1 'volg ons ook via'-->
+		<section>
+
+			<h2>volg ons ook via</h2>
+
+			<ul>
+				<li>
+					<a href="#">
+						<img src="images/facebook-icon.svg" alt="">
+						Facebook
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img src="images/twitter-icon.svg" alt="">
+						Twitter
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img src="images/instagram-icon.svg" alt="">
+						Instagram
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img src="images/tiktok-icon.svg" alt="">
+						TikTok
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img src="images/youtube-icon.svg" alt="">
+						YouTube
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img src="images/blog-icon.svg" alt="">
+						Blog
+					</a>
+				</li>
+			</ul>
+
+		</section>
+
+		<!--footer section 2 'schrijf je in voor onze nieuwsbrief'-->
+		<section>
+			<h2>wees welkom bij de vuefamilie</h2>
+			<p>Schrijf je in voor onze nieuwsbrief.</p>
+			<form>
+				<input type="email" placeholder="E-mailadres" />
+				<button>aanmelden</button>
+			</form>
+		</section>
+
+		<!--footer section 3 'footerlijst films, zakelijk en vue'-->
+		<section>
+			<!--h2 is verstopt-->
+			<h2>links naar andere pagina's</h2>
+
+			<section>
+				<h3>films</h3>
+				<ul>
+					<li>
+						<a href="#">
+							Nu in de bioscoop
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Top 10
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Voorverkoop
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Voorpremiere
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Coming soon
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Filmtrailers
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Dinner & Movie
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Totaalaanbod Film
+						</a>
+					</li>
+				</ul>
+			</section>
+
+			<section>
+				<h3>zakelijk</h3>
+				<ul>
+					<li>
+						<a href="#">
+							Zaalhuur
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Scholen
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Vouchers
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Doekreclame
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Partners
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Besloten filmvoorstelling
+						</a>
+					</li>
+				</ul>
+			</section>
+
+			<section>
+				<h3>vue</h3>
+				<ul>
+					<li>
+						<a href="#">
+							App
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Over Vue
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Verloren voorwerpen
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Contact
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Werken bij de Vue
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Veelgestelde vragen
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Nieuwsbrief
+						</a>
+					</li>
+				</ul>
+			</section>
+
+		</section>
+
+		<!--footer section 4 'download de vue app via de app store of google play'-->
+		<section>
+			<h2>download de vue app</h2>
+			<ul>
+				<li>
+					<a href="">
+						<img src="images/apple.png" alt="">
+						App Store
+					</a>
+					<a href="">
+						<img src="images/googleplay.png" alt="">
+						Google Play
+					</a>
+				</li>
+			</ul>
+		</section>
+
+		<!--footer section 5 'copyright'-->
+		<section>
+			<!-- <h2 is verstopt> -->
+			<h2>copyright</h2>
+			<ul>
+				<li>
+					<a href="#">
+						Disclaimer
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						Privacy
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						Cookievoorkeuren
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						Bezoekersvoorwaarden
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						©Vue Cinemas 2022
+					</a>
+				</li>
+			</ul>
+		</section>
+
+		<!--footer section 6 'partners van vue'-->
+
+		<section>
+			<!--h2 is verstopt-->
+			<h2>partners van Vue</h2>
+			<ul>
+				<li>
+					<a href="#">
+						<img src="images/vue-international-partnerofvue-.png" alt="vue-international-partnerofvue">
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img src="images/nationale-bioscoopbon-partnerofvue.png" alt="nationale-bioscoopbon-partnerofvue">
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img src="images/stichting-bio-v2-partnerofvue.png" alt="stichting-bio-v2-partnerofvue">
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img src="images/dolby-atmos-partnerofvue-.png" alt="dolby-atmos-partnerofvue">
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img src="images/kijkwijzer-partnervanvue.png" alt="kijkwijzer-partnervanvue">
+					</a>
+				</li>
+			</ul>
+		</section>
+
+	</footer>
+
+	<script defer src="scripts/script.js"></script>
+
+</body>
+
+</html>
