@@ -13,15 +13,20 @@
 </head>
 
 <body class="sinterklaas-modus">
+	<!-- ik heb als bron vooral gebruikt gemaakt van chatGPT -->
+	<!-- zero state starting overlay -->
+
+	<div id="hide-zero-state">
+		<div class="zeroBackground">
+			<h1 id="title-overlay">Ga je mee met onze vriendschapsreis?</h1>
+			<p>Klik op de Oude Schicht of ergens anders om te beginnen...</p>
+			<img src="images/schicht-verhaal4.svg" alt="test-landkaart">
+		</div>
+	</div>
+
+	<!-- header -->
 
 	<header>
-		<div class="overlay-site" id="overlay-site">
-			<div class="overlay-content-site">
-				<h1 id="title">Ga je mee met onze vriendschapsreis?</h1>
-				<p>Klik op de Oude Schicht of ergens anders om te beginnen...</p>
-				<img src="images/schicht-verhaal4.svg" alt="test-landkaart">
-			</div>
-		</div>
 		<h1 id="title">De vriendschapsreis</h1>
 		<h2 id="title-sinterklaas">De vriendschapsreis</h1>
 			<button id="toggle-sinterklaas-modus">Sinterklaas Modus</button>
@@ -32,17 +37,13 @@
 	<main>
 		<section class="map-container">
 			<h2>landkaart</h2>
-			<img src="images/test landkaart.svg" alt="test-landkaart">
+			<img src="images/landkaart.svg" alt="test-landkaart">
 
 			<!-- <h3>markers op landkaart</h3> -->
 			<span class="marker" data-index="0"></span>
 			<span class="marker" data-index="1"></span>
 			<span class="marker" data-index="2"></span>
 			<span class="marker" data-index="3"></span>
-
-			<!--voetsporen Bommel & Tom Poes-->
-			<img src="images/voetsporen-bommel.svg" alt="voetsporen-bommel">
-			<img src="images/Voetsporen Tom Poes.svg" alt="voetsporen-tom-poes">
 
 			<button id="bommelButton" class="button-container">
 				<img class="default-image" src="images/bommel-gezicht.svg" alt="bommel-gezicht">
@@ -90,7 +91,7 @@
 						moment gaan ze samen verder reizen en lijken meteen al een avontuur op het oog te hebben.</p>
 				</div>
 
-				<img class="marker-image2" src="images/schicht-verhaal1.png" alt="schicht-verhaal1"
+				<img class="marker-image2" src="images/schicht-verhaal-2missgoed.svg" alt="schicht-verhaal1"
 					data-marker-index="0">
 				<audio class="markerSound">
 					<source src="audio/auto-die-opstart.mp3" type="audio/mpeg">
@@ -168,7 +169,8 @@
 					</p>
 				</div>
 
-				<img class="marker-image2" src="images/schicht-verhaal3.svg" alt="schicht-verhaal3" data-marker-index="2">
+				<img class="marker-image2" src="images/schicht-verhaal3.svg" alt="schicht-verhaal3"
+					data-marker-index="2">
 				<audio class="markerSound">
 					<source src="audio/auto-die-opstart.mp3" type="audio/mpeg">
 				</audio>
@@ -202,7 +204,8 @@
 					</p>
 
 				</div>
-				<img class="marker-image2" src="images/schicht-verhaal4.svg" alt="schicht-verhaal4" data-marker-index="3">
+				<img class="marker-image2" src="images/schicht-verhaal4.svg" alt="schicht-verhaal4"
+					data-marker-index="3">
 				<audio class="markerSound">
 					<source src="audio/auto-die-opstart.mp3" type="audio/mpeg">
 				</audio>
