@@ -6,65 +6,215 @@
 	<meta name="author" content="jouw naam">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>VIDii 2023/24 - Tijdlijn</title>
+	<title>De vriendschapsreis</title>
 
 	<link href="styles/style.css" rel="stylesheet">
-	<link rel="icon" type="image/png+xml" href="images/favicon.png">
+	<link rel="icon" type="image/png+xml" href="images/bommel-gezicht.svg">
 </head>
 
-<body>
+<body class="sinterklaas-modus">
+
+	<header>
+		<div class="overlay-site" id="overlay-site">
+			<div class="overlay-content-site">
+				<h1 id="title">Ga je mee met onze vriendschapsreis?</h1>
+				<p>Klik op de Oude Schicht of ergens anders om te beginnen...</p>
+				<img src="images/schicht-verhaal4.svg" alt="test-landkaart">
+			</div>
+		</div>
+		<h1 id="title">De vriendschapsreis</h1>
+		<h2 id="title-sinterklaas">De vriendschapsreis</h1>
+			<button id="toggle-sinterklaas-modus">Sinterklaas Modus</button>
+	</header>
+
+	<!-- section 1 landkaart -->
+
 	<main>
-		<header>
-			<h1>De vriendschapsreis</h1>
-		</header>
-
-		<!-- 	
-bommel en tom poes -->
-		<section>
-			<h2>bommel en tom poes</h2>
-			<!-- <ul>
-				<li><img src="images/bommel-en-tom-poes.png" alt="bommel-en-tom-poes"></li>
-				<li><img src="images/tompoes.png" alt="tom-poes"></li>
-			</ul> -->
-
-		</section>
-
-		<!-- 	
-landkaart -->
-		<section>
+		<section class="map-container">
 			<h2>landkaart</h2>
-			<article>
-				<h2>Ontdek Heer Bommel en Tom Poes' hartverwarmende reis</h2>
-				  <!-- <svg svg width="90%" height="90%" viewBox="0 0 500 400">
-					<image xlink:href="images/landkaart bommel.svg" width="100%" height="100%" />
-				  </svg> -->
+			<img src="images/test landkaart.svg" alt="test-landkaart">
 
-				  <section>
-					<img src="images/landkaart bommel.svg" alt="">
-							  	<!-- 	
-markers op landkaart -->
-					<span class="info-tonen-over-bos"></span>
-					<span></span>
-					<span></span>
-					<span></span>
-				  </section>
+			<!-- <h3>markers op landkaart</h3> -->
+			<span class="marker" data-index="0"></span>
+			<span class="marker" data-index="1"></span>
+			<span class="marker" data-index="2"></span>
+			<span class="marker" data-index="3"></span>
 
-				  	<!-- 	
-markers op landkaart -->
-				  <!-- <ul>
-					<li>Donkere Bomen Bos</li>
-					<li>Rommeldam</li>
-					<li>Bommelstein</li>
-					<li>de Zwarte Bergen</li>
-				  </ul> -->
-			</article>
+			<!--voetsporen Bommel & Tom Poes-->
+			<img src="images/voetsporen-bommel.svg" alt="voetsporen-bommel">
+			<img src="images/Voetsporen Tom Poes.svg" alt="voetsporen-tom-poes">
+
+			<button id="bommelButton" class="button-container">
+				<img class="default-image" src="images/bommel-gezicht.svg" alt="bommel-gezicht">
+				<img class="dark-mode-image-hidden mijter" id="mijter" src="images/mijter.svg" alt="mijter">
+				<audio id="bommelAudio">
+					<source src="audio/bommel-quote.wav" type="audio/mpeg">
+				</audio>
+			</button>
+
+			<button id="tom-poesButton" class="button-container">
+				<img class="default-image" src="images/tom-poes-gezicht.svg" alt="tom-poes-gezicht">
+				<img class="dark-mode-image-hidden pietenmuts" id="pietenmuts" src="images/pietenmuts.svg"
+					alt="pietenmuts">
+				<audio id="tom-poesAudio">
+					<source src="audio/tom-poes-quote-uitgebreid.wav" type="audio/mpeg">
+				</audio>
+			</button>
 
 		</section>
-	
+
+		<!-- section 2 overlay popup met info-->
+		<section class="overlay">
+			<h2>overlay-information</h2>
+			<div class="overlay-content" id="marker-0">
+				<h3 class="marker-title">Donkere Bomen Bos</h3>
+				<img class="marker-image" src="images/verhaal1.jpg" alt="verhaal1" data-marker-index="0">
+				<div class="two-column-container">
+					<p class="marker-text">Tom Poes en Bommel ontmoeten elkaar in 1941, in het verhaal van de Toverpijp.
+						Tom
+						Poes wandelt langs de Kale Driesprong, dat ligt tussen de Drie Kromme Sparren en Het Donkere
+						Boomen
+						Bosch.
+					</p>
+
+					<p class="marker-text">
+						Hij is op zoek naar avonturen en ineens komt hij een heer tegen in een geruite jas. Tom Poes
+						denkt
+						gelijk dat de man een vreemdeling is omdat hij niet zo gauw iemand ziet in een geruite jas. Zo
+						te
+						merken is de heer net als Tom Poes op zoek naar avontuur.</p>
+
+					<p class="marker-text">Als ze kennismaken lijken ze zich meteen op hun gemak te voelen bij elkaar.
+						Tom
+						Poes mag de heer ‘heer Ollie’ noemen en Tom Poes noemt heer Ollie ‘jonge vriend’. Het volgende
+						moment gaan ze samen verder reizen en lijken meteen al een avontuur op het oog te hebben.</p>
+				</div>
+
+				<img class="marker-image2" src="images/schicht-verhaal1.png" alt="schicht-verhaal1"
+					data-marker-index="0">
+				<audio class="markerSound">
+					<source src="audio/auto-die-opstart.mp3" type="audio/mpeg">
+				</audio>
+			</div>
+
+			<div class="overlay-content" id="marker-1">
+				<h3 class="marker-title">Rommeldam</h3>
+				<img class="marker-image" src="images/verhaal2.jpg" alt="verhaal2" data-marker-index="1">
+				<div class="two-column-container">
+					<p class="marker-text">In 1949 schreef Marten Toonder ‘de betoverde prinses’. In dit verhaal redt
+						Heer
+						Bommel een prinses die gevangen werd gehouden door een draak. De prinses wordt meegenomen naar
+						kasteel Bommelstein en ze gaat een relatie aan met Bommel.</p>
+					<p class="marker-text">Al snel begint Bommel zich te ergeren aan de relatie. De prinses wil hem
+						steeds
+						meer regels opleggen, zoals nette kleding dragen, haar helpen met breiwerk en geld terugvragen
+						aan
+						iedereen die hij ooit geld geleend had.
+					</p>
+					<p class="marker-text">Tom Poes is intussen verdrietig dat heer Bommel niet meer zoveel aandacht aan
+						hem
+						geeft. Ineens komt Bommel bij Tom Poes langs om zijn irritaties te uiten over de relatie. En het
+						volgende moment gaan ze samen op pad om weg te vluchten van de prinses.
+					</p>
+					<p class="marker-text">Dus dit verhaal laat zien dat de band tussen Heer Bommel en Tom Poes nog
+						sterker
+						is geworden. Tom Poes vindt het namelijk jammer als Bommel zijn aandacht aan iemand anders geeft
+						en
+						Bommel komt bij Tom Poes om te klagen over zijn relatie.
+					</p>
+				</div>
+
+				<img class="marker-image2" src="images/schicht-verhaal2.svg" alt="schicht-verhaal2"
+					data-marker-index="1">
+				<audio class="markerSound">
+					<source src="audio/auto-die-opstart.mp3" type="audio/mpeg">
+				</audio>
+			</div>
+
+			<div class="overlay-content" id="marker-2">
+				<h3 class="marker-title">Bommelstein</h3>
+				<img class="marker-image" src="images/verhaal3.jpg" alt="verhaal3" data-marker-index="2">
+				<div class="two-column-container">
+					<p class="marker-text">In 1956 beleven Heer Bommel en Tom Poes het avontuur van ‘het mengeldier’. In
+						het
+						begin van het verhaal is Bommel bezig om zijn memoires op te schrijven. Ineens belt iemand aan.
+						Joost, de bediende van Bommel doet open. Het is een marskramer die Joost een witte bolhoed
+						verkoopt.
+					</p>
+					<p class="marker-text">Dan wordt er nog een keer aangebeld. Het is de meesterschilder Terpen Tijn,
+						die
+						in ruil voor een slaapplek belooft aan heer Bommel om zijn portret te schilderen. De volgende
+						dag
+						begint hij met schilderen, maar heer Bommel vindt dat het niet op hem lijkt.
+					</p>
+					<p class="marker-text">Dan schildert Terpen Tijn het kasteel Bommelstein maar ook dat vindt Bommel
+						niet
+						mooi. Hij vindt het een gevangenis. De schilder is boos en verlaat het kasteel.
+						Vervolgens probeert Bommel tot rust te komen in zijn tuin. Maar ineens ziet hij dat het kasteel
+						verandert tot wat Terpen Tijn geschilderd had. Het blijkt het werk te zijn van het mengeldier
+						dat de
+						witte bolhoed was van Joost. Het mengeldier is een verzamelaar, die alles verzamelt en door
+						elkaar
+						roert zoals de gedachten en herinneringen van de heer Bommel.
+					</p>
+					<p class="marker-text">Intussen maakt Tom Poes zich zorgen over heer Bommel. Hij is al lang niet bij
+						hem
+						geweest en hij hoorde van de kruidenier dat het niet goed ging met Bommel. Dus hij besluit bij
+						Bommel langs te gaan.
+					</p>
+					<p class="marker-text">Dit verhaal laat dus zien dat Tom Poes zich zorgen maakt over Bommel en dat
+						hij
+						hem wil helpen. Het is dus een mooi voorbeeld van hoe sterk de band met Bommel is geworden.
+					</p>
+				</div>
+
+				<img class="marker-image2" src="images/schicht-verhaal3.svg" alt="schicht-verhaal3" data-marker-index="2">
+				<audio class="markerSound">
+					<source src="audio/auto-die-opstart.mp3" type="audio/mpeg">
+				</audio>
+			</div>
+
+			<div class="overlay-content" id="marker-3">
+				<h3 class="marker-title">De Zwarte Bergen</h3>
+				<img class="marker-image" src="images/verhaal4.jpg" alt="verhaal4" data-marker-index="3">
+				<div class="two-column-container">
+					<p class="marker-text">In 1965 schreef Marten Toonder ‘de Labberdaan’. Tom Poes en Heer Bommel doen
+						een
+						autorit in de Zwarte Bergen om avontuur te zoeken. In de Zwarte Bergen komen ze het volk van de
+						Labberdanen tegen, die graag hard werken. Dit geldt ook voor Plep Labberdaan, maar omdat hij
+						onhandig is, wordt hij niet gewaardeerd door zijn soortgenoten.
+					</p>
+
+					<p class="marker-text">Vervolgens besluit Bommel om Plep mee te nemen naar Bommelstein om hem een
+						beter
+						thuis te geven en beter werk. Tom Poes vindt dit echter geen goed idee, omdat de Labberdaan voor
+						een
+						hoop ellende zou kunnen zorgen.
+					</p>
+
+					<p class="marker-text">In dit verhaal lijken Bommel en Tom Poes wat meer discussie te hebben. Bommel
+						wil
+						zich bemoeien met wat de Labberdaan doet, maar Tom Poes zegt dat Bommel de reus beter met rust
+						kan
+						laten. Maar Bommel is eigenwijs en neemt de Labberdaan toch mee en Tom Poes legt zich neer bij
+						de
+						beslissing.
+					</p>
+
+				</div>
+				<img class="marker-image2" src="images/schicht-verhaal4.svg" alt="schicht-verhaal4" data-marker-index="3">
+				<audio class="markerSound">
+					<source src="audio/auto-die-opstart.mp3" type="audio/mpeg">
+				</audio>
+			</div>
+
+			<button class="close-button"><img src="images/close-button.svg" alt="close-button"></button>
+		</section>
 
 		<script src="scripts/script.js"></script>
 	</main>
-	<footer></footer>
+
+	<footer>door Agnes Verhagen 2023</footer>
 </body>
 
 </html>

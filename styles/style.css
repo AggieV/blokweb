@@ -1,0 +1,584 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+
+/* naar een idee van Jen Simmons */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #d68f3a;
+  opacity: 0.8;
+  overflow: hidden;
+  /* height: 100vh; */
+  /* background-image: linear-gradient(red 1px, transparent 1px), linear-gradient(to right, red 1px, #d68f3a 1px);
+  background-size: 80px 80px; */
+
+  /* background-image:
+  repeating-linear-gradient(red 1px, transparent 1px),
+    linear-gradient(to right, red 1px, transparent 1px),
+    linear-gradient(to bottom, red 1px, transparent 1px),
+    linear-gradient(to right, red 1px, transparent 1px);
+  background-size: 80px 80px;
+  background-position: -10px -10px, -10px -10px, -10px -10px, -10px -10px; */
+
+  /* background: linear-gradient( 90deg, 
+  gold 0%, 
+  gold 10%, 
+  white 30%, 
+  maroon 50%, 
+  gray 60%, 
+  maroon 80%, 
+  white 100%),
+ linear-gradient( 180deg, 
+  gold 0%, 
+  gold 10%, 
+  white 30%, 
+  maroon 50%, 
+  gray 60%, 
+  maroon 80%, 
+  white 100%);
+background-size: 4em 4em;
+background-color: #ffffff;
+background-blend-mode: multiply, normal; */
+  /* cursor: url(images/voetsporen-bommel.svg), auto; */
+  /* cursor: url(target.svg) 15 15, move; */
+}
+
+body.sinterklaas-modus {
+  background-image: url("dark-mode-background.jpg") repeat-y;
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+  background-position: center center;
+  animation: moveBackground 20s infinite linear;
+  /* animation-fill-mode: forwards; */
+  animation-delay: 0.5s;
+  /* transition: transform 100s linear; 
+  transform: translateY(100%);  */
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+@keyframes moveBackground {
+  0% {
+    background-position: bottom;
+  }
+
+  100% {
+    background-position: top;
+  }
+}
+
+/* Default mode styles */
+section:nth-of-type(1)>button img,
+body:not(.sinterklaas-modus) button#tom-poesButton img,
+body:not(.sinterklaas-modus) button#bommelButton img {
+  width: 5em;
+  /* Set the width as needed */
+  height: auto;
+}
+
+/* Dark mode styles */
+body.sinterklaas-modus button#tom-poesButton img,
+body.sinterklaas-modus button#bommelButton img {
+  /* width: 5em;  */
+  /* Set the same width as in the default mode */
+  height: auto;
+}
+
+.overlay-site {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  /* Initial opacity set to 0 */
+  transition: opacity 3s ease;
+  /* Transition for smooth fade effect */
+  z-index: 6000;
+  margin: 0 auto;
+  cursor: pointer;
+  position: relative;
+}
+
+.overlay-visible {
+  opacity: 1;
+  /* Opacity set to 1 when the overlay is visible */
+}
+
+.overlay-content-site {
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  top: 8em;
+  position: absolute;
+  margin: 1em;
+}
+
+
+header {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* margin-left: 1em; */
+  flex-wrap: wrap;
+  bottom: 1em;
+  margin-top: 1.5em;
+}
+
+/*sinterklaasmode*/
+
+header button {
+  position: absolute;
+  /* margin-top: 1.5em; */
+  right: 1em;
+  padding: 1em;
+  z-index: 3000;
+  width: 150px;
+}
+
+header img {
+  width: 6em;
+  cursor: pointer;
+  margin-top: 2em;
+}
+
+/* Media query to adjust button position for smaller screens */
+@media screen and (max-width: 768px) {
+  header button {
+    position: relative;
+    margin-top: 1.5em;
+    margin: 0 auto;
+  }
+}
+
+body.dark-mode .toggle-sinterklaas-modus {
+  /* Set the same fixed width for dark mode */
+  width: 150px;
+}
+
+button:not([disabled]) {
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:focus {
+  filter: drop-shadow();
+}
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+
+@font-face {
+  font-family: 'Bulmer Bt Roman';
+  src: url('../fonts/BulmerBTRoman.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --color-headings: darkblue;
+
+}
+
+
+/********************/
+/* ALGEMENE STYLING */
+/********************/
+
+h1 {
+  color: var(--color-headings);
+  color: white;
+  font-family: 'Bulmer Bt Roman', sans-serif;
+  text-align: center;
+  font-weight: 700;
+  font-size: 2em;
+  /* margin-top: 1.5em; */
+  text-transform: uppercase;
+  padding: 0.5em;
+}
+
+h2 {
+  display: none;
+}
+
+p {
+  min-width: 20em;
+  /* Set a minimum width for regular p lines */
+  max-width: 30em;
+  /* Set a maximum width for regular p lines */
+  margin: 0 auto;
+  /* Center the paragraphs */
+  flex-basis: calc(50% - 10px);
+  /* Two items per row with a 10px gap */
+}
+
+.two-column-container {
+  display: flex;
+  gap: 1em;
+}
+
+
+/* Media query for larger screens */
+@media screen and (max-width: 768px) {
+  .two-column-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* Adjust the gap between columns */
+    justify-content: space-around;
+    /* Adjust as needed to align columns */
+    flex-basis: calc(50% - 10px);
+    /* Two items per row with a 10px gap */
+  }
+
+  .column {
+    flex: 1 1 calc(50% - 20px);
+    /* Create two equal-width columns with gap between */
+    min-width: 0;
+    /* Ensure content can shrink within the column */
+  }
+}
+
+
+ul {
+  list-style-type: none;
+}
+
+/* map container */
+section:nth-of-type(1) {
+  position: relative;
+  max-width: 130vh;
+  margin: 0 auto;
+}
+
+/*landkaart*/
+section:nth-of-type(1)>img:first-of-type {
+  width: 95%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  /* position: relative; */
+}
+
+/*positie markers op landkaart*/
+section:nth-of-type(1)>span {
+  position: absolute;
+  width: 5% !important;
+  aspect-ratio: 1 / 1;
+  border: 6px solid blue;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 2000;
+}
+
+section:nth-of-type(1)>span::after {
+  position: absolute;
+  top: -1.6em;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+section:nth-of-type(1) span:first-of-type {
+  top: 30%;
+  left: 20%;
+}
+
+section:nth-of-type(1) span:nth-of-type(2) {
+  top: 75%;
+  left: 45%;
+}
+
+section:nth-of-type(1) span:nth-of-type(3) {
+  top: 35%;
+  left: 70%;
+}
+
+section:nth-of-type(1) span:nth-of-type(4) {
+  top: 55%;
+  right: 20%;
+}
+
+/*content span, locaties op landkaart*/
+section:nth-of-type(1)>span:hover::after {
+  background-color: rgba(127, 255, 212, 0.7);
+}
+
+section:nth-of-type(1) span:first-of-type:hover::after {
+  content: '1 Donkere Bomen Bos';
+}
+
+section:nth-of-type(1) span:nth-of-type(2):hover::after {
+  content: '2 Rommeldam';
+}
+
+section:nth-of-type(1) span:nth-of-type(3):hover::after {
+  content: '3 Bommelstein';
+}
+
+section:nth-of-type(1) span:nth-of-type(4):hover::after {
+  content: '4 De Zwarte Bergen';
+}
+
+/*voetsporen Bommel & Tom Poes*/
+
+section:nth-of-type(1) img:nth-of-type(2) {
+  position: absolute;
+  width: 2%;
+  height: auto;
+  transform: rotate(90deg);
+  top: 30%;
+  left: 28%;
+}
+
+section:nth-of-type(1) img:nth-of-type(3) {
+  position: absolute;
+  width: 2%;
+  height: auto;
+  transform: rotate(90deg);
+  top: 35%;
+  left: 28%;
+}
+
+/*overlay met informatie over elke plek*/
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* max-height: 80vh; */
+  overflow-y: auto;
+  display: none;
+  transition: opacity 2s ease, transform 2s ease;
+  z-index: 3000;
+}
+
+.overlay-content {
+  /* position: fixed; */
+  overflow-y: auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  margin: 2em auto;
+  max-height: 90vh;
+  margin: 8em;
+}
+
+@media screen and (max-width: 768px) {
+  .overlay-content {
+    margin: 1em;
+  }
+}
+
+/*openen en sluiten overlay*/
+
+.overlay.toon-informatie {
+  transform: translateY(0);
+  /* opacity: 1; */
+}
+
+.sluit-informatie {
+  transform: translateY(-100%);
+  cursor: pointer;
+}
+
+section:nth-of-type(2) button {
+  position: absolute;
+  top: 2.5em;
+  right: 0;
+}
+
+/*marker info styling*/
+
+.marker-title {
+  font-size: 28px;
+  top: 5em;
+  color: #333;
+  color: blue;
+}
+
+.marker-image {
+  margin-top: 1em;
+  max-width: 100%;
+  margin-bottom: 1em;
+  width: 100vw;
+}
+
+/* .marker-image2 {
+  visibility: hidden;
+  width: 10vw;
+  margin: 0 auto;
+  transform: scaleX(1);
+  animation: moveRightAndLeft 20s linear infinite;
+  animation-delay: 2s;
+  cursor: pointer;
+} */
+
+.marker-image2 {
+  display: none;
+  width: 10vw;
+  margin: 0 auto;
+  transform: scaleX(1);
+  animation: moveRightAndLeft 20s linear infinite;
+  animation-delay: 2s;
+  cursor: pointer;
+}
+
+.show-marker-image2 {
+  display: block;
+  /* Show marker-image2 when this class is applied */
+}
+
+@keyframes moveRightAndLeft {
+  0% {
+    transform: translateX(0) scaleX(1);
+  }
+
+  25% {
+    transform: translateX(10em) scaleX(1);
+  }
+
+  50% {
+    transform: translateX(20em) scaleX(-1);
+  }
+
+  75% {
+    transform: translateX(10em) scaleX(-1);
+  }
+
+  100% {
+    transform: translateX(0) scaleX(1);
+  }
+}
+
+.marker-text {
+  font-size: 18px;
+  color: #333;
+}
+
+/*voice buttons Bommel en Tom Poes*/
+
+section:nth-of-type(1)>button {
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  /* z-index: 1000; */
+  width: 25em;
+  height: 25em;
+}
+
+.button-container {
+  position: relative;
+  display: inline-block;
+}
+
+
+/* bommelButton */
+section:nth-of-type(1)>button:nth-of-type(1) {
+  position: absolute;
+  top: 50%;
+  left: -10%;
+  width: 30%;
+  /* pas hier grote aan van bommel */
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+section:nth-of-type(1)>button:nth-of-type(1):hover {
+  transform: translateY(-2px) translateX(2px);
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.7);
+  background-color: red;
+}
+
+
+section:nth-of-type(1)>button:nth-of-type(1) img {
+  width: 100%;
+  height: auto;
+}
+
+
+#mijter {
+  position: absolute;
+  transform: rotate(360deg);
+  top: -70%;
+  left: 14%;
+  height: auto;
+}
+
+/* tom-poesButton */
+section:nth-of-type(1)>button:nth-of-type(2) {
+  position: absolute;
+  top: 60%;
+  left: 80%;
+  /* transform: translateY(-50%) translateX(-50%); */
+  width: 30%;
+  /* pas hier grote aan van tom poes */
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+section:nth-of-type(1)>button:nth-of-type(2) img {
+  width: 50%;
+  height: auto;
+}
+
+#pietenmuts {
+  position: absolute;
+  transform: rotate(335deg);
+  top: -7%;
+  left: 22%;
+  height: auto;
+}
+
+.dark-mode-image-hidden {
+  position: relative;
+  top: -10px;
+  /* Adjust this value to position the image above the default image */
+  display: none;
+  /* Initially hide the dark mode image */
+}
+
+.dark-mode .dark-mode-image-hidden {
+  display: inline;
+  /* Display the dark mode image when in dark mode */
+}
+
+
+/*footer*/
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #cda97a;
+  padding: 10px 0;
+  margin-top: -20em;
+}
