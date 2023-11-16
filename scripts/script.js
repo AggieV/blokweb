@@ -1,6 +1,18 @@
 // // JavaScript Document
 // console.log("Ola!");
 
+document.addEventListener('DOMContentLoaded', function() {
+  const overlayContents = document.querySelectorAll('.overlay-content');
+
+  // Hide all overlay contents initially
+  overlayContents.forEach(content => {
+    content.classList.add('hide-overlay');
+  });
+
+  // ... (your existing JavaScript code for handling overlay events)
+});
+
+
 //hide zero state
 
 var zeroStateButton = document.getElementById('hide-zero-state');
@@ -45,8 +57,30 @@ const markerImage = document.querySelector('.marker-image');
 const markerText = document.querySelector('.marker-text');
 const closeButton = document.querySelector('.close-button');
 
+document.addEventListener('DOMContentLoaded', function() {
+  const overlayContents = document.querySelectorAll('.overlay-content');
+
+  // Hide all overlay contents initially
+  overlayContents.forEach(content => {
+    content.classList.add('hide-overlay');
+  });
+
+  // ... (your existing JavaScript code for handling overlay events)
+});
+
+
 markers.forEach((marker, index) => {
   marker.addEventListener('click', () => appear(index));
+
+  marker.addEventListener('keydown', handleKeydown);
+
+  function handleKeydown(e) {
+    if(e.key == "Enter") {
+      appear(index);
+    }
+  }
+
+
 });
 
 //close overlays op landkaart
