@@ -1,223 +1,883 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="nl">
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="author" content="jouw naam">
+	<meta name="author" content="Agnes Verhagen">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>De vriendschapsreis</title>
+	<title>vuecinemas - homepage</title>
 
-	<link href="styles/style.css" rel="stylesheet">
-	<link rel="icon" type="image/png+xml" href="images/bommel-gezicht.svg">
+	<link href="styles/styles.css" rel="stylesheet">
+	<link href="styles/moviepassstyles.css" rel="stylesheet">
+	<link rel="icon" type="image/svg+xml" href="images/faviconvue.png">
 </head>
 
-<body class="sinterklaas-modus">
-	<!-- ik heb als bron vooral gebruikt gemaakt van chatGPT en af en toe heb ik hulp gekregen vvan studentassistenten-->
-	<!-- zero state starting overlay -->
-
-	<div id="hide-zero-state">
-		<div class="zeroBackground">
-			<h1 id="title-overlay">Ga je mee met onze vriendschapsreis?</h1>
-			<p>Klik op de Oude Schicht of ergens anders om te beginnen...</p>
-			<img src="images/schicht-verhaal4.svg" alt="test-landkaart">
-		</div>
-	</div>
-
-	<!-- header -->
+<body>
 
 	<header>
-		<h1 id="title">De vriendschapsreis</h1>
-		<h2 id="title-sinterklaas">De vriendschapsreis</h2>
-			<button id="toggle-sinterklaas-modus">Sinterklaas Modus</button>
+
+		<h1>
+			<img src="images/vue-logo.png" alt="vue-logo">
+		</h1>
+
+		<ul>
+			<li>
+				<button aria-label="switchdarkandlightmode">Light mode</button>
+			</li>
+
+			<li>
+				<details>
+					<summary>Alle Vue Cinemas</summary>
+					<ul>
+						<li>
+							<a href="#">
+								Vue Alkmaar
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Vue Alphen a/d Rijn
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Vue Amersfoort
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Vue Apeldoorn
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Vue Arnhem
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Vue Den Bosch
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Vue Deventer
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Vue Doetinchem
+							</a>
+						</li>
+					</ul>
+				</details>
+			</li>
+
+			<li>
+				<details>
+					<summary>Films</summary>
+					<ul>
+						<li>
+							<a href="#">
+								Nu in de bioscoop
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Top 10
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Voorverkoop
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Voorpremière
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Coming soon
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Filmtrailers
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Dinner & Movie
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Totaalaanbod Film bij Vue
+							</a>
+						</li>
+					</ul>
+				</details>
+			</li>
+
+			<li>
+				<details>
+					<summary>Specials & Events</summary>
+					<ul>
+						<li>
+							<a href="#">
+								Ladies Night
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Movie Pass Exclusive
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Marathon
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Girls Night
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Meet The Cast
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Soft Sound Screening
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Sneak Preview
+							</a>
+						</li>
+					</ul>
+				</details>
+			</li>
+
+			<li>
+				<details>
+					<summary>Kids</summary>
+					<ul>
+						<li>
+							<a href="#">
+								Kinderfilms
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Kinderfeestjes
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Vue Amersfoort
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Mega Kids Weekend
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Mini Mornings
+							</a>
+						</li>
+					</ul>
+				</details>
+			</li>
+
+			<li>
+				<details>
+					<summary>Belevingen</summary>
+					<ul>
+						<li>
+							<a href="#">
+								Dolby Atmos
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Dolby Cinema
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								XD
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								VIP seating
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								DeLuxe Seating
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								D-box
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								3D
+							</a>
+						</li>
+					</ul>
+				</details>
+			</li>
+
+			<li>
+				<input type="text" name="searchfield" placeholder="Search for...">
+				<button aria-label="search"><img src="images/search-icon.png" alt="search-icon"></button>
+			</li>
+
+			<li>
+				<button aria-label="menu"><img src="images/hamburgermenu.png" alt="hamburgermenu"></button>
+			</li>
+		</ul>
+
+		<nav>
+			<img src="images/vue-logo.png" alt="vue-logo">
+			<button aria-label="closemenu"><img src="images/sluitbutton-icon.png" alt="sluitbutton-icon"></button>
+			<ul>
+				<li>
+					<a href="#">
+						<img src="images/mijnprofiel-icon.png" alt="">
+						<div>Log in</div>
+						<div>Mijn Vue</div>
+						<img src="images/arrow-icon.svg" alt="">
+					</a>
+				</li>
+
+				<li>
+					<a href="trailers.html">
+						<img src="images/trailer-icon.svg" alt="">
+						Trailers
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img src="images/specials&events-icon.svg" alt="">
+						Specials & Events
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img src="images/kids-icon.svg" alt="">
+						Kids
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img src="images/belevingen-icon.svg" alt="">
+						Belevingen
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img src="images/tickets-icon.svg" alt="">
+						Tickets
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img src="images/movie-pass-icon.svg" alt="">
+						Moviepass
+					</a>
+				</li>
+
+				<ul>
+					<li>
+						<a href="#">
+							Giftcards
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Zakelijk
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Klantenservice
+						</a>
+					</li>
+				</ul>
+
+			</ul>
+
+		</nav>
+
 	</header>
 
-	<!-- section 1 landkaart -->
-
 	<main>
-		<section class="map-container">
-			<h2>landkaart</h2>
-			<img src="images/landkaart.svg" alt="test-landkaart">
 
-			<!-- <h3>markers op landkaart</h3> -->
-			<span tabindex="0" class="marker" data-index="0"></span>
-			<span tabindex="0" class="marker" data-index="1"></span>
-			<span tabindex="0" class="marker" data-index="2"></span>
-			<span tabindex="0"class="marker" data-index="3"></span>
+		<!-- <section 1-article 'films die nu draaien' en article 'vue movie pass voordelen'> -->
+		<section>
+			<!--article 1 films die nu draaien-->
+			<article>
+				<!-- <h2 is verstopt> -->
+				<h2>films die nu draaien</h2>
+				<ul>
+					<li>
+						<a href="#" aria-label="info over barbarian"><img src="images/barbarian.jpg"
+								alt="barbarian"></a>
+					</li>
 
-			<button id="bommelButton" class="button-container">
-				<img class="default-image" src="images/bommel-gezicht.svg" alt="bommel-gezicht">
-				<img class="dark-mode-image-hidden mijter" id="mijter" src="images/mijter.svg" alt="mijter">
-				<audio id="bommelAudio">
-					<source src="audio/bommel-quote.wav" type="audio/mpeg">
-				</audio>
-			</button>
+					<li>
+						<a href="#" aria-label="info over casacoco"><img src="images/casacoco.jpg" alt="casacoco"></a>
+					</li>
 
-			<button id="tom-poesButton" class="button-container">
-				<img class="default-image" src="images/tom-poes-gezicht.svg" alt="tom-poes-gezicht">
-				<img class="dark-mode-image-hidden pietenmuts" id="pietenmuts" src="images/pietenmuts.svg"
-					alt="pietenmuts">
-				<audio id="tom-poesAudio">
-					<source src="audio/tom-poes-quote-uitgebreid.wav" type="audio/mpeg">
-				</audio>
-			</button>
+					<li>
+						<a href="#" aria-label="info over blackadam"><img src="images/blackadam.jpg"
+								alt="blackadam"></a>
+					</li>
+
+					<li>
+						<a href="#" aria-label="info over clubvansintrace"><img src="images/clubvansintrace.jpg"
+								alt="clubvansintrace"></a>
+					</li>
+
+					<li>
+						<a href="#" aria-label="info over grotesintfilm"><img src="images/grotesintfilm.jpg"
+								alt="grotesintfilm"></a>
+					</li>
+
+					<li>
+						<a href="#" aria-label="info over listydome5"><img src="images/listydome5.jpg"
+								alt="listydome5"></a>
+					</li>
+
+					<li>
+						<a href="#" aria-label="info over tickettoparadise"><img src="images/tickettoparadise.jpeg"
+								alt="tickettoparadise"></a>
+					</li>
+
+					<li>
+						<a href="#" aria-label="info over wakandaforever"><img src="images/wakandaforever.jpg"
+								alt="wakandaforever"></a>
+					</li>
+				</ul>
+			</article>
+
+			<!--article 2-vue movie pass voordelen-->
+
+			<article>
+				<h2>vue movie pass</h2>
+				<h3>onbeperkt naar de film voor €20.50 p/mnd</h3>
+				<ul>
+					<li>
+						<img src="images/movie-snacks.svg" alt="">
+						<p>10% korting op eten en drinken</p>
+					</li>
+
+					<li>
+						<img src="images/movie-chair.svg" alt="">
+						<p>Inclusief Sneak Preview & Movie Pass Exclusive</p>
+					</li>
+
+					<li>
+						<img src="images/movie-watch.svg" alt="">
+						<p>Inclusief XD Experience en Dolby Atmos</p>
+					</li>
+				</ul>
+
+				<div>
+					<a href="#">neem abonnement</a>
+					<a href="#">geef cadeau</a>
+				</div>
+
+			</article>
 
 		</section>
 
-		<!-- section 2 overlay popup met info-->
-		<section class="overlay">
-			<h2>overlay-information</h2>
-			<div class="overlay-content" id="marker-0">
-				<h3 class="marker-title">Donkere Bomen Bos</h3>
-				<img class="marker-image" src="images/verhaal1.jpg" alt="verhaal1" data-marker-index="0">
-				<div class="two-column-container">
-					<p class="marker-text">Tom Poes en Bommel ontmoeten elkaar in 1941, in het verhaal van de Toverpijp.
-						Tom
-						Poes wandelt langs de Kale Driesprong, dat ligt tussen de Drie Kromme Sparren en Het Donkere
-						Boomen
-						Bosch.
-					</p>
+		<!-- <section 2-speciaal voor onze échte filmliefhebbers en nog 2 artikelen> -->
+		<section>
+			<!-- h2 is verstopt -->
+			<h2>hoe werkt de vue movie pass?</h2>
+			<ul>
+				<li>
+					<img src="images/moviepassfirstarticle.jpg" alt="">
 
-					<p class="marker-text">
-						Hij is op zoek naar avonturen en ineens komt hij een heer tegen in een geruite jas. Tom Poes
-						denkt
-						gelijk dat de man een vreemdeling is omdat hij niet zo gauw iemand ziet in een geruite jas. Zo
-						te
-						merken is de heer net als Tom Poes op zoek naar avontuur.</p>
+					<h3>speciaal voor onze échte filmliefhebbers</h3>
 
-					<p class="marker-text">Als ze kennismaken lijken ze zich meteen op hun gemak te voelen bij elkaar.
-						Tom
-						Poes mag de heer ‘heer Ollie’ noemen en Tom Poes noemt heer Ollie ‘jonge vriend’. Het volgende
-						moment gaan ze samen verder reizen en lijken meteen al een avontuur op het oog te hebben.</p>
-				</div>
+					<p>Een Vue Movie Pass is een film abonnement waarmee je onbeperkt naar alle Vue Cinemas kan gaan.
+						Het
+						abonnement is
+						opzegbaar na 4 kalendermaanden. Of je nou fan bent van horror of de nieuwste Marvel's wilt zien,
+						hiermee
+						kan je
+						elke reguliere voorstelling bezoeken. Ook krijg je korting op al het eten en drinken én mag je
+						gratis
+						naar de
+						Movie Pass Exclusive en de Sneak Preview. Wat wil je nog meer?</p>
+				</li>
 
-				<img class="marker-image2" src="images/schicht-verhaal-2missgoed.svg" alt="schicht-verhaal1"
-					data-marker-index="0">
-				<audio class="markerSound">
-					<source src="audio/auto-die-opstart.mp3" type="audio/mpeg">
-				</audio>
-			</div>
+				<li>
+					<img src="images/moviepasssecondarticle.jpg" alt="">
 
-			<div class="overlay-content" id="marker-1">
-				<h3 class="marker-title">Rommeldam</h3>
-				<img class="marker-image" src="images/verhaal2.jpg" alt="verhaal2" data-marker-index="1">
-				<div class="two-column-container">
-					<p class="marker-text">In 1949 schreef Marten Toonder ‘de betoverde prinses’. In dit verhaal redt
-						Heer
-						Bommel een prinses die gevangen werd gehouden door een draak. De prinses wordt meegenomen naar
-						kasteel Bommelstein en ze gaat een relatie aan met Bommel.</p>
-					<p class="marker-text">Al snel begint Bommel zich te ergeren aan de relatie. De prinses wil hem
-						steeds
-						meer regels opleggen, zoals nette kleding dragen, haar helpen met breiwerk en geld terugvragen
-						aan
-						iedereen die hij ooit geld geleend had.
-					</p>
-					<p class="marker-text">Tom Poes is intussen verdrietig dat heer Bommel niet meer zoveel aandacht aan
-						hem
-						geeft. Ineens komt Bommel bij Tom Poes langs om zijn irritaties te uiten over de relatie. En het
-						volgende moment gaan ze samen op pad om weg te vluchten van de prinses.
-					</p>
-					<p class="marker-text">Dus dit verhaal laat zien dat de band tussen Heer Bommel en Tom Poes nog
-						sterker
-						is geworden. Tom Poes vindt het namelijk jammer als Bommel zijn aandacht aan iemand anders geeft
-						en
-						Bommel komt bij Tom Poes om te klagen over zijn relatie.
-					</p>
-				</div>
+					<h3>al gauw voordeliger dan reguliere tickets</h3>
 
-				<img class="marker-image2" src="images/schicht-verhaal2.svg" alt="schicht-verhaal2"
-					data-marker-index="1">
-				<audio class="markerSound">
-					<source src="audio/auto-die-opstart.mp3" type="audio/mpeg">
-				</audio>
-			</div>
+					<p>Als je meer dan 1x per maand naar de bioscoop gaat, is de Vue Movie Pass al goedkoper dan het
+						bestellen
+						van
+						reguliere tickets! Dus voor iedereen die graag voordelig naar de bioscoop gaat, is deze Movie
+						Pass
+						ideaal. De
+						prijs is exclusief toeslagen voor 3D, DeLuxe seating en speciale evenementen als Ladies Night en
+						Vue
+						Plus.</p>
+				</li>
 
-			<div class="overlay-content" id="marker-2">
-				<h3 class="marker-title">Bommelstein</h3>
-				<img class="marker-image" src="images/verhaal3.jpg" alt="verhaal3" data-marker-index="2">
-				<div class="two-column-container">
-					<p class="marker-text">In 1956 beleven Heer Bommel en Tom Poes het avontuur van ‘het mengeldier’. In
-						het
-						begin van het verhaal is Bommel bezig om zijn memoires op te schrijven. Ineens belt iemand aan.
-						Joost, de bediende van Bommel doet open. Het is een marskramer die Joost een witte bolhoed
-						verkoopt.
-					</p>
-					<p class="marker-text">Dan wordt er nog een keer aangebeld. Het is de meesterschilder Terpen Tijn,
-						die
-						in ruil voor een slaapplek belooft aan heer Bommel om zijn portret te schilderen. De volgende
-						dag
-						begint hij met schilderen, maar heer Bommel vindt dat het niet op hem lijkt.
-					</p>
-					<p class="marker-text">Dan schildert Terpen Tijn het kasteel Bommelstein maar ook dat vindt Bommel
-						niet
-						mooi. Hij vindt het een gevangenis. De schilder is boos en verlaat het kasteel.
-						Vervolgens probeert Bommel tot rust te komen in zijn tuin. Maar ineens ziet hij dat het kasteel
-						verandert tot wat Terpen Tijn geschilderd had. Het blijkt het werk te zijn van het mengeldier
-						dat de
-						witte bolhoed was van Joost. Het mengeldier is een verzamelaar, die alles verzamelt en door
-						elkaar
-						roert zoals de gedachten en herinneringen van de heer Bommel.
-					</p>
-					<p class="marker-text">Intussen maakt Tom Poes zich zorgen over heer Bommel. Hij is al lang niet bij
-						hem
-						geweest en hij hoorde van de kruidenier dat het niet goed ging met Bommel. Dus hij besluit bij
-						Bommel langs te gaan.
-					</p>
-					<p class="marker-text">Dit verhaal laat dus zien dat Tom Poes zich zorgen maakt over Bommel en dat
-						hij
-						hem wil helpen. Het is dus een mooi voorbeeld van hoe sterk de band met Bommel is geworden.
-					</p>
-				</div>
+				<li>
+					<img src="images/moviepassthirdarticle.jpg" alt="">
 
-				<img class="marker-image2" src="images/schicht-verhaal3.svg" alt="schicht-verhaal3"
-					data-marker-index="2">
-				<audio class="markerSound">
-					<source src="audio/auto-die-opstart.mp3" type="audio/mpeg">
-				</audio>
-			</div>
 
-			<div class="overlay-content" id="marker-3">
-				<h3 class="marker-title">De Zwarte Bergen</h3>
-				<img class="marker-image" src="images/verhaal4.jpg" alt="verhaal4" data-marker-index="3">
-				<div class="two-column-container">
-					<p class="marker-text">In 1965 schreef Marten Toonder ‘de Labberdaan’. Tom Poes en Heer Bommel doen
-						een
-						autorit in de Zwarte Bergen om avontuur te zoeken. In de Zwarte Bergen komen ze het volk van de
-						Labberdanen tegen, die graag hard werken. Dit geldt ook voor Plep Labberdaan, maar omdat hij
-						onhandig is, wordt hij niet gewaardeerd door zijn soortgenoten.
-					</p>
+					<h3>scan via de vue app en je bent binnen!</h3>
 
-					<p class="marker-text">Vervolgens besluit Bommel om Plep mee te nemen naar Bommelstein om hem een
-						beter
-						thuis te geven en beter werk. Tom Poes vindt dit echter geen goed idee, omdat de Labberdaan voor
-						een
-						hoop ellende zou kunnen zorgen.
-					</p>
+					<p>Bekijk in de middag welke films er vanavond
+						draaien en ga dezelfde avond nog zonder extra kosten naar de bioscoop! Laat jouw digitale Vue
+						Movie
+						Pass
+						scannen
+						vanaf je app en je bent binnen. Een perfect avondje uit als je het ons vraagt! Dus wacht niet en
+						bestel
+						nu jou
+						Vue Movie Pass voor jezelf en je vrienden.</p>
+				</li>
 
-					<p class="marker-text">In dit verhaal lijken Bommel en Tom Poes wat meer discussie te hebben. Bommel
-						wil
-						zich bemoeien met wat de Labberdaan doet, maar Tom Poes zegt dat Bommel de reus beter met rust
-						kan
-						laten. Maar Bommel is eigenwijs en neemt de Labberdaan toch mee en Tom Poes legt zich neer bij
-						de
-						beslissing.
-					</p>
+			</ul>
 
-				</div>
-				<img class="marker-image2" src="images/schicht-verhaal4.svg" alt="schicht-verhaal4"
-					data-marker-index="3">
-				<audio class="markerSound">
-					<source src="audio/auto-die-opstart.mp3" type="audio/mpeg">
-				</audio>
-			</div>
-
-			<button class="close-button"><img src="images/close-button.svg" alt="close-button"></button>
 		</section>
 
-		<script src="scripts/script.js"></script>
+		<!-- <section 3-quotes> -->
+		<section>
+			<!-- <h2 is verstopt> -->
+
+			<h2>quotes van bezoekers</h2>
+
+			<div>
+				<blockquote>Het is fijn om een Vue Movie Pass te hebben. Onbeperkt naar de film wanneer het mij
+					uitkomt. Ik
+					ga nu
+					naar films
+					waar ik normaal niet zo snel heen zou gaan en waar ik steeds erg verrast door word!
+				</blockquote>
+			</div>
+
+			<p>giamo (bezoeker)</p>
+
+			<button aria-label="like deze review">Like deze review <span>♥</span></button>
+
+		</section>
+
+		<!--<section 4-veelgestelde vragen>-->
+		<section>
+			<!--article 1 'veelgestelde vragen'-->
+			<article>
+
+				<h2>Veelgestelde vragen</h2>
+
+				<ul>
+					<li>
+						<div>
+							<h3>Wanneer kan ik mijn tickets ophalen?</h3>
+							<button aria-label="dropdown"><img src="images/arrow-icon.svg" alt="arrow-icon"></button>
+						</div>
+						<article>
+							<p>
+								Als je tickets via internet hebt gekocht kun je direct doorlopen naar de ticketcontrole.
+								Jouw
+								Vue
+								Movie Pass is alleen digitaal en moet je ook laten controleren bij de ticketcontrole.
+								Via
+								'tickets'
+								op je App of mobiele website swipe je makkelijk heen en weer tussen jouw QR tickets
+								codes en
+								jouw
+								digitale Vue Movie Pass. Als je tickets aan de kassa koopt, dan krijg je direct een
+								fysiek
+								filmticket mee, die je kunt laten controleren tezamen met je digitale Vue Movie Pass bij
+								de
+								ticketcontrole. Gebruik dan de snelbutton Movie Pass op de app. Hier vind je snel en
+								makkelijk
+								jouw
+								digitale Movie Pass als je geen online tickets hebt gekocht. Alle tickets zijn pas vanaf
+								90
+								minuten
+								voorafgaand aan de voorstelling te scannen bij de ticketcontrole of te koop bij de
+								kassa.
+							</p>
+						</article>
+					</li>
+
+					<li>
+						<div>
+							<h3>Kan ik ook kaartjes kopen in de bioscoop?</h3>
+							<button aria-label="dropdown"><img src="images/arrow-icon.svg" alt="arrow-icon"></button>
+						</div>
+						<article>
+							<p>
+								Ja, aan de kassa, mits de kaartjes voor voorstellingen zijn die op dezelfde dag
+								plaatsvinden. Er
+								moet minstens 90 minuten tussen twee achtereenvolgende voorstellingen zitten.
+							</p>
+						</article>
+					</li>
+
+					<li>
+						<div>
+							<h3>Waar kan ik mijn gekochte tickets vinden?</h3>
+							<button aria-label="dropdown"><img src="images/arrow-icon.svg" alt="arrow-icon"></button>
+						</div>
+						<article>
+							<p>
+								Tickets worden altijd gemaild naar het adres dat gekoppeld is aan jouw Vue Movie Pass.
+								Daarnaast
+								staan ze bij 'tickets' in jouw Mijn Vue account. Op de Vue App staat tevens een
+								snelbutton
+								'tickets'
+								op de home page. Het ticket bestaat uit een QR Code die je moet laten scannen bij de
+								ticketcontrole
+								in de bioscoop!
+							</p>
+						</article>
+					</li>
+
+				</ul>
+
+				<a href="#">Bekijk alle vragen</a>
+			</article>
+
+			<!--article 2 'voorwaarden'-->
+
+			<article>
+				<h2>voorwaarden</h2>
+				<a href="#">Bekijk de algemene voorwaarden</a>
+			</article>
+
+			<!--article 3 'overige vragen'-->
+
+			<article>
+				<h2>overige vragen</h2>
+				<p>Staat jouw vraag en/of antwoord er niet bij? Neem dan contact met ons op middels het e-mailadres.</p>
+				<a href="#">klantenservice@vuemoviepass.nl</a>
+			</article>
+
+		</section>
+
 	</main>
 
-	<footer>door Agnes Verhagen 2023</footer>
+
+	<!--<footer gedeelte>-->
+
+	<footer>
+
+		<!--footer section 1 'volg ons ook via'-->
+		<section>
+
+			<h2>volg ons ook via</h2>
+
+			<ul>
+				<li>
+					<a href="#">
+						<img src="images/facebook-icon.svg" alt="">
+						Facebook
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img src="images/twitter-icon.svg" alt="">
+						Twitter
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img src="images/instagram-icon.svg" alt="">
+						Instagram
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img src="images/tiktok-icon.svg" alt="">
+						TikTok
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img src="images/youtube-icon.svg" alt="">
+						YouTube
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img src="images/blog-icon.svg" alt="">
+						Blog
+					</a>
+				</li>
+			</ul>
+
+		</section>
+
+		<!--footer section 2 'schrijf je in voor onze nieuwsbrief'-->
+		<section>
+			<h2>wees welkom bij de vuefamilie</h2>
+			<p>Schrijf je in voor onze nieuwsbrief.</p>
+			<form>
+				<input type="email" placeholder="E-mailadres" />
+				<button>aanmelden</button>
+			</form>
+		</section>
+
+		<!--footer section 3 'footerlijst films, zakelijk en vue'-->
+		<section>
+			<!--h2 is verstopt-->
+			<h2>links naar andere pagina's</h2>
+
+			<section>
+				<h3>films</h3>
+				<ul>
+					<li>
+						<a href="#">
+							Nu in de bioscoop
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Top 10
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Voorverkoop
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Voorpremiere
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Coming soon
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Filmtrailers
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Dinner & Movie
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Totaalaanbod Film
+						</a>
+					</li>
+				</ul>
+			</section>
+
+			<section>
+				<h3>zakelijk</h3>
+				<ul>
+					<li>
+						<a href="#">
+							Zaalhuur
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Scholen
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Vouchers
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Doekreclame
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Partners
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Besloten filmvoorstelling
+						</a>
+					</li>
+				</ul>
+			</section>
+
+			<section>
+				<h3>vue</h3>
+				<ul>
+					<li>
+						<a href="#">
+							App
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Over Vue
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Verloren voorwerpen
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Contact
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Werken bij de Vue
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Veelgestelde vragen
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Nieuwsbrief
+						</a>
+					</li>
+				</ul>
+			</section>
+
+		</section>
+
+		<!--footer section 4 'download de vue app via de app store of google play'-->
+		<section>
+			<h2>download de vue app</h2>
+			<ul>
+				<li>
+					<a href="">
+						<img src="images/apple.png" alt="">
+						App Store
+					</a>
+					<a href="">
+						<img src="images/googleplay.png" alt="">
+						Google Play
+					</a>
+				</li>
+			</ul>
+		</section>
+
+		<!--footer section 5 'copyright'-->
+		<section>
+			<!-- <h2 is verstopt> -->
+			<h2>copyright</h2>
+			<ul>
+				<li>
+					<a href="#">
+						Disclaimer
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						Privacy
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						Cookievoorkeuren
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						Bezoekersvoorwaarden
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						©Vue Cinemas 2022
+					</a>
+				</li>
+			</ul>
+		</section>
+
+		<!--footer section 6 'partners van vue'-->
+
+		<section>
+			<!--h2 is verstopt-->
+			<h2>partners van Vue</h2>
+			<ul>
+				<li>
+					<a href="#">
+						<img src="images/vue-international-partnerofvue-.png" alt="vue-international-partnerofvue">
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img src="images/nationale-bioscoopbon-partnerofvue.png" alt="nationale-bioscoopbon-partnerofvue">
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img src="images/stichting-bio-v2-partnerofvue.png" alt="stichting-bio-v2-partnerofvue">
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img src="images/dolby-atmos-partnerofvue-.png" alt="dolby-atmos-partnerofvue">
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img src="images/kijkwijzer-partnervanvue.png" alt="kijkwijzer-partnervanvue">
+					</a>
+				</li>
+			</ul>
+		</section>
+
+	</footer>
+
+	<script defer src="scripts/script.js"></script>
+
 </body>
 
 </html>
